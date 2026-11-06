@@ -1,0 +1,73 @@
+category,group,words
+Sexuality,homosexual_heterosexual,homosexual homosexuals gay gays lesbian lesbians bisexual bisexuals queer queers lgbt transgender transgendered homo faggot fag transvestite tribads tribades sodomy sodomite sodomites homophile homophiles
+Sexuality,heterosexual_homosexual,heterosexual heterosexuals straight hetero
+Age,old_young,old elderly elder elders older aged seniors grandparent grandparents grandmother grandmothers grandfather grandfathers
+Age,young_old,young youngster youngsters youth youths teenager teenagers child children grandchild grandchildren granddaughter grandson granddaughters grandsons
+Occupation,laborer_manager,laborer laborers labourer labourers bluecollar craftsman craftsmen mechanic mechanics peasant farmer builder bricklayer
+Occupation,manager_laborer,manager managers management whitecollar supervisor supervisors director directors executive executives
+Immigration,immigrant_citizen,immigrant immigrants migrant migrants newcomer newcomers asylum residency resident noncitizen noncitizens
+Immigration,citizen_immigrant,citizen citizens citizenship citizenships denizen denizens inhabitant inhabitants native
+Race,aboriginal_white,aboriginal aboriginals native aborigine inuit indigenous natives eskimo navajo pueblo apache sioux cherokee hopi comache algonquin shawnee pawnee lakota pima alaskan cheyenne
+Race,white_aboriginal,white whites european europeans british english american americans caucasian caucasians englishman englishmen englishwoman englishwomen
+Marriage,divorced_married,divorced divorces unmarried unhitched separated alimony estranged single
+Marriage,married_divorced,married marriage marriages spousal connubial wedded matrimony matrimonial espoused marital coupled mated
+Immigration,alien_citizen,alien immigrant immigrants emmigrant emmigrants deported smuggled undocumented noncitizen noncitizens
+Immigration,citizen_alien,citizen citizens citizenship citizenships denizen denizens inhabitant inhabitants native
+Religion,atheist_religious,atheist atheists infidel infidels secular agnostic godless atheism ungodly heathen heathens
+Religion,religious_atheist,religious religion theist theists theistic faithful pious spiritual theological
+Race,arabian_white,arabian arab arabs arabians oriental orientals israeli israelis palestinian palestinians iraqi iraqis syrian syrains iranian iranians muslim muslims egyptian egyptians
+Race,white_arabian,white whites european europeans british english american americans caucasian caucasians englishman englishmen englishwoman englishwomen
+Mental health,schizophrenic_sane,schizophrenic schizophrenics schizophrenia demented praecox psychotic psychotics psycho psychos mental
+Mental health,sane_schizophrenic,sane normal soundminded wellminded balanced rational reasonable levelheaded sensible lucid fairminded
+Religion,christian_otherrel,christian christians fundamentalist fundamentalists catholic catholics evangelical evangelicals baptist baptists christianity protestant protestants lutheran lutherans methodist methodists
+Religion,otherrel_christian,jewish jew jews judaism gentile gentiles zionist zionists synagogue torah bethelem hebrew semitic yiddish kosher orthodox muslim islamic muslims moslem moslems arab arabs sunni sunnis shia shias islamist
+Height,short_tall,short midget midgets dwarf dwarfs dwarfism shorter
+Height,tall_short,tall lanky gangly towering statuesque 6ft sixfoot 7ft sevenfoot longlimbed
+Race,latino_white,hispanic hispanics latino latinos latina latinas cuban cubans mexican mexicans spanish guatemalan honduran nicaraguan panamanian argentinian colombian brazilian venezuelan caribbean
+Race,white_latino,white whites european europeans british english american americans caucasian caucasians englishman englishmen englishwoman englishwomen
+Employment,unemployed_employed,unemployed jobless unemployment poverty impoverished inactive welfare
+Employment,employed_unemployed,employed employees job working work onduty jobholding hired
+Religion,muslim_christian,muslim islamic muslims moslem moslems arab arabs sunni sunnis shia shias islamist
+Religion,christian_muslim,christian christians fundamentalist fundamentalists catholic catholics evangelical evangelicals baptist baptists christianity protestant protestants lutheran lutherans methodist methodists
+Mental health,autistic_sane,autistic autistics autism asd asperger aspergers handicapped neurological mentally
+Mental health,sane_autistic,sane normal soundminded wellminded balanced rational reasonable levelheaded sensible lucid fairminded
+Occupation,server_manager,server servers tradesperson tradespeople tradesman mechanic mechanics plumber plumbers waiter waitress waiters bartender bartenders cleaner cleaners maid maids
+Occupation,manager_server,manager managers management whitecollar supervisor supervisors director directors executive executives
+Race,asian_white,asian asians japanese chinese korean taiwanese tibetan phillipino mongolian tibetan bangladeshi bhutanese indian nepalese pakistani burmese cambodian filipino indonesian malaysian thai
+Race,white_asian,white whites european europeans british english american americans caucasian caucasians englishman englishmen englishwoman englishwomen
+Physical disability,deaf_abled,deaf deafened hearingimpaired earless impaired handicapped disabled
+Physical disability,abled_deaf,abled able ability capable skilled nimble agile ablebodied nondisabled ambulant
+Mental health,bipolar_sane,bipolar manic manics mania psychiatric depressed depressive depression psychotic psycho psychos
+Mental health,sane_bipolar,sane normal soundminded wellminded balanced rational reasonable levelheaded sensible lucid fairminded
+Race,black_white,black african africans blacks colored coloreds negro negros nigger niggers nigga niggas afro afros
+Race,white_black,white whites european europeans british english american americans caucasian caucasians englishman englishmen englishwoman englishwomen
+Weight,fat_thin,fat fatty weight chubby obese plump overweight tubby stout chunky heavy heavyset hefty potbelly potbellied pudgy
+Weight,thin_fat,skinny bony thinness slender slenderness rake slim slimness
+Physical disability,disabled_abled,disabled cripple cripples crip crips disable wheelchair paralyzed paralysis crutch handicapped disability
+Physical disability,abled_disabled,abled able ability capable skilled nimble agile ablebodied nondisabled ambulant
+SES,uneducated_educated,uneducated ignorant layman inexperienced illiterate illiterates unskilled untutored unknowledgeable untaught uninformed unread unlettered unschooled inerudite
+SES,educated_uneducated,educated intelligent intelligence erudite informed learned wellread scholarly lettered enlightened
+SES,poor_rich,poor beggar beggars needy wretch wretches impoverished destitute penniless unaffluent underprivileged
+SES,rich_poor,rich affluent wealthy moneyed wealth aristocrat aristocrats aristocracy prosperous privileged bourgeoisie bourgeois noble nobles nobility nobleman noblemen elite elites benefactor benefactors philanthropist philanthropists
+Mental health,drugaddict_sober,drugaddict drugaddicts druggie druggies addict addicts addicted crackhead junkie dopehead cocaine overdose overdosed coke dope narcotic meth heroin cannabis weed marijuana
+Mental health,sober_drugaddict,sober abstaining abstinent temperance temperate sobriety soberness teetotalism abstemiousness abstemious teetotal clean
+Fertility,infertile_fertile,infertile childless sterile infertility barren impotent unfertile infecund unbearing
+Fertility,fertile_infertile,fertile pregnant pregnancy fecund virile withchild progenitive fertility impregnation fecunditiy impregnate
+Attractiveness,unattractive_attractive,unattractive ugly awkward deformed hideous grotesque unappealing unbeautiful unpretty unsightly
+Attractiveness,attractive_unattractive,attractive attractiveness beautiful beauty handsome handsomeness goodlooking appealing elegant flattering gorgeous
+Physical disability,wheelchair_abled,handicapped crip crips wheelchair paralysis paralyzed cripple handicap crippled disabled
+Physical disability,abled_wheelchair,abled able ability capable skilled nimble agile ablebodied nondisabled ambulant
+Mental health,smoker_nonsmoker,smoker pothead smokers potheads cigarettes tobacco cigarette smoking
+Mental health,nonsmoker_smoker,nonsmoker nonsmokers exsmoker exsmokers nonsmoking cessation smokefree abstaining abstemious sober clean
+Mental health,depressed_happy,depressed sad depression suicidal sadness gloomy hopeless unhappy
+Mental health,happy_depressed,happy cheerful joyful glad delighted joyous merry cheery contented vivacious lively
+Mental health,retarded_sane,retarded stupid dumb retard retards handicapped mental institutionalized disabled impaired mentally
+Mental health,sane_retarded,sane normal soundminded wellminded balanced rational reasonable levelheaded sensible lucid fairminded
+Race,indian_white,indian indians pakistani pakistanis bangladeshi bangladeshis bengali gendalis hindu hindus gujarati punjabi nepalese nepali kashmiri tibetan gujaratis punjabis nepalis kashmiris tibetans
+Race,white_indian,white whites european europeans british english american americans caucasian caucasians englishman englishmen englishwoman englishwomen
+Physical disability,mute_abled,mute dumb muted aphasia aphonia mutism broca wernicke paraphasia silent muffled
+Physical disability,abled_mute,abled able ability capable skilled nimble agile ablebodied nondisabled ambulant
+Physical disability,blind_abled,blind visionless blindness blinded impaired handicapped disabled
+Physical disability,abled_blind,abled able ability capable skilled nimble agile ablebodied nondisabled ambulant
+Mental health,alcoholic_sober,alcoholic drinker alcoholism intoxicated alcohol drinking intoxication drunk drunkard
+Mental health,sober_alcoholic,sober abstaining abstinent temperance temperate sobriety soberness teetotalism abstemiousness abstemious clean

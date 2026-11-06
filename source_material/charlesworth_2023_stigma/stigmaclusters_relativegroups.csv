@@ -1,0 +1,72 @@
+﻿homosexual_heterosexual,Social group,Sexuality
+heterosexual_homosexual,Social group,Sexuality
+old_young,Social group,Age
+young_old,Social group,Age
+laborer_manager,Occupation,Blue collar
+manager_laborer,Occupation,White collar
+immigrant_citizen,Social group,Immigration
+citizen_immigrant,Social group,Immigration
+aboriginal_white,Social group,Race
+white_aboriginal,Social group,Race
+divorced_married,Social group,Marriage
+married_divorced,Social group,Marriage
+alien_citizen,Social group,Immigration
+citizen_alien,Social group,Immigration
+atheist_religious,Social group,Religion
+religious_atheist,Social group,Religion
+arabian_white,Social group,Race
+white_arabian,Social group,Race
+schizophrenic_sane,Mental,Mental health
+sane_schizophrenic,Mental,Mental health
+christian_otherrel,Social group,Religion
+otherrel_christian,Social group,Religion
+short_tall,Body,Height
+tall_short,Body,Height
+latino_white,Social group,Race
+white_latino,Social group,Race
+unemployed_employed,Occupation,Employment
+employed_unemployed,Occupation,Employment
+muslim_christian,Social group,Religion
+christian_muslim,Social group,Religion
+autistic_sane,Mental,Mental health
+sane_autistic,Mental,Mental health
+server_manager,Occupation,Blue collar
+manager_server,Occupation,White collar
+asian_white,Social group,Race
+white_asian,Social group,Race
+deaf_abled,Body,Physical disability
+abled_deaf,Body,Physical disability
+bipolar_sane,Mental,Mental health
+sane_bipolar,Mental,Mental health
+black_white,Social group,Race
+white_black,Social group,Race
+fat_thin,Body,Weight
+thin_fat,Body,Weight
+disabled_abled,Body,Physical disability
+abled_disabled,Body,Physical disability
+uneducated_educated,Social group,SES
+educated_uneducated,Social group,SES
+poor_rich,Social group,SES
+rich_poor,Social group,SES
+drugaddict_sober,Mental,Mental health
+sober_drugaddict,Mental,Mental health
+infertile_fertile,Body,
+fertile_infertile,Body,
+unattractive_attractive,Body,
+attractive_unattractive,Body,
+wheelchair_abled,Body,Physical disability
+abled_wheelchair,Body,Physical disability
+smoker_nonsmoker,Mental,Mental health
+nonsmoker_smoker,Mental,Mental health
+depressed_happy,Mental,Mental health
+happy_depressed,Mental,Mental health
+retarded_sane,Mental,Mental health
+sane_retarded,Mental,Mental health
+indian_white,Social group,Race
+white_indian,Social group,Race
+mute_abled,Body,Physical disability
+abled_mute,Body,Physical disability
+blind_abled,Body,Physical disability
+abled_blind,Body,Physical disability
+alcoholic_sober,Mental,Mental health
+sober_alcoholic,Mental,Mental health

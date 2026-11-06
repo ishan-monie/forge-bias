@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forge Bias Prototype (plain-language)</title>
+<style>
+:root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink2: #52514e; --muted: #898781;
+  --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,.10);
+  --blue: #2a78d6; --red: #e34948; --band: rgba(42,120,214,.10); --warnbg: #fff7e0; --zone: #efeee9;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink2: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,.10);
+    --blue: #3987e5; --red: #e66767; --band: rgba(57,135,229,.18); --warnbg: #2b2410; --zone: #262624;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--page); color: var(--ink); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 860px; margin: 0 auto; padding: 20px 16px 60px; }
+header { display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; justify-content: space-between; }
+h1 { font-size: 22px; margin: 0; }
+.badge { font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--axis); color: var(--ink2); margin-left: 8px; vertical-align: middle; }
+.meta { color: var(--ink2); font-size: 13px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin-top: 16px; }
+h2 { font-size: 17px; margin: 0 0 4px; }
+.sub { color: var(--ink2); font-size: 14px; margin: 0 0 10px; }
+p { margin: 8px 0; }
+.controls { display: flex; flex-wrap: wrap; gap: 10px 22px; align-items: center; }
+label.f { font-size: 14px; color: var(--ink2); display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+select { font: inherit; padding: 6px 8px; border-radius: 6px; border: 1px solid var(--axis); background: var(--surface); color: var(--ink); max-width: 100%; }
+.seg { display: inline-flex; border: 1px solid var(--axis); border-radius: 6px; overflow: hidden; flex-wrap: wrap; }
+.seg button { font: inherit; font-size: 14px; padding: 6px 12px; border: 0; background: var(--surface); color: var(--ink2); cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--blue); color: #fff; }
+button.dl { font: inherit; font-size: 14px; padding: 6px 12px; border-radius: 6px; border: 1px solid var(--axis); background: var(--surface); color: var(--ink); cursor: pointer; }
+#headline { font-size: 21px; line-height: 1.4; margin: 0 0 8px; font-weight: 600; }
+#headline2 { margin: 0 0 8px; }
+#sowhat { margin: 0; padding: 10px 12px; border-left: 4px solid var(--blue); background: var(--band); border-radius: 4px; }
+.up { color: var(--red); } .down { color: var(--blue); }
+svg { display: block; width: 100%; height: auto; }
+svg text { fill: var(--ink); font: 13px system-ui, -apple-system, "Segoe UI", sans-serif; }
+svg text.m { fill: var(--muted); } svg text.s { fill: var(--ink2); }
+.how { font-size: 15px; }
+.how .ex { background: var(--zone); border-radius: 6px; padding: 8px 12px; margin: 8px 0; }
+details { margin-top: 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; }
+details > summary { cursor: pointer; padding: 14px 18px; font-weight: 600; font-size: 16px; list-style: none; }
+details > summary::before { content: "\25B6"; display: inline-block; margin-right: 10px; font-size: 11px; color: var(--muted); transition: transform .15s; }
+details[open] > summary::before { transform: rotate(90deg); }
+details > .body { padding: 0 18px 16px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--ink2); margin: 4px 0 8px; align-items: center; }
+.legend i { display: inline-block; width: 14px; height: 10px; border-radius: 2px; vertical-align: middle; margin-right: 5px; }
+.legend b.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: middle; margin-right: 5px; }
+.scroll { max-height: 520px; overflow-y: auto; border: 1px solid var(--border); border-radius: 6px; }
+.nets { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+@media (max-width: 700px) { .nets { grid-template-columns: 1fr; } }
+.nets h3 { font-size: 14px; margin: 0; color: var(--ink2); font-weight: 600; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; font-variant-numeric: tabular-nums; }
+th, td { padding: 4px 8px; text-align: right; border-bottom: 1px solid var(--grid); white-space: nowrap; }
+th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
+thead th { position: sticky; top: 0; background: var(--surface); border-bottom: 1px solid var(--axis); color: var(--ink2); font-weight: 600; }
+tr.tgt td { background: var(--band); }
+.care { background: var(--warnbg); border-color: var(--axis); }
+.care ul { margin: 6px 0 0; padding-left: 20px; font-size: 15px; }
+.care li { margin: 5px 0; }
+dl { margin: 6px 0 0; font-size: 14.5px; } dt { font-weight: 600; margin-top: 8px; } dd { margin: 2px 0 0; color: var(--ink2); }
+#tip { position: fixed; pointer-events: none; z-index: 9; background: var(--ink); color: var(--page); font-size: 13px; padding: 6px 9px; border-radius: 6px; max-width: 320px; display: none; line-height: 1.4; }
+input[type=range] { vertical-align: middle; width: 160px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Does fixing one bias move it somewhere else? <span class="badge">PROTOTYPE</span></h1>
+  <div class="meta">Model tested: <strong id="model"></strong></div>
+</header>
+
+<div class="card how">
+  <h2>The idea</h2>
+  <p>AI language tools learn from huge amounts of text, and they absorb its stereotypes. Some social groups end up associated with positive words (like "good" or "competent") and others with negative ones.</p>
+  <p>One proposed fix is to <b>remove one kind of bias</b> from the model, for example racial bias. This page tests a worry: <b>does fixing one kind of bias make bias toward <i>other</i> groups worse?</b></p>
+  <p><b>How to read the numbers.</b> Each group (for example "poor" or "Muslim") gets a <b>score</b>: higher means the model links the group more with positive words, lower means more with negative words. Within a category (like Religion), the <b>gap</b> is the score of the most favored group minus the score of the least favored one. A bigger gap means a more unequal treatment.</p>
+  <div class="ex" id="example"></div>
+  <p style="font-size:14px;color:var(--ink2)">Scores are small numbers (roughly −0.15 to +0.15). A change under 0.005 is too small to treat as real, so we call it "barely changed".</p>
+</div>
+
+<div class="card">
+  <div class="controls">
+    <label class="f"><b>1.</b> Which bias do we remove?
+      <select id="cat"></select></label>
+    <span class="f"><b>2.</b> Measured as</span>
+    <span class="seg" role="group" aria-label="What to measure">
+      <button id="m-valence" aria-pressed="true">Good vs. bad words</button>
+      <button id="m-competence" aria-pressed="false">Competent vs. incompetent words</button>
+    </span>
+  </div>
+  <div style="margin-top:16px">
+    <p id="headline"></p>
+    <p id="headline2"></p>
+    <p id="sowhat"></p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>What happened to the other categories?</h2>
+  <p class="sub" id="c1sub"></p>
+  <div id="c1"></div>
+  <p id="fixednote" class="sub" style="margin-top:10px"></p>
+</div>
+
+<div class="card care">
+  <h2>Keep in mind</h2>
+  <ul>
+    <li><b>This is a prototype, not a research finding.</b> It uses one small AI model, one way of removing bias, and only 4 to 25 words per group. We have not tested whether the changes are statistically meaningful.</li>
+    <li><b>Ignore the category we fixed.</b> Its gap always drops to about zero, because we removed it on purpose. What matters is what happens to everything else.</li>
+    <li><b>Small bars are not meaningful.</b> Anything inside the grey "about no change" zone should be read as no change.</li>
+    <li><b>This model has no gender category.</b> The 72 groups come from a published list (Charlesworth et al. 2023) that doesn't include it.</li>
+  </ul>
+</div>
+
+<details>
+  <summary>Zoom in: scores for each group inside a category</summary>
+  <div class="body">
+    <p class="sub">Pick a category to see how each group's score moved. A dot further right means the model links the group with more positive words.</p>
+    <label class="f">Category <select id="zcat"></select></label>
+    <div class="legend" style="margin-top:8px"><span><b class="dot" style="border:2px solid var(--muted)"></b>before removing bias</span><span><b class="dot" style="background:var(--ink2)"></b>after</span>
+      <span><i style="background:var(--red)"></i>moved toward more negative</span><span><i style="background:var(--blue)"></i>moved toward more positive</span></div>
+    <div id="c2"></div>
+    <p class="sub" id="zfoot"></p>
+  </div>
+</details>
+
+<details>
+  <summary>Advanced: how groups cluster together (network)</summary>
+  <div class="body">
+    <p class="sub">Each dot is a social group. Two dots are joined by a line when the words for those groups tend to be used in similar ways, so the model treats the groups as related. Blue dots are the groups in the category we fixed. Compare the two pictures: did the connections change?</p>
+    <label class="f">Show only the strongest <input type="range" id="thr" min="2" max="30" value="10"> <b id="thrv"></b> of connections</label>
+    <div class="nets" style="margin-top:8px">
+      <div><h3 id="n1t">Before</h3><div id="net1"></div></div>
+      <div><h3 id="n2t">After</h3><div id="net2"></div></div>
+    </div>
+    <p class="sub">Dots with a "+N" in their name stand for several groups that have identical word lists. Hover a dot for its name.</p>
+  </div>
+</details>
+
+<details>
+  <summary>Data table and CSV download</summary>
+  <div class="body">
+    <p class="sub" id="tsub"></p>
+    <div class="controls" style="margin-bottom:8px">
+      <button class="dl" id="dl1">Download CSV (this category)</button>
+      <button class="dl" id="dl2">Download CSV (all 15 categories)</button>
+    </div>
+    <div class="scroll"><table id="tbl"></table></div>
+  </div>
+</details>
+
+<details>
+  <summary>Technical details and glossary</summary>
+  <div class="body">
+    <p id="kline"></p>
+    <dl>
+      <dt>Embedding</dt><dd>The model's internal "map" of word meanings. Each word is a point in a 100-dimensional space; words used in similar contexts sit near each other.</dd>
+      <dt>Score</dt><dd>Average similarity of a group's words to the positive words minus its average similarity to the negative words (cosine similarity). Positive words: <span id="pos"></span>. Negative words: <span id="neg"></span>.</dd>
+      <dt>Gap</dt><dd>Highest group score minus lowest group score within one category.</dd>
+      <dt>Removing a bias (k)</dt><dd>We find the directions in the map that separate the groups of one category, then delete them from every word (a "subspace subtraction", after Bolukbasi et al. 2016). <b>k</b> is the number of directions deleted; "full rank" means all of them, one fewer than the number of distinct groups.</dd>
+      <dt>Group names</dt><dd>"old (vs. young)" is the word list for <i>old</i>, defined against <i>young</i>, as in Charlesworth et al. (2023). Some groups share identical word lists; they stay in the tables but are merged into one dot in the network and counted once when finding the directions to remove. This is still to be confirmed with the original authors.</dd>
+      <dt>Categories</dt><dd>Follow the published clusters file. Fertility and Attractiveness were blank there, and Blue/White collar were merged into Occupation.</dd>
+    </dl>
+  </div>
+</details>
+</main>
+<div id="tip"></div>
+
+<script>
+const D = /*__DATA__*/null;
+const $ = id => document.getElementById(id);
+let target = D.targets.includes("Race") ? "Race" : D.targets[0], metric = "valence", zcat = null;
+const f3 = x => x.toFixed(3);
+const sgn = (x, d = 3) => { const s = Math.abs(x).toFixed(d); return +s === 0 ? s : (x >= 0 ? "+" : "−") + s; };
+const NS = "http://www.w3.org/2000/svg";
+const el = (tag, attrs = {}, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); if (parent) parent.appendChild(e); return e; };
+const SMALL = 0.005;
+const WORDS = { valence: ["nice, pleasant, wonderful, good, fantastic", "bad, horrible, horrific, disgusting, unpleasant"], competence: ["competent, talented, smart, capable, able", "incompetent, untalented, dumb, incapable, unable"] };
+const dirColor = d => d > SMALL ? "var(--red)" : d < -SMALL ? "var(--blue)" : "var(--muted)";
+const idxOf = cat => D.groups.map((g, i) => [g, i]).filter(([g]) => g.c === cat).map(([, i]) => i);
+const gap = (arr, cat) => { const v = idxOf(cat).map(i => arr[i]); return Math.max(...v) - Math.min(...v); };
+const label = g => { const p = g.split("_"); return p.length === 2 ? `${p[0]} (vs. ${p[1]})` : g; };
+const short = g => g.split("_")[0];
+
+function stats() {
+  const b = D.before[metric], a = D.after[target][metric];
+  const rows = D.categories.map(c => { const gb = gap(b, c), ga = gap(a, c); return { c, b: gb, a: ga, d: ga - gb }; });
+  return { own: rows.find(r => r.c === target), others: rows.filter(r => r.c !== target).sort((x, y) => y.d - x.d) };
+}
+const mText = () => metric === "valence" ? "good-vs-bad" : "competent-vs-incompetent";
+
+function example() {
+  const b = D.before[metric], idx = idxOf(target).sort((i, j) => b[j] - b[i]), hi = idx[0], lo = idx[idx.length - 1];
+  $("example").innerHTML = `<b>Example (${target}):</b> the most favored group is <b>${short(D.groups[hi].g)}</b> (score ${sgn(b[hi])}) and the least favored is <b>${short(D.groups[lo].g)}</b> (score ${sgn(b[lo])}). The gap is ${sgn(b[hi])} minus ${sgn(b[lo])} = <b>${f3(b[hi] - b[lo])}</b>.`;
+}
+
+function headline() {
+  const { own, others } = stats(), grew = others.filter(r => r.d > SMALL), shr = others.filter(r => r.d < -SMALL), same = others.length - grew.length - shr.length, top = others[0];
+  $("headline").innerHTML = `We removed <b>${target}</b> bias from the model. For the other ${others.length} categories, the ${mText()} gap <span class="up">got worse in ${grew.length}</span>, <span class="down">got better in ${shr.length}</span>, and barely changed in ${same}.`;
+  $("headline2").innerHTML = grew.length
+    ? `Biggest worsening: <b>${top.c}</b>, where the gap between the most and least favored group grew from ${f3(top.b)} to ${f3(top.a)} (${sgn(top.d)}).`
+    : `No other category got noticeably worse.`;
+  $("sowhat").innerHTML = grew.length > shr.length
+    ? `<b>In plain terms:</b> fixing ${target} bias mostly did not help the other categories, and made more of them worse than better.`
+    : grew.length === 0 ? `<b>In plain terms:</b> fixing ${target} bias did not noticeably make any other category worse in this test.`
+    : `<b>In plain terms:</b> fixing ${target} bias helped or left alone most other categories, but ${grew.length === 1 ? "one" : grew.length} got worse. Removing one bias is not a free fix.`;
+  const k = D.k[target], nd = D.nDistinct[target], ng = D.nGroups[target];
+  $("kline").innerHTML = `<b>Currently selected:</b> ${target}. We deleted <b>k = ${k}</b> direction${k > 1 ? "s" : ""} from the model (full rank: ${nd} distinct group${nd > 1 ? "s" : ""} give ${k} direction${k > 1 ? "s" : ""}, out of ${ng} group${ng > 1 ? "s" : ""} in the category). The model has 100 dimensions in total.`;
+  $("pos").textContent = WORDS[metric][0]; $("neg").textContent = WORDS[metric][1];
+  example();
+}
+
+function tip(e, html) { const t = $("tip"); t.innerHTML = html; t.style.display = "block"; t.style.left = Math.min(e.clientX + 14, innerWidth - 330) + "px"; t.style.top = (e.clientY + 14) + "px"; }
+document.addEventListener("mousemove", e => { const h = e.target.closest && e.target.closest("[data-tip]"); if (h) tip(e, h.dataset.tip); else $("tip").style.display = "none"; });
+function niceStep(m) { const p = Math.pow(10, Math.floor(Math.log10(m))), r = m / p; return (r < 1.5 ? 1 : r < 3.5 ? 2 : r < 7.5 ? 5 : 10) * p; }
+
+function chart1() {
+  const { own, others } = stats();
+  $("c1sub").textContent = `Each bar shows how the ${mText()} gap changed after removing ${target} bias. Red bars to the right = the gap grew (more unequal). Blue bars to the left = the gap shrank (more equal).`;
+  const W = 760, L = 150, R = 110, T = 44, RH = 30, H = T + others.length * RH + 8;
+  const M = Math.max(0.02, ...others.map(r => Math.abs(r.d))) * 1.15;
+  const w = W - L - R, x = v => L + (v + M) / (2 * M) * w, x0 = x(0);
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Change in bias gap for each other category" });
+  el("rect", { x: x(-SMALL), y: T - 6, width: x(SMALL) - x(-SMALL), height: H - T - 2, fill: "var(--zone)" }, svg);
+  el("text", { x: x0, y: T - 10, "text-anchor": "middle", class: "m", style: "font-size:11px" }, svg).textContent = "about no change";
+  el("text", { x: L, y: 14, class: "s", style: "font-weight:600" }, svg).textContent = "← gap shrank (better)";
+  el("text", { x: W - R, y: 14, "text-anchor": "end", class: "s", style: "font-weight:600" }, svg).textContent = "gap grew (worse) →";
+  el("line", { x1: x0, x2: x0, y1: T - 6, y2: H - 2, stroke: "var(--axis)", "stroke-width": 1.5 }, svg);
+  others.forEach((r, i) => {
+    const y = T + i * RH + RH / 2, col = dirColor(r.d), xe = x(r.d), small = Math.abs(r.d) <= SMALL;
+    el("text", { x: L - 10, y: y + 4, "text-anchor": "end" }, svg).textContent = r.c;
+    if (!small) el("rect", { x: Math.min(x0, xe), y: y - 9, width: Math.abs(xe - x0), height: 18, rx: 3, fill: col }, svg);
+    const t = el("text", { x: W - R + 12, y: y + 4, "text-anchor": "start", style: "font-weight:600" }, svg);
+    t.textContent = small ? "no change" : sgn(r.d) + (r.d > 0 ? " worse" : " better"); t.style.fill = small ? "var(--muted)" : col;
+    el("rect", { x: 0, y: y - RH / 2, width: W, height: RH, fill: "transparent", "data-tip": `<b>${r.c}</b><br>Gap between most and least favored group:<br>before ${f3(r.b)} → after ${f3(r.a)}<br>${small ? "barely changed" : r.d > 0 ? "got worse (more unequal)" : "got better (more equal)"}` }, svg);
+  });
+  $("c1").replaceChildren(svg);
+  $("fixednote").innerHTML = `<b>The category we fixed (${target}):</b> its own gap went from ${f3(own.b)} to ${f3(own.a)}. That drop is expected and says little, since we removed it directly.` + (own.d > SMALL ? " (Here it actually went up, a sign that this simple method did not fully work for this category.)" : "");
+}
+
+function chart2() {
+  const b = D.before[metric], a = D.after[target][metric], idx = idxOf(zcat);
+  const vs = idx.flatMap(i => [b[i], a[i]]).concat([0]);
+  let lo = Math.min(...vs), hi = Math.max(...vs); const pad = Math.max((hi - lo) * 0.12, 0.01); lo -= pad; hi += pad;
+  const W = 760, L = 210, R = 70, T = 40, RH = 26, H = T + idx.length * RH + 8, x = v => L + (v - lo) / (hi - lo) * (W - L - R);
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Group scores before and after" });
+  const st = niceStep((hi - lo) / 5);
+  for (let v = Math.ceil(lo / st) * st; v <= hi; v += st) {
+    el("line", { x1: x(v), x2: x(v), y1: T - 6, y2: H - 4, stroke: Math.abs(v) < 1e-9 ? "var(--axis)" : "var(--grid)", "stroke-width": Math.abs(v) < 1e-9 ? 1.5 : 1 }, svg);
+    el("text", { x: x(v), y: T - 12, "text-anchor": "middle", class: "m", style: "font-size:11px" }, svg).textContent = Math.abs(v) < 1e-9 ? "0 (neutral)" : v.toFixed(2);
+  }
+  el("text", { x: L, y: 12, class: "s", style: "font-weight:600" }, svg).textContent = "← more negative words";
+  el("text", { x: W - R, y: 12, "text-anchor": "end", class: "s", style: "font-weight:600" }, svg).textContent = "more positive words →";
+  idx.forEach((gi, r) => {
+    const g = D.groups[gi], cy = T + r * RH + RH / 2, d = a[gi] - b[gi];
+    const c = d > SMALL ? "var(--blue)" : d < -SMALL ? "var(--red)" : "var(--muted)";
+    el("text", { x: L - 10, y: cy + 4, "text-anchor": "end" }, svg).textContent = label(g.g);
+    el("line", { x1: x(b[gi]), x2: x(a[gi]), y1: cy, y2: cy, stroke: c, "stroke-width": 3.5, "stroke-linecap": "round" }, svg);
+    el("circle", { cx: x(b[gi]), cy, r: 5.5, fill: "var(--surface)", stroke: "var(--muted)", "stroke-width": 2 }, svg);
+    el("circle", { cx: x(a[gi]), cy, r: 5.5, fill: "var(--ink2)", stroke: "var(--surface)", "stroke-width": 1.5 }, svg);
+    const t = el("text", { x: Math.max(x(b[gi]), x(a[gi])) + 12, y: cy + 4, class: "s", style: "font-size:12px" }, svg);
+    t.textContent = Math.abs(d) <= SMALL ? "no change" : sgn(d);
+    el("rect", { x: 0, y: cy - RH / 2, width: W, height: RH, fill: "transparent", "data-tip": `<b>${label(g.g)}</b><br>score before ${f3(b[gi])} → after ${f3(a[gi])}<br>${Math.abs(d) <= SMALL ? "barely changed" : d > 0 ? "now linked to more positive words" : "now linked to more negative words"}` }, svg);
+  });
+  $("c2").replaceChildren(svg);
+  $("zfoot").textContent = zcat === target ? `${zcat} is the category we fixed, so the groups here are pulled together on purpose.` : `${zcat} is not the category we fixed. Movement here is a side effect (spillover) of removing ${target} bias.`;
+}
+
+const nn = D.nodes.length, tidx = (i, j) => i * nn - i * (i + 1) / 2 + (j - i - 1);
+const sortedBefore = [...D.simBefore].sort((p, q) => p - q);
+function thrValue() { const top = +$("thr").value / 100; return sortedBefore[Math.max(0, Math.min(sortedBefore.length - 1, Math.floor((1 - top) * sortedBefore.length)))]; }
+function drawNet(host, sims, thr) {
+  const S = 420, P = 26, svg = el("svg", { viewBox: `0 0 ${S} ${S}`, role: "img", "aria-label": "Group similarity network" });
+  const px = n => P + n.x * (S - 2 * P), py = n => P + (1 - n.y) * (S - 2 * P);
+  const edges = [];
+  for (let i = 0; i < nn; i++) for (let j = i + 1; j < nn; j++) { const s = sims[tidx(i, j)]; if (s >= thr) edges.push([i, j, s]); }
+  edges.sort((p, q) => p[2] - q[2]);
+  const smax = Math.max(...sims, thr + 1e-6);
+  edges.forEach(([i, j, s]) => {
+    const A = D.nodes[i], B = D.nodes[j], both = A.cat === target && B.cat === target;
+    el("line", { x1: px(A), y1: py(A), x2: px(B), y2: py(B), stroke: both ? "var(--blue)" : "var(--muted)", "stroke-opacity": both ? .7 : .35, "stroke-width": 0.8 + 2.2 * (s - thr) / (smax - thr) }, svg);
+  });
+  D.nodes.forEach(n => {
+    const isT = n.cat === target;
+    const c = el("circle", { cx: px(n), cy: py(n), r: isT ? 6.5 : 4.5, fill: isT ? "var(--blue)" : "var(--muted)", stroke: "var(--surface)", "stroke-width": 1.5 }, svg);
+    c.dataset.tip = `<b>${label(n.members[0])}</b>${n.members.length > 1 ? `<br>+ ${n.members.length - 1} identical: ${n.members.slice(1).map(label).join(", ")}` : ""}<br>${n.cat}`;
+  });
+  D.nodes.forEach(n => { if (n.cat === target) el("text", { x: px(n) + 9, y: py(n) + 3, style: "font-size:10.5px", class: "s" }, svg).textContent = short(n.members[0]); });
+  host.replaceChildren(svg);
+  return edges.length;
+}
+function network() {
+  $("thrv").textContent = $("thr").value + "%";
+  const thr = thrValue(), c1 = drawNet($("net1"), D.simBefore, thr), c2 = drawNet($("net2"), D.simAfter[target], thr);
+  $("n1t").textContent = `Before — ${c1} connections`;
+  $("n2t").textContent = `After removing ${target} bias — ${c2} connections`;
+}
+
+const COLS = ["valence_before", "valence_after", "valence_change", "competence_before", "competence_after", "competence_change"];
+function rowsFor(t) {
+  return D.groups.map((g, i) => {
+    const o = { model: D.model, target_category: t, k: D.k[t], category: g.c, group: g.g };
+    for (const m of ["valence", "competence"]) { const b = D.before[m][i], a = D.after[t][m][i]; o[m + "_before"] = b; o[m + "_after"] = a; o[m + "_change"] = +(a - b).toFixed(4); }
+    return o;
+  });
+}
+function table() {
+  $("tsub").textContent = `Bias removed: ${target} (k = ${D.k[target]}). Highlighted rows are in that category. Score: higher = linked to more positive words.`;
+  const head = "<thead><tr><th>Category</th><th>Group</th><th>Good−bad before</th><th>after</th><th>change</th><th>Competent−incompetent before</th><th>after</th><th>change</th></tr></thead>";
+  const body = rowsFor(target).map(r => `<tr class="${r.category === target ? "tgt" : ""}"><td>${r.category}</td><td>${label(r.group)}</td>` + COLS.map(c => `<td>${c.endsWith("change") ? sgn(r[c]) : f3(r[c])}</td>`).join("") + "</tr>").join("");
+  $("tbl").innerHTML = head + "<tbody>" + body + "</tbody>";
+}
+function csv(rs) {
+  const cols = ["model", "target_category", "k", "category", "group", ...COLS];
+  const q = v => typeof v === "string" && /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
+  return [cols.join(","), ...rs.map(r => cols.map(c => q(r[c])).join(","))].join("\n");
+}
+function download(name, text) { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([text], { type: "text/csv" })); a.download = name; document.body.appendChild(a); a.click(); a.remove(); }
+$("dl1").onclick = () => download(`forge_bias_${target.replace(/\W+/g, "_")}_k${D.k[target]}.csv`, csv(rowsFor(target)));
+$("dl2").onclick = () => download("forge_bias_all_categories_fullrank.csv", csv(D.targets.flatMap(rowsFor)));
+
+function render(resetZoom) {
+  headline(); chart1();
+  if (resetZoom || !zcat) { zcat = stats().others[0].c; $("zcat").value = zcat; }
+  chart2(); network(); table();
+}
+$("model").textContent = D.model;
+D.targets.forEach(t => { for (const id of ["cat", "zcat"]) { const o = document.createElement("option"); o.value = o.textContent = t; $(id).appendChild(o); } });
+$("cat").value = target;
+$("cat").onchange = e => { target = e.target.value; render(true); };
+$("zcat").onchange = e => { zcat = e.target.value; chart2(); };
+for (const m of ["valence", "competence"]) $("m-" + m).onclick = () => { metric = m; $("m-valence").setAttribute("aria-pressed", m === "valence"); $("m-competence").setAttribute("aria-pressed", m === "competence"); render(true); };
+$("thr").oninput = network;
+render(true);
+</script>
+</body>
+</html>

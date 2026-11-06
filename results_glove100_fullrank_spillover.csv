@@ -1,0 +1,451 @@
+model,target_category,category,is_target,metric,gap_before,gap_after,gap_change,k,target_n_groups,target_n_distinct
+GloVe wiki-gigaword 100d,Sexuality,Sexuality,True,valence,0.06455,0.00193,-0.06262,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Sexuality,True,competence,0.05591,0.0029,-0.05302,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Age,False,valence,0.01223,0.00709,-0.00513,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Age,False,competence,0.05705,0.06244,0.00539,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Occupation,False,valence,0.062,0.05148,-0.01052,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Occupation,False,competence,0.16445,0.15778,-0.00667,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Immigration,False,valence,0.0999,0.098,-0.00189,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Immigration,False,competence,0.04685,0.04458,-0.00227,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Race,False,valence,0.08456,0.06675,-0.01782,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Race,False,competence,0.11121,0.10663,-0.00458,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Marriage,False,valence,0.03042,0.02563,-0.00479,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Marriage,False,competence,0.00143,0.00593,0.0045,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Religion,False,valence,0.12705,0.12571,-0.00134,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Religion,False,competence,0.1655,0.16555,5e-05,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Mental health,False,valence,0.265,0.2584,-0.0066,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Mental health,False,competence,0.16981,0.16119,-0.00862,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Height,False,valence,0.05028,0.05393,0.00365,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Height,False,competence,0.00348,0.00524,0.00177,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Employment,False,valence,0.18785,0.18544,-0.00241,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Employment,False,competence,0.18226,0.18276,0.00051,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Physical disability,False,valence,0.12926,0.11342,-0.01583,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Physical disability,False,competence,0.16671,0.16034,-0.00637,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Weight,False,valence,0.00372,0.00681,0.00309,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Weight,False,competence,0.02816,0.02842,0.00025,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,SES,False,valence,0.21672,0.21986,0.00314,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,SES,False,competence,0.25505,0.25932,0.00427,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Fertility,False,valence,0.03245,0.04622,0.01376,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Fertility,False,competence,0.06054,0.0741,0.01356,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Attractiveness,False,valence,0.33122,0.32684,-0.00437,1,2,2
+GloVe wiki-gigaword 100d,Sexuality,Attractiveness,False,competence,0.21726,0.2125,-0.00476,1,2,2
+GloVe wiki-gigaword 100d,Age,Sexuality,False,valence,0.06455,0.06372,-0.00083,1,2,2
+GloVe wiki-gigaword 100d,Age,Sexuality,False,competence,0.05591,0.06844,0.01252,1,2,2
+GloVe wiki-gigaword 100d,Age,Age,True,valence,0.01223,0.00174,-0.01049,1,2,2
+GloVe wiki-gigaword 100d,Age,Age,True,competence,0.05705,0.00249,-0.05456,1,2,2
+GloVe wiki-gigaword 100d,Age,Occupation,False,valence,0.062,0.06488,0.00288,1,2,2
+GloVe wiki-gigaword 100d,Age,Occupation,False,competence,0.16445,0.1632,-0.00125,1,2,2
+GloVe wiki-gigaword 100d,Age,Immigration,False,valence,0.0999,0.09866,-0.00124,1,2,2
+GloVe wiki-gigaword 100d,Age,Immigration,False,competence,0.04685,0.04884,0.00199,1,2,2
+GloVe wiki-gigaword 100d,Age,Race,False,valence,0.08456,0.08545,0.00088,1,2,2
+GloVe wiki-gigaword 100d,Age,Race,False,competence,0.11121,0.10748,-0.00374,1,2,2
+GloVe wiki-gigaword 100d,Age,Marriage,False,valence,0.03042,0.03149,0.00106,1,2,2
+GloVe wiki-gigaword 100d,Age,Marriage,False,competence,0.00143,0.00257,0.00114,1,2,2
+GloVe wiki-gigaword 100d,Age,Religion,False,valence,0.12705,0.12973,0.00268,1,2,2
+GloVe wiki-gigaword 100d,Age,Religion,False,competence,0.1655,0.15134,-0.01416,1,2,2
+GloVe wiki-gigaword 100d,Age,Mental health,False,valence,0.265,0.26607,0.00107,1,2,2
+GloVe wiki-gigaword 100d,Age,Mental health,False,competence,0.16981,0.18041,0.01061,1,2,2
+GloVe wiki-gigaword 100d,Age,Height,False,valence,0.05028,0.05219,0.00191,1,2,2
+GloVe wiki-gigaword 100d,Age,Height,False,competence,0.00348,0.00087,-0.00261,1,2,2
+GloVe wiki-gigaword 100d,Age,Employment,False,valence,0.18785,0.19046,0.00261,1,2,2
+GloVe wiki-gigaword 100d,Age,Employment,False,competence,0.18226,0.18666,0.00441,1,2,2
+GloVe wiki-gigaword 100d,Age,Physical disability,False,valence,0.12926,0.13168,0.00242,1,2,2
+GloVe wiki-gigaword 100d,Age,Physical disability,False,competence,0.16671,0.1616,-0.00512,1,2,2
+GloVe wiki-gigaword 100d,Age,Weight,False,valence,0.00372,0.00313,-0.00058,1,2,2
+GloVe wiki-gigaword 100d,Age,Weight,False,competence,0.02816,0.02945,0.00128,1,2,2
+GloVe wiki-gigaword 100d,Age,SES,False,valence,0.21672,0.22096,0.00424,1,2,2
+GloVe wiki-gigaword 100d,Age,SES,False,competence,0.25505,0.25096,-0.00409,1,2,2
+GloVe wiki-gigaword 100d,Age,Fertility,False,valence,0.03245,0.03618,0.00372,1,2,2
+GloVe wiki-gigaword 100d,Age,Fertility,False,competence,0.06054,0.04334,-0.0172,1,2,2
+GloVe wiki-gigaword 100d,Age,Attractiveness,False,valence,0.33122,0.33894,0.00772,1,2,2
+GloVe wiki-gigaword 100d,Age,Attractiveness,False,competence,0.21726,0.21486,-0.0024,1,2,2
+GloVe wiki-gigaword 100d,Occupation,Sexuality,False,valence,0.06455,0.06342,-0.00113,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Sexuality,False,competence,0.05591,0.04697,-0.00895,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Age,False,valence,0.01223,0.01443,0.0022,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Age,False,competence,0.05705,0.05703,-2e-05,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Occupation,True,valence,0.062,0.01751,-0.04449,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Occupation,True,competence,0.16445,0.0154,-0.14905,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Immigration,False,valence,0.0999,0.0977,-0.0022,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Immigration,False,competence,0.04685,0.03017,-0.01668,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Race,False,valence,0.08456,0.08854,0.00397,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Race,False,competence,0.11121,0.08683,-0.02439,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Marriage,False,valence,0.03042,0.03212,0.0017,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Marriage,False,competence,0.00143,0.00569,0.00425,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Religion,False,valence,0.12705,0.12771,0.00067,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Religion,False,competence,0.1655,0.13246,-0.03305,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Mental health,False,valence,0.265,0.26808,0.00309,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Mental health,False,competence,0.16981,0.14455,-0.02526,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Height,False,valence,0.05028,0.06193,0.01165,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Height,False,competence,0.00348,0.03814,0.03467,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Employment,False,valence,0.18785,0.18351,-0.00434,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Employment,False,competence,0.18226,0.14664,-0.03562,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Physical disability,False,valence,0.12926,0.13016,0.00091,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Physical disability,False,competence,0.16671,0.17575,0.00903,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Weight,False,valence,0.00372,0.00456,0.00084,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Weight,False,competence,0.02816,0.02037,-0.00779,2,4,3
+GloVe wiki-gigaword 100d,Occupation,SES,False,valence,0.21672,0.20844,-0.00828,2,4,3
+GloVe wiki-gigaword 100d,Occupation,SES,False,competence,0.25505,0.20859,-0.04645,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Fertility,False,valence,0.03245,0.03406,0.00161,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Fertility,False,competence,0.06054,0.07265,0.01211,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Attractiveness,False,valence,0.33122,0.33774,0.00652,2,4,3
+GloVe wiki-gigaword 100d,Occupation,Attractiveness,False,competence,0.21726,0.2039,-0.01336,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Sexuality,False,valence,0.06455,0.0536,-0.01095,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Sexuality,False,competence,0.05591,0.05008,-0.00583,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Age,False,valence,0.01223,0.01187,-0.00036,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Age,False,competence,0.05705,0.05842,0.00137,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Occupation,False,valence,0.062,0.02031,-0.04169,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Occupation,False,competence,0.16445,0.14011,-0.02434,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Immigration,True,valence,0.0999,0.00574,-0.09416,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Immigration,True,competence,0.04685,0.00996,-0.03688,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Race,False,valence,0.08456,0.07964,-0.00493,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Race,False,competence,0.11121,0.0914,-0.01981,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Marriage,False,valence,0.03042,0.04442,0.014,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Marriage,False,competence,0.00143,0.00095,-0.00049,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Religion,False,valence,0.12705,0.09679,-0.03026,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Religion,False,competence,0.1655,0.15091,-0.01459,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Mental health,False,valence,0.265,0.25417,-0.01083,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Mental health,False,competence,0.16981,0.15723,-0.01258,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Height,False,valence,0.05028,0.0432,-0.00708,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Height,False,competence,0.00348,0.00159,-0.00188,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Employment,False,valence,0.18785,0.16889,-0.01896,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Employment,False,competence,0.18226,0.17572,-0.00654,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Physical disability,False,valence,0.12926,0.13118,0.00192,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Physical disability,False,competence,0.16671,0.16537,-0.00134,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Weight,False,valence,0.00372,0.01507,0.01135,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Weight,False,competence,0.02816,0.03497,0.00681,2,4,3
+GloVe wiki-gigaword 100d,Immigration,SES,False,valence,0.21672,0.17791,-0.03881,2,4,3
+GloVe wiki-gigaword 100d,Immigration,SES,False,competence,0.25505,0.2408,-0.01424,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Fertility,False,valence,0.03245,0.03339,0.00094,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Fertility,False,competence,0.06054,0.06391,0.00337,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Attractiveness,False,valence,0.33122,0.28198,-0.04923,2,4,3
+GloVe wiki-gigaword 100d,Immigration,Attractiveness,False,competence,0.21726,0.19454,-0.02272,2,4,3
+GloVe wiki-gigaword 100d,Race,Sexuality,False,valence,0.06455,0.02926,-0.03529,6,12,7
+GloVe wiki-gigaword 100d,Race,Sexuality,False,competence,0.05591,0.02149,-0.03442,6,12,7
+GloVe wiki-gigaword 100d,Race,Age,False,valence,0.01223,0.01119,-0.00104,6,12,7
+GloVe wiki-gigaword 100d,Race,Age,False,competence,0.05705,0.05997,0.00292,6,12,7
+GloVe wiki-gigaword 100d,Race,Occupation,False,valence,0.062,0.04128,-0.02072,6,12,7
+GloVe wiki-gigaword 100d,Race,Occupation,False,competence,0.16445,0.1243,-0.04015,6,12,7
+GloVe wiki-gigaword 100d,Race,Immigration,False,valence,0.0999,0.10539,0.00549,6,12,7
+GloVe wiki-gigaword 100d,Race,Immigration,False,competence,0.04685,0.04003,-0.00682,6,12,7
+GloVe wiki-gigaword 100d,Race,Race,True,valence,0.08456,0.00681,-0.07776,6,12,7
+GloVe wiki-gigaword 100d,Race,Race,True,competence,0.11121,0.00761,-0.1036,6,12,7
+GloVe wiki-gigaword 100d,Race,Marriage,False,valence,0.03042,0.03088,0.00045,6,12,7
+GloVe wiki-gigaword 100d,Race,Marriage,False,competence,0.00143,0.01128,0.00985,6,12,7
+GloVe wiki-gigaword 100d,Race,Religion,False,valence,0.12705,0.13318,0.00614,6,12,7
+GloVe wiki-gigaword 100d,Race,Religion,False,competence,0.1655,0.12939,-0.03612,6,12,7
+GloVe wiki-gigaword 100d,Race,Mental health,False,valence,0.265,0.29313,0.02814,6,12,7
+GloVe wiki-gigaword 100d,Race,Mental health,False,competence,0.16981,0.14789,-0.02192,6,12,7
+GloVe wiki-gigaword 100d,Race,Height,False,valence,0.05028,0.06306,0.01279,6,12,7
+GloVe wiki-gigaword 100d,Race,Height,False,competence,0.00348,0.01208,0.00861,6,12,7
+GloVe wiki-gigaword 100d,Race,Employment,False,valence,0.18785,0.18766,-0.00019,6,12,7
+GloVe wiki-gigaword 100d,Race,Employment,False,competence,0.18226,0.16831,-0.01395,6,12,7
+GloVe wiki-gigaword 100d,Race,Physical disability,False,valence,0.12926,0.12214,-0.00711,6,12,7
+GloVe wiki-gigaword 100d,Race,Physical disability,False,competence,0.16671,0.1466,-0.02011,6,12,7
+GloVe wiki-gigaword 100d,Race,Weight,False,valence,0.00372,0.02437,0.02065,6,12,7
+GloVe wiki-gigaword 100d,Race,Weight,False,competence,0.02816,0.00289,-0.02527,6,12,7
+GloVe wiki-gigaword 100d,Race,SES,False,valence,0.21672,0.21358,-0.00314,6,12,7
+GloVe wiki-gigaword 100d,Race,SES,False,competence,0.25505,0.21277,-0.04227,6,12,7
+GloVe wiki-gigaword 100d,Race,Fertility,False,valence,0.03245,0.0427,0.01025,6,12,7
+GloVe wiki-gigaword 100d,Race,Fertility,False,competence,0.06054,0.06882,0.00828,6,12,7
+GloVe wiki-gigaword 100d,Race,Attractiveness,False,valence,0.33122,0.33214,0.00093,6,12,7
+GloVe wiki-gigaword 100d,Race,Attractiveness,False,competence,0.21726,0.19532,-0.02194,6,12,7
+GloVe wiki-gigaword 100d,Marriage,Sexuality,False,valence,0.06455,0.06227,-0.00229,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Sexuality,False,competence,0.05591,0.05666,0.00074,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Age,False,valence,0.01223,0.01353,0.0013,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Age,False,competence,0.05705,0.05838,0.00133,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Occupation,False,valence,0.062,0.06338,0.00138,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Occupation,False,competence,0.16445,0.16532,0.00087,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Immigration,False,valence,0.0999,0.11067,0.01077,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Immigration,False,competence,0.04685,0.04818,0.00134,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Race,False,valence,0.08456,0.08687,0.00231,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Race,False,competence,0.11121,0.11151,0.0003,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Marriage,True,valence,0.03042,0.00165,-0.02877,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Marriage,True,competence,0.00143,0.00309,0.00166,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Religion,False,valence,0.12705,0.12954,0.00249,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Religion,False,competence,0.1655,0.16843,0.00292,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Mental health,False,valence,0.265,0.26535,0.00035,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Mental health,False,competence,0.16981,0.17097,0.00116,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Height,False,valence,0.05028,0.04733,-0.00295,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Height,False,competence,0.00348,0.00493,0.00145,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Employment,False,valence,0.18785,0.191,0.00315,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Employment,False,competence,0.18226,0.18509,0.00283,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Physical disability,False,valence,0.12926,0.1333,0.00404,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Physical disability,False,competence,0.16671,0.16953,0.00282,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Weight,False,valence,0.00372,0.01031,0.00659,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Weight,False,competence,0.02816,0.03043,0.00227,1,2,2
+GloVe wiki-gigaword 100d,Marriage,SES,False,valence,0.21672,0.22442,0.0077,1,2,2
+GloVe wiki-gigaword 100d,Marriage,SES,False,competence,0.25505,0.25708,0.00203,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Fertility,False,valence,0.03245,0.03995,0.0075,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Fertility,False,competence,0.06054,0.06212,0.00158,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Attractiveness,False,valence,0.33122,0.33334,0.00212,1,2,2
+GloVe wiki-gigaword 100d,Marriage,Attractiveness,False,competence,0.21726,0.2199,0.00264,1,2,2
+GloVe wiki-gigaword 100d,Religion,Sexuality,False,valence,0.06455,0.05769,-0.00686,4,6,5
+GloVe wiki-gigaword 100d,Religion,Sexuality,False,competence,0.05591,0.05284,-0.00307,4,6,5
+GloVe wiki-gigaword 100d,Religion,Age,False,valence,0.01223,0.01485,0.00262,4,6,5
+GloVe wiki-gigaword 100d,Religion,Age,False,competence,0.05705,0.04697,-0.01008,4,6,5
+GloVe wiki-gigaword 100d,Religion,Occupation,False,valence,0.062,0.03121,-0.03079,4,6,5
+GloVe wiki-gigaword 100d,Religion,Occupation,False,competence,0.16445,0.10821,-0.05624,4,6,5
+GloVe wiki-gigaword 100d,Religion,Immigration,False,valence,0.0999,0.09083,-0.00907,4,6,5
+GloVe wiki-gigaword 100d,Religion,Immigration,False,competence,0.04685,0.03755,-0.00929,4,6,5
+GloVe wiki-gigaword 100d,Religion,Race,False,valence,0.08456,0.06896,-0.0156,4,6,5
+GloVe wiki-gigaword 100d,Religion,Race,False,competence,0.11121,0.07571,-0.0355,4,6,5
+GloVe wiki-gigaword 100d,Religion,Marriage,False,valence,0.03042,0.04523,0.01481,4,6,5
+GloVe wiki-gigaword 100d,Religion,Marriage,False,competence,0.00143,0.02126,0.01983,4,6,5
+GloVe wiki-gigaword 100d,Religion,Religion,True,valence,0.12705,0.00721,-0.11984,4,6,5
+GloVe wiki-gigaword 100d,Religion,Religion,True,competence,0.1655,0.00764,-0.15787,4,6,5
+GloVe wiki-gigaword 100d,Religion,Mental health,False,valence,0.265,0.25473,-0.01026,4,6,5
+GloVe wiki-gigaword 100d,Religion,Mental health,False,competence,0.16981,0.15444,-0.01537,4,6,5
+GloVe wiki-gigaword 100d,Religion,Height,False,valence,0.05028,0.06835,0.01807,4,6,5
+GloVe wiki-gigaword 100d,Religion,Height,False,competence,0.00348,0.01775,0.01427,4,6,5
+GloVe wiki-gigaword 100d,Religion,Employment,False,valence,0.18785,0.14789,-0.03996,4,6,5
+GloVe wiki-gigaword 100d,Religion,Employment,False,competence,0.18226,0.12581,-0.05645,4,6,5
+GloVe wiki-gigaword 100d,Religion,Physical disability,False,valence,0.12926,0.12548,-0.00377,4,6,5
+GloVe wiki-gigaword 100d,Religion,Physical disability,False,competence,0.16671,0.1603,-0.00641,4,6,5
+GloVe wiki-gigaword 100d,Religion,Weight,False,valence,0.00372,0.00098,-0.00274,4,6,5
+GloVe wiki-gigaword 100d,Religion,Weight,False,competence,0.02816,0.02024,-0.00792,4,6,5
+GloVe wiki-gigaword 100d,Religion,SES,False,valence,0.21672,0.16753,-0.04919,4,6,5
+GloVe wiki-gigaword 100d,Religion,SES,False,competence,0.25505,0.1828,-0.07225,4,6,5
+GloVe wiki-gigaword 100d,Religion,Fertility,False,valence,0.03245,0.02045,-0.012,4,6,5
+GloVe wiki-gigaword 100d,Religion,Fertility,False,competence,0.06054,0.04337,-0.01717,4,6,5
+GloVe wiki-gigaword 100d,Religion,Attractiveness,False,valence,0.33122,0.28822,-0.043,4,6,5
+GloVe wiki-gigaword 100d,Religion,Attractiveness,False,competence,0.21726,0.15244,-0.06482,4,6,5
+GloVe wiki-gigaword 100d,Mental health,Sexuality,False,valence,0.06455,0.03501,-0.02954,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Sexuality,False,competence,0.05591,0.04014,-0.01578,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Age,False,valence,0.01223,0.01702,0.00479,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Age,False,competence,0.05705,0.07193,0.01488,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Occupation,False,valence,0.062,0.04476,-0.01724,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Occupation,False,competence,0.16445,0.13369,-0.03077,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Immigration,False,valence,0.0999,0.1067,0.0068,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Immigration,False,competence,0.04685,0.03366,-0.01319,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Race,False,valence,0.08456,0.11157,0.02701,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Race,False,competence,0.11121,0.0902,-0.02101,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Marriage,False,valence,0.03042,0.0364,0.00597,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Marriage,False,competence,0.00143,0.0276,0.02616,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Religion,False,valence,0.12705,0.1395,0.01246,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Religion,False,competence,0.1655,0.13652,-0.02899,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Mental health,True,valence,0.265,0.01646,-0.24854,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Mental health,True,competence,0.16981,0.00953,-0.16028,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Height,False,valence,0.05028,0.02031,-0.02997,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Height,False,competence,0.00348,0.02311,0.01964,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Employment,False,valence,0.18785,0.09793,-0.08992,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Employment,False,competence,0.18226,0.12853,-0.05373,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Physical disability,False,valence,0.12926,0.12692,-0.00234,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Physical disability,False,competence,0.16671,0.14018,-0.02653,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Weight,False,valence,0.00372,0.00821,0.00449,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Weight,False,competence,0.02816,0.01164,-0.01652,12,16,13
+GloVe wiki-gigaword 100d,Mental health,SES,False,valence,0.21672,0.18136,-0.03536,12,16,13
+GloVe wiki-gigaword 100d,Mental health,SES,False,competence,0.25505,0.20796,-0.04709,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Fertility,False,valence,0.03245,0.01031,-0.02214,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Fertility,False,competence,0.06054,0.06915,0.00861,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Attractiveness,False,valence,0.33122,0.26619,-0.06502,12,16,13
+GloVe wiki-gigaword 100d,Mental health,Attractiveness,False,competence,0.21726,0.17367,-0.04359,12,16,13
+GloVe wiki-gigaword 100d,Height,Sexuality,False,valence,0.06455,0.06522,0.00067,1,2,2
+GloVe wiki-gigaword 100d,Height,Sexuality,False,competence,0.05591,0.05699,0.00108,1,2,2
+GloVe wiki-gigaword 100d,Height,Age,False,valence,0.01223,0.01314,0.00092,1,2,2
+GloVe wiki-gigaword 100d,Height,Age,False,competence,0.05705,0.05799,0.00094,1,2,2
+GloVe wiki-gigaword 100d,Height,Occupation,False,valence,0.062,0.07299,0.01099,1,2,2
+GloVe wiki-gigaword 100d,Height,Occupation,False,competence,0.16445,0.17179,0.00733,1,2,2
+GloVe wiki-gigaword 100d,Height,Immigration,False,valence,0.0999,0.10048,0.00058,1,2,2
+GloVe wiki-gigaword 100d,Height,Immigration,False,competence,0.04685,0.04748,0.00064,1,2,2
+GloVe wiki-gigaword 100d,Height,Race,False,valence,0.08456,0.08709,0.00252,1,2,2
+GloVe wiki-gigaword 100d,Height,Race,False,competence,0.11121,0.11332,0.0021,1,2,2
+GloVe wiki-gigaword 100d,Height,Marriage,False,valence,0.03042,0.02922,-0.0012,1,2,2
+GloVe wiki-gigaword 100d,Height,Marriage,False,competence,0.00143,0.00106,-0.00038,1,2,2
+GloVe wiki-gigaword 100d,Height,Religion,False,valence,0.12705,0.13289,0.00584,1,2,2
+GloVe wiki-gigaword 100d,Height,Religion,False,competence,0.1655,0.16867,0.00317,1,2,2
+GloVe wiki-gigaword 100d,Height,Mental health,False,valence,0.265,0.26381,-0.00118,1,2,2
+GloVe wiki-gigaword 100d,Height,Mental health,False,competence,0.16981,0.17298,0.00317,1,2,2
+GloVe wiki-gigaword 100d,Height,Height,True,valence,0.05028,0.00344,-0.04683,1,2,2
+GloVe wiki-gigaword 100d,Height,Height,True,competence,0.00348,0.00226,-0.00122,1,2,2
+GloVe wiki-gigaword 100d,Height,Employment,False,valence,0.18785,0.19651,0.00866,1,2,2
+GloVe wiki-gigaword 100d,Height,Employment,False,competence,0.18226,0.18841,0.00615,1,2,2
+GloVe wiki-gigaword 100d,Height,Physical disability,False,valence,0.12926,0.12658,-0.00268,1,2,2
+GloVe wiki-gigaword 100d,Height,Physical disability,False,competence,0.16671,0.1696,0.00288,1,2,2
+GloVe wiki-gigaword 100d,Height,Weight,False,valence,0.00372,0.00069,-0.00303,1,2,2
+GloVe wiki-gigaword 100d,Height,Weight,False,competence,0.02816,0.0291,0.00094,1,2,2
+GloVe wiki-gigaword 100d,Height,SES,False,valence,0.21672,0.22659,0.00987,1,2,2
+GloVe wiki-gigaword 100d,Height,SES,False,competence,0.25505,0.26181,0.00676,1,2,2
+GloVe wiki-gigaword 100d,Height,Fertility,False,valence,0.03245,0.03184,-0.00061,1,2,2
+GloVe wiki-gigaword 100d,Height,Fertility,False,competence,0.06054,0.06146,0.00092,1,2,2
+GloVe wiki-gigaword 100d,Height,Attractiveness,False,valence,0.33122,0.33099,-0.00023,1,2,2
+GloVe wiki-gigaword 100d,Height,Attractiveness,False,competence,0.21726,0.22044,0.00319,1,2,2
+GloVe wiki-gigaword 100d,Employment,Sexuality,False,valence,0.06455,0.05844,-0.00612,1,2,2
+GloVe wiki-gigaword 100d,Employment,Sexuality,False,competence,0.05591,0.05177,-0.00415,1,2,2
+GloVe wiki-gigaword 100d,Employment,Age,False,valence,0.01223,0.01003,-0.00219,1,2,2
+GloVe wiki-gigaword 100d,Employment,Age,False,competence,0.05705,0.06042,0.00337,1,2,2
+GloVe wiki-gigaword 100d,Employment,Occupation,False,valence,0.062,0.02915,-0.03285,1,2,2
+GloVe wiki-gigaword 100d,Employment,Occupation,False,competence,0.16445,0.10817,-0.05628,1,2,2
+GloVe wiki-gigaword 100d,Employment,Immigration,False,valence,0.0999,0.09051,-0.00939,1,2,2
+GloVe wiki-gigaword 100d,Employment,Immigration,False,competence,0.04685,0.03978,-0.00706,1,2,2
+GloVe wiki-gigaword 100d,Employment,Race,False,valence,0.08456,0.08879,0.00423,1,2,2
+GloVe wiki-gigaword 100d,Employment,Race,False,competence,0.11121,0.09733,-0.01388,1,2,2
+GloVe wiki-gigaword 100d,Employment,Marriage,False,valence,0.03042,0.03099,0.00057,1,2,2
+GloVe wiki-gigaword 100d,Employment,Marriage,False,competence,0.00143,0.00059,-0.00085,1,2,2
+GloVe wiki-gigaword 100d,Employment,Religion,False,valence,0.12705,0.08607,-0.04098,1,2,2
+GloVe wiki-gigaword 100d,Employment,Religion,False,competence,0.1655,0.13805,-0.02745,1,2,2
+GloVe wiki-gigaword 100d,Employment,Mental health,False,valence,0.265,0.23466,-0.03034,1,2,2
+GloVe wiki-gigaword 100d,Employment,Mental health,False,competence,0.16981,0.15445,-0.01536,1,2,2
+GloVe wiki-gigaword 100d,Employment,Height,False,valence,0.05028,0.08314,0.03286,1,2,2
+GloVe wiki-gigaword 100d,Employment,Height,False,competence,0.00348,0.03276,0.02928,1,2,2
+GloVe wiki-gigaword 100d,Employment,Employment,True,valence,0.18785,0.00136,-0.18649,1,2,2
+GloVe wiki-gigaword 100d,Employment,Employment,True,competence,0.18226,0.01348,-0.16878,1,2,2
+GloVe wiki-gigaword 100d,Employment,Physical disability,False,valence,0.12926,0.09092,-0.03833,1,2,2
+GloVe wiki-gigaword 100d,Employment,Physical disability,False,competence,0.16671,0.1363,-0.03041,1,2,2
+GloVe wiki-gigaword 100d,Employment,Weight,False,valence,0.00372,0.02113,0.01741,1,2,2
+GloVe wiki-gigaword 100d,Employment,Weight,False,competence,0.02816,0.01384,-0.01432,1,2,2
+GloVe wiki-gigaword 100d,Employment,SES,False,valence,0.21672,0.13228,-0.08444,1,2,2
+GloVe wiki-gigaword 100d,Employment,SES,False,competence,0.25505,0.16972,-0.08532,1,2,2
+GloVe wiki-gigaword 100d,Employment,Fertility,False,valence,0.03245,0.03167,-0.00078,1,2,2
+GloVe wiki-gigaword 100d,Employment,Fertility,False,competence,0.06054,0.05981,-0.00072,1,2,2
+GloVe wiki-gigaword 100d,Employment,Attractiveness,False,valence,0.33122,0.29397,-0.03725,1,2,2
+GloVe wiki-gigaword 100d,Employment,Attractiveness,False,competence,0.21726,0.17877,-0.03849,1,2,2
+GloVe wiki-gigaword 100d,Physical disability,Sexuality,False,valence,0.06455,0.02157,-0.04298,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Sexuality,False,competence,0.05591,0.00394,-0.05198,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Age,False,valence,0.01223,0.01893,0.0067,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Age,False,competence,0.05705,0.06119,0.00415,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Occupation,False,valence,0.062,0.04807,-0.01393,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Occupation,False,competence,0.16445,0.1778,0.01335,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Immigration,False,valence,0.0999,0.10573,0.00583,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Immigration,False,competence,0.04685,0.04831,0.00146,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Race,False,valence,0.08456,0.08914,0.00458,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Race,False,competence,0.11121,0.08519,-0.02602,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Marriage,False,valence,0.03042,0.03324,0.00282,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Marriage,False,competence,0.00143,0.00539,0.00395,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Religion,False,valence,0.12705,0.12031,-0.00674,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Religion,False,competence,0.1655,0.15452,-0.01098,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Mental health,False,valence,0.265,0.23282,-0.03218,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Mental health,False,competence,0.16981,0.10656,-0.06325,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Height,False,valence,0.05028,0.05017,-0.00011,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Height,False,competence,0.00348,0.00994,0.00647,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Employment,False,valence,0.18785,0.14561,-0.04224,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Employment,False,competence,0.18226,0.12761,-0.05465,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Physical disability,True,valence,0.12926,0.00317,-0.12608,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Physical disability,True,competence,0.16671,0.0091,-0.15761,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Weight,False,valence,0.00372,0.01812,0.0144,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Weight,False,competence,0.02816,0.02777,-0.00039,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,SES,False,valence,0.21672,0.20454,-0.01218,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,SES,False,competence,0.25505,0.24696,-0.00808,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Fertility,False,valence,0.03245,0.02647,-0.00598,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Fertility,False,competence,0.06054,0.05065,-0.00989,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Attractiveness,False,valence,0.33122,0.31768,-0.01353,5,10,6
+GloVe wiki-gigaword 100d,Physical disability,Attractiveness,False,competence,0.21726,0.1821,-0.03515,5,10,6
+GloVe wiki-gigaword 100d,Weight,Sexuality,False,valence,0.06455,0.06449,-6e-05,1,2,2
+GloVe wiki-gigaword 100d,Weight,Sexuality,False,competence,0.05591,0.05674,0.00083,1,2,2
+GloVe wiki-gigaword 100d,Weight,Age,False,valence,0.01223,0.01306,0.00083,1,2,2
+GloVe wiki-gigaword 100d,Weight,Age,False,competence,0.05705,0.05974,0.00269,1,2,2
+GloVe wiki-gigaword 100d,Weight,Occupation,False,valence,0.062,0.06277,0.00077,1,2,2
+GloVe wiki-gigaword 100d,Weight,Occupation,False,competence,0.16445,0.1652,0.00075,1,2,2
+GloVe wiki-gigaword 100d,Weight,Immigration,False,valence,0.0999,0.10131,0.00142,1,2,2
+GloVe wiki-gigaword 100d,Weight,Immigration,False,competence,0.04685,0.04981,0.00296,1,2,2
+GloVe wiki-gigaword 100d,Weight,Race,False,valence,0.08456,0.08805,0.00348,1,2,2
+GloVe wiki-gigaword 100d,Weight,Race,False,competence,0.11121,0.1096,-0.00162,1,2,2
+GloVe wiki-gigaword 100d,Weight,Marriage,False,valence,0.03042,0.03217,0.00174,1,2,2
+GloVe wiki-gigaword 100d,Weight,Marriage,False,competence,0.00143,0.00786,0.00642,1,2,2
+GloVe wiki-gigaword 100d,Weight,Religion,False,valence,0.12705,0.1285,0.00145,1,2,2
+GloVe wiki-gigaword 100d,Weight,Religion,False,competence,0.1655,0.16572,0.00021,1,2,2
+GloVe wiki-gigaword 100d,Weight,Mental health,False,valence,0.265,0.26827,0.00328,1,2,2
+GloVe wiki-gigaword 100d,Weight,Mental health,False,competence,0.16981,0.17585,0.00604,1,2,2
+GloVe wiki-gigaword 100d,Weight,Height,False,valence,0.05028,0.05004,-0.00024,1,2,2
+GloVe wiki-gigaword 100d,Weight,Height,False,competence,0.00348,0.01233,0.00886,1,2,2
+GloVe wiki-gigaword 100d,Weight,Employment,False,valence,0.18785,0.19497,0.00712,1,2,2
+GloVe wiki-gigaword 100d,Weight,Employment,False,competence,0.18226,0.18464,0.00238,1,2,2
+GloVe wiki-gigaword 100d,Weight,Physical disability,False,valence,0.12926,0.13094,0.00168,1,2,2
+GloVe wiki-gigaword 100d,Weight,Physical disability,False,competence,0.16671,0.17008,0.00337,1,2,2
+GloVe wiki-gigaword 100d,Weight,Weight,True,valence,0.00372,0.00724,0.00352,1,2,2
+GloVe wiki-gigaword 100d,Weight,Weight,True,competence,0.02816,0.00664,-0.02152,1,2,2
+GloVe wiki-gigaword 100d,Weight,SES,False,valence,0.21672,0.22128,0.00456,1,2,2
+GloVe wiki-gigaword 100d,Weight,SES,False,competence,0.25505,0.25849,0.00344,1,2,2
+GloVe wiki-gigaword 100d,Weight,Fertility,False,valence,0.03245,0.03055,-0.0019,1,2,2
+GloVe wiki-gigaword 100d,Weight,Fertility,False,competence,0.06054,0.06588,0.00534,1,2,2
+GloVe wiki-gigaword 100d,Weight,Attractiveness,False,valence,0.33122,0.33394,0.00272,1,2,2
+GloVe wiki-gigaword 100d,Weight,Attractiveness,False,competence,0.21726,0.22521,0.00795,1,2,2
+GloVe wiki-gigaword 100d,SES,Sexuality,False,valence,0.06455,0.06923,0.00467,3,4,4
+GloVe wiki-gigaword 100d,SES,Sexuality,False,competence,0.05591,0.06076,0.00485,3,4,4
+GloVe wiki-gigaword 100d,SES,Age,False,valence,0.01223,0.02013,0.0079,3,4,4
+GloVe wiki-gigaword 100d,SES,Age,False,competence,0.05705,0.05023,-0.00682,3,4,4
+GloVe wiki-gigaword 100d,SES,Occupation,False,valence,0.062,0.07686,0.01486,3,4,4
+GloVe wiki-gigaword 100d,SES,Occupation,False,competence,0.16445,0.02995,-0.13451,3,4,4
+GloVe wiki-gigaword 100d,SES,Immigration,False,valence,0.0999,0.08063,-0.01927,3,4,4
+GloVe wiki-gigaword 100d,SES,Immigration,False,competence,0.04685,0.05143,0.00458,3,4,4
+GloVe wiki-gigaword 100d,SES,Race,False,valence,0.08456,0.12479,0.04023,3,4,4
+GloVe wiki-gigaword 100d,SES,Race,False,competence,0.11121,0.04371,-0.0675,3,4,4
+GloVe wiki-gigaword 100d,SES,Marriage,False,valence,0.03042,0.05009,0.01966,3,4,4
+GloVe wiki-gigaword 100d,SES,Marriage,False,competence,0.00143,0.02127,0.01984,3,4,4
+GloVe wiki-gigaword 100d,SES,Religion,False,valence,0.12705,0.09526,-0.03179,3,4,4
+GloVe wiki-gigaword 100d,SES,Religion,False,competence,0.1655,0.0933,-0.07221,3,4,4
+GloVe wiki-gigaword 100d,SES,Mental health,False,valence,0.265,0.26388,-0.00111,3,4,4
+GloVe wiki-gigaword 100d,SES,Mental health,False,competence,0.16981,0.10006,-0.06975,3,4,4
+GloVe wiki-gigaword 100d,SES,Height,False,valence,0.05028,0.1118,0.06152,3,4,4
+GloVe wiki-gigaword 100d,SES,Height,False,competence,0.00348,0.05597,0.05249,3,4,4
+GloVe wiki-gigaword 100d,SES,Employment,False,valence,0.18785,0.06602,-0.12183,3,4,4
+GloVe wiki-gigaword 100d,SES,Employment,False,competence,0.18226,0.02173,-0.16053,3,4,4
+GloVe wiki-gigaword 100d,SES,Physical disability,False,valence,0.12926,0.12063,-0.00863,3,4,4
+GloVe wiki-gigaword 100d,SES,Physical disability,False,competence,0.16671,0.15261,-0.0141,3,4,4
+GloVe wiki-gigaword 100d,SES,Weight,False,valence,0.00372,0.01131,0.00759,3,4,4
+GloVe wiki-gigaword 100d,SES,Weight,False,competence,0.02816,0.01146,-0.0167,3,4,4
+GloVe wiki-gigaword 100d,SES,SES,True,valence,0.21672,0.0057,-0.21102,3,4,4
+GloVe wiki-gigaword 100d,SES,SES,True,competence,0.25505,0.00423,-0.25081,3,4,4
+GloVe wiki-gigaword 100d,SES,Fertility,False,valence,0.03245,0.01277,-0.01968,3,4,4
+GloVe wiki-gigaword 100d,SES,Fertility,False,competence,0.06054,0.01168,-0.04886,3,4,4
+GloVe wiki-gigaword 100d,SES,Attractiveness,False,valence,0.33122,0.25078,-0.08044,3,4,4
+GloVe wiki-gigaword 100d,SES,Attractiveness,False,competence,0.21726,0.1183,-0.09896,3,4,4
+GloVe wiki-gigaword 100d,Fertility,Sexuality,False,valence,0.06455,0.07326,0.00871,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Sexuality,False,competence,0.05591,0.07138,0.01546,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Age,False,valence,0.01223,0.01957,0.00734,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Age,False,competence,0.05705,0.04448,-0.01257,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Occupation,False,valence,0.062,0.06497,0.00297,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Occupation,False,competence,0.16445,0.17697,0.01252,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Immigration,False,valence,0.0999,0.09804,-0.00185,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Immigration,False,competence,0.04685,0.04942,0.00258,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Race,False,valence,0.08456,0.09094,0.00637,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Race,False,competence,0.11121,0.09763,-0.01358,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Marriage,False,valence,0.03042,0.04021,0.00979,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Marriage,False,competence,0.00143,0.01468,0.01325,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Religion,False,valence,0.12705,0.12754,0.00049,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Religion,False,competence,0.1655,0.15979,-0.00571,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Mental health,False,valence,0.265,0.26287,-0.00213,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Mental health,False,competence,0.16981,0.16239,-0.00742,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Height,False,valence,0.05028,0.04812,-0.00215,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Height,False,competence,0.00348,0.00093,-0.00255,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Employment,False,valence,0.18785,0.18984,0.00199,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Employment,False,competence,0.18226,0.18273,0.00047,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Physical disability,False,valence,0.12926,0.12611,-0.00314,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Physical disability,False,competence,0.16671,0.15622,-0.0105,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Weight,False,valence,0.00372,0.00375,3e-05,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Weight,False,competence,0.02816,0.0415,0.01334,1,2,2
+GloVe wiki-gigaword 100d,Fertility,SES,False,valence,0.21672,0.20668,-0.01004,1,2,2
+GloVe wiki-gigaword 100d,Fertility,SES,False,competence,0.25505,0.23422,-0.02082,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Fertility,True,valence,0.03245,0.00342,-0.02903,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Fertility,True,competence,0.06054,0.00325,-0.05729,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Attractiveness,False,valence,0.33122,0.32089,-0.01032,1,2,2
+GloVe wiki-gigaword 100d,Fertility,Attractiveness,False,competence,0.21726,0.19244,-0.02482,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Sexuality,False,valence,0.06455,0.01424,-0.05031,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Sexuality,False,competence,0.05591,0.0243,-0.03161,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Age,False,valence,0.01223,0.02969,0.01747,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Age,False,competence,0.05705,0.05021,-0.00684,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Occupation,False,valence,0.062,0.03561,-0.02639,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Occupation,False,competence,0.16445,0.11841,-0.04604,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Immigration,False,valence,0.0999,0.04325,-0.05665,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Immigration,False,competence,0.04685,0.01259,-0.03425,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Race,False,valence,0.08456,0.10255,0.01799,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Race,False,competence,0.11121,0.07282,-0.0384,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Marriage,False,valence,0.03042,0.02778,-0.00264,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Marriage,False,competence,0.00143,0.00403,0.00259,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Religion,False,valence,0.12705,0.09197,-0.03508,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Religion,False,competence,0.1655,0.09518,-0.07033,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Mental health,False,valence,0.265,0.13969,-0.12531,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Mental health,False,competence,0.16981,0.09946,-0.07035,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Height,False,valence,0.05028,0.01559,-0.03469,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Height,False,competence,0.00348,0.01968,0.0162,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Employment,False,valence,0.18785,0.06768,-0.12017,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Employment,False,competence,0.18226,0.10863,-0.07362,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Physical disability,False,valence,0.12926,0.05085,-0.07841,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Physical disability,False,competence,0.16671,0.12862,-0.03809,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Weight,False,valence,0.00372,0.01526,0.01154,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Weight,False,competence,0.02816,0.04096,0.0128,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,SES,False,valence,0.21672,0.04755,-0.16917,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,SES,False,competence,0.25505,0.15021,-0.10484,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Fertility,False,valence,0.03245,0.05048,0.01803,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Fertility,False,competence,0.06054,0.00819,-0.05235,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Attractiveness,True,valence,0.33122,0.0013,-0.32992,1,2,2
+GloVe wiki-gigaword 100d,Attractiveness,Attractiveness,True,competence,0.21726,0.00114,-0.21612,1,2,2
