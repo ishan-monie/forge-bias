@@ -98,7 +98,7 @@ a { color: var(--blue); }
 <div class="card">
   <div class="controls">
     <label class="f" id="modelwrap"><b>Model:</b> <select id="msel"></select></label>
-    <label class="f"><b>Remove bias:</b> <select id="cat"></select></label>
+    <label class="f" id="catwrap"><b>Remove bias:</b> <select id="cat"></select></label>
     <span class="seg" role="group" aria-label="What to measure">
       <button id="m-valence" aria-pressed="true">Good vs. bad words</button>
       <button id="m-competence" aria-pressed="false">Competent vs. incompetent</button>
@@ -107,7 +107,8 @@ a { color: var(--blue); }
 </div>
 
 <div class="tabs" role="tablist" id="tabs">
-  <button role="tab" data-t="overview" aria-selected="true">Overview</button>
+  <button role="tab" data-t="base" aria-selected="true">Starting bias</button>
+  <button role="tab" data-t="overview" aria-selected="false">After removing a bias</button>
   <button role="tab" data-t="compare" aria-selected="false" id="tab-compare">Compare models</button>
   <button role="tab" data-t="groups" aria-selected="false">Groups</button>
   <button role="tab" data-t="network" aria-selected="false">Network</button>
@@ -115,7 +116,26 @@ a { color: var(--blue); }
   <button role="tab" data-t="how" aria-selected="false">How it works</button>
 </div>
 
-<section id="p-overview" class="card panel">
+<section id="p-base" class="card panel">
+  <h2>How biased is each group to begin with?</h2>
+  <p id="blead" style="font-size:18px;font-weight:600;margin:2px 0 8px"></p>
+  <p class="cap">No bias has been removed here. This is the model as it comes. Each bar is one group's score: blue = its words sit closer to positive words, red = closer to negative words.</p>
+  <label class="f">Show <select id="bcat"></select></label>
+  <div id="b1"></div>
+  <h2 style="margin-top:18px">Which categories are most unequal?</h2>
+  <p class="cap">Gap = the most favored group's score minus the least favored group's score, within a category. Bigger = the model treats the groups in that category more differently.</p>
+  <div id="b2"></div>
+  <details class="info"><summary>How to read this</summary>
+    <ul>
+      <li><b>Score:</b> average closeness of the group's words to positive words (nice, good, wonderful) minus closeness to negative words (bad, horrible, disgusting). 0 = neutral. It uses the good-vs-bad or competent-vs-incompetent word lists, whichever is selected above.</li>
+      <li><b>Pairs:</b> each group is defined against its opposite, e.g. "sane (vs. schizophrenic)" and "schizophrenic (vs. sane)". The two directions are listed separately, so one usually scores positive and the other negative.</li>
+      <li><b>Not a verdict on people:</b> these scores describe how Wikipedia and news text write about each group, as captured by the model.</li>
+      <li>The next tab shows what happens to these starting gaps when one bias is removed.</li>
+    </ul>
+  </details>
+</section>
+
+<section id="p-overview" class="card panel" hidden>
   <p id="lead" style="font-size:18px;font-weight:600;margin:2px 0 8px"></p>
   <div class="tiles">
     <div class="tile w"><b id="t-worse">0</b><span>categories got worse</span></div>
@@ -239,7 +259,7 @@ const gap = (arr, cat) => { const v = idxOf(cat).map(i => arr[i]); return Math.m
 const short = g => g.split("_")[0];
 const label = g => { const p = g.split("_"); return p.length === 2 ? `${p[0]} (vs. ${p[1]})` : g; };
 function niceStep(m) { const p = Math.pow(10, Math.floor(Math.log10(m))), r = m / p; return (r < 1.5 ? 1 : r < 3.5 ? 2 : r < 7.5 ? 5 : 10) * p; }
-let zcat = null;
+let zcat = null, bcat = "All";
 const mText = () => metric === "valence" ? "good-vs-bad" : "competent-vs-incompetent";
 
 function stats() {
@@ -311,7 +331,7 @@ document.addEventListener("mousemove", e => {
 function chart1() {
   const { own, others } = stats();
   $("c1sub").textContent = `Change in the ${mText()} gap after removing ${target} bias. Red, right = more unequal. Blue, left = more equal.`;
-  const W = 760, L = 150, R = 110, T = 44, RH = 32, H = T + others.length * RH + 8;
+  const W = 760, L = 150, R = 110, T = 44, RH = 38, H = T + others.length * RH + 8;
   const M = Math.max(0.02, ...others.map(r => Math.abs(r.d))) * 1.15;
   const w = W - L - R, x = v => L + (v + M) / (2 * M) * w, x0 = x(0);
   const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Change in bias gap for each other category" });
@@ -322,7 +342,8 @@ function chart1() {
   el("line", { x1: x0, x2: x0, y1: T - 6, y2: H - 2, stroke: "var(--axis)", "stroke-width": 1.5 }, svg);
   others.forEach((r, i) => {
     const y = T + i * RH + RH / 2, col = dirColor(r.d), xe = x(r.d), small = Math.abs(r.d) <= SMALL;
-    el("text", { x: L - 10, y: y + 5, "text-anchor": "end" }, svg).textContent = r.c;
+    el("text", { x: L - 10, y: y + 1, "text-anchor": "end" }, svg).textContent = r.c;
+    el("text", { x: L - 10, y: y + 14, "text-anchor": "end", class: "m", style: "font-size:10.5px" }, svg).textContent = "starting gap " + f3(r.b);
     if (!small) el("rect", { x: Math.min(x0, xe), y: y - 10, width: Math.abs(xe - x0), height: 20, rx: 3, fill: col }, svg);
     const t = el("text", { x: W - R + 12, y: y + 5, style: "font-weight:600" }, svg);
     t.textContent = small ? "no change" : sgn(r.d) + (r.d > 0 ? " worse" : " better"); t.style.fill = small ? "var(--muted)" : col;
@@ -417,8 +438,39 @@ function network() {
     (dlt > 0 ? `, so removing the bias made these groups look <b>more alike</b> to the model.` : dlt < 0 ? `, so these groups look <b>less alike</b> than before.` : `, so no change in how alike they look.`) +
     ` (This counts only the strongest ${$("thr").value}% of connections.)`;
 }
+function baseline() {
+  const b = D.before[metric], mx = Math.max(0.02, ...b.map(Math.abs)) * 1.1;
+  const idx = D.groups.map((g, i) => i).filter(i => bcat === "All" || D.groups[i].c === bcat).sort((i, j) => b[j] - b[i]);
+  const all = D.groups.map((g, i) => i).sort((i, j) => b[j] - b[i]), hi = all[0], lo = all[all.length - 1];
+  const gaps = D.categories.map(c => ({ c, v: gap(b, c) })).sort((p, q) => q.v - p.v);
+  $("blead").innerHTML = `Most linked to negative words: <b>${label(D.groups[lo].g)}</b> (${sgn(b[lo])}). Most positive: <b>${label(D.groups[hi].g)}</b> (${sgn(b[hi])}). Most unequal category: <b>${gaps[0].c}</b> (gap ${f3(gaps[0].v)}).`;
+  const W = 760, L = 250, R = 20, T = 30, RH = 20, H = T + idx.length * RH + 8, half = (W - L - R) / 2, mid = L + half, x = v => mid + v / mx * half;
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Starting score of each group" });
+  el("text", { x: L, y: 12, class: "s", style: "font-weight:600" }, svg).textContent = "← more negative words";
+  el("text", { x: W - R, y: 12, "text-anchor": "end", class: "s", style: "font-weight:600" }, svg).textContent = "more positive words →";
+  el("line", { x1: mid, x2: mid, y1: T - 6, y2: H - 2, stroke: "var(--axis)", "stroke-width": 1.5 }, svg);
+  el("text", { x: mid, y: 26, "text-anchor": "middle", class: "m", style: "font-size:11px" }, svg).textContent = "0";
+  idx.forEach((gi, r) => {
+    const y = T + r * RH + RH / 2, v = b[gi], col = v >= 0 ? "var(--blue)" : "var(--red)";
+    el("text", { x: L - 8, y: y + 4, "text-anchor": "end", style: "font-size:12px" }, svg).textContent = label(D.groups[gi].g);
+    el("rect", { x: Math.min(mid, x(v)), y: y - 6, width: Math.max(1, Math.abs(x(v) - mid)), height: 12, rx: 2, fill: col }, svg);
+    el("rect", { x: 0, y: y - RH / 2, width: W, height: RH, fill: "transparent", "data-tip": `<b>${label(D.groups[gi].g)}</b><br>${D.groups[gi].c}<br>starting score ${sgn(v)}<br>${v >= 0 ? "closer to positive words" : "closer to negative words"}` }, svg);
+  });
+  $("b1").replaceChildren(svg);
+  const L2 = 150, R2 = 70, RH2 = 28, T2 = 6, H2 = T2 + gaps.length * RH2 + 4, gm = Math.max(...gaps.map(g => g.v)) * 1.05, x2 = v => L2 + v / gm * (W - L2 - R2);
+  const s2 = el("svg", { viewBox: `0 0 ${W} ${H2}`, role: "img", "aria-label": "Starting gap for each category" });
+  gaps.forEach((g, i) => {
+    const y = T2 + i * RH2 + RH2 / 2;
+    el("text", { x: L2 - 10, y: y + 5, "text-anchor": "end" }, s2).textContent = g.c;
+    el("rect", { x: L2, y: y - 9, width: Math.max(1, x2(g.v) - L2), height: 18, rx: 3, fill: "var(--ink2)" }, s2);
+    el("text", { x: x2(g.v) + 8, y: y + 5, class: "s", style: "font-weight:600" }, s2).textContent = f3(g.v);
+    const ids = idxOf(g.c).sort((p, q) => b[q] - b[p]);
+    el("rect", { x: 0, y: y - RH2 / 2, width: W, height: RH2, fill: "transparent", "data-tip": `<b>${g.c}</b><br>most favored: ${label(D.groups[ids[0]].g)} (${sgn(b[ids[0]])})<br>least favored: ${label(D.groups[ids[ids.length - 1]].g)} (${sgn(b[ids[ids.length - 1]])})<br>gap ${f3(g.v)}` }, s2);
+  });
+  $("b2").replaceChildren(s2);
+}
 function render(resetZoom) {
-  headline(); chart1();
+  baseline(); headline(); chart1();
   if (resetZoom || !zcat) { zcat = stats().others[0].c; $("zcat").value = zcat; }
   chart2(); network(); table();
   if (ALL.order.length > 1) compare();
@@ -431,6 +483,9 @@ function setModel(k) {
 }
 ALL.order.forEach(k => { const o = document.createElement("option"); o.value = k; o.textContent = ALL.models[k].name; $("msel").appendChild(o); });
 if (ALL.order.length < 2) { $("modelwrap").hidden = true; $("tab-compare").hidden = true; }
+{ const o = document.createElement("option"); o.value = "All"; o.textContent = "all 72 groups"; $("bcat").appendChild(o); }
+D.categories.forEach(c => { const o = document.createElement("option"); o.value = o.textContent = c; $("bcat").appendChild(o); });
+$("bcat").onchange = e => { bcat = e.target.value; baseline(); };
 D.targets.forEach(t => { for (const id of ["cat", "zcat"]) { const o = document.createElement("option"); o.value = o.textContent = t; $(id).appendChild(o); } });
 $("cat").value = target;
 $("msel").onchange = e => { setModel(e.target.value); render(true); };
@@ -440,8 +495,10 @@ $("thr").oninput = network;
 for (const m of ["valence", "competence"]) $("m-" + m).onclick = () => { metric = m; $("m-valence").setAttribute("aria-pressed", m === "valence"); $("m-competence").setAttribute("aria-pressed", m === "competence"); render(true); };
 document.querySelectorAll("#tabs button").forEach(b => b.onclick = () => {
   document.querySelectorAll("#tabs button").forEach(x => x.setAttribute("aria-selected", x === b));
-  for (const t of ["overview", "compare", "groups", "network", "data", "how"]) $("p-" + t).hidden = t !== b.dataset.t;
+  for (const t of ["base", "overview", "compare", "groups", "network", "data", "how"]) $("p-" + t).hidden = t !== b.dataset.t;
+  $("catwrap").hidden = b.dataset.t === "base" || b.dataset.t === "how";
 });
+$("catwrap").hidden = true;
 render(true);
 </script>
 </body>
