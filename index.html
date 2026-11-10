@@ -151,7 +151,8 @@ a { color: var(--blue); }
   <details class="info"><summary>How to read this</summary>
     <ul>
       <li><b>Score:</b> average closeness of the group's words to positive words (nice, good, wonderful) minus closeness to negative words (bad, horrible, disgusting). 0 = neutral. It uses the good-vs-bad or competent-vs-incompetent word lists, whichever is selected above.</li>
-      <li><b>Pairs:</b> each group is defined against its opposite, e.g. "sane (vs. schizophrenic)" and "schizophrenic (vs. sane)". The two directions are listed separately, so one usually scores positive and the other negative.</li>
+      <li><b>Pairs:</b> each group is defined against its opposite, e.g. "sane (vs. schizophrenic)" and "schizophrenic (vs. sane)". The "(vs. …)" only says which opposite group's words it was paired with. Each group is scored on its own words, so both directions can be positive, both negative, or one of each (for example "old" and "young" are both slightly positive).</li>
+      <li><b>0 is not a perfect neutral point:</b> a bit over half of the 72 groups score above 0, so compare groups with each other rather than with 0.</li>
       <li><b>Not a verdict on people:</b> these scores describe how Wikipedia and news text write about each group, as captured by the model.</li>
       <li>The next tab shows what happens to these starting gaps when one bias is removed.</li>
     </ul>
