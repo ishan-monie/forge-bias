@@ -171,8 +171,7 @@ a { color: var(--blue); }
   <div id="c1"></div>
   <p class="small" id="fixednote"></p>
   <h2 id="zsec">Which groups moved?</h2>
-  <p class="cap">Pick a category (or click a row in the chart above). Each row is a group: hollow dot = before, filled dot = after.</p>
-  <label class="f">Category <select id="zcat"></select></label>
+  <p class="cap">Showing the highlighted category from the chart above. Click another row there to switch. Each row below is a group: hollow dot = before, filled dot = after.</p>
   <div class="legend"><span><b class="dot" style="border:2px solid var(--muted)"></b>before</span><span><b class="dot" style="background:var(--ink2)"></b>after</span>
     <span><i style="background:var(--red)"></i>toward negative</span><span><i style="background:var(--blue)"></i>toward positive</span></div>
   <div id="c2"></div>
@@ -315,6 +314,7 @@ const short = g => g.split("_")[0];
 const label = g => { const p = g.split("_"); return p.length === 2 ? `${p[0]} (vs. ${p[1]})` : g; };
 function niceStep(m) { const p = Math.pow(10, Math.floor(Math.log10(m))), r = m / p; return (r < 1.5 ? 1 : r < 3.5 ? 2 : r < 7.5 ? 5 : 10) * p; }
 let zcat = null, bcat = "All";
+function pickZ(c, scroll) { zcat = c; chart1(); chart2(); if (scroll) $("zsec").scrollIntoView({ behavior: "smooth", block: "start" }); }
 const mText = () => metric === "valence" ? "good-vs-bad" : "competent-vs-incompetent";
 
 function stats() {
@@ -397,16 +397,18 @@ function chart1() {
   el("line", { x1: x0, x2: x0, y1: T - 6, y2: H - 2, stroke: "var(--axis)", "stroke-width": 1.5 }, svg);
   others.forEach((r, i) => {
     const y = T + i * RH + RH / 2, col = dirColor(r.d), xe = x(r.d), small = Math.abs(r.d) <= SMALL;
+    if (r.c === zcat) el("rect", { x: 0, y: y - RH / 2 + 1, width: W, height: RH - 2, rx: 6, fill: "var(--band)" }, svg);
     el("text", { x: L - 10, y: y + 1, "text-anchor": "end" }, svg).textContent = r.c;
     el("text", { x: L - 10, y: y + 14, "text-anchor": "end", class: "m", style: "font-size:10.5px" }, svg).textContent = "starting gap " + f3(r.b);
     if (!small) el("rect", { x: Math.min(x0, xe), y: y - 10, width: Math.abs(xe - x0), height: 20, rx: 3, fill: col }, svg);
     const t = el("text", { x: W - R + 12, y: y + 5, style: "font-weight:600" }, svg);
     t.textContent = small ? "no change" : sgn(r.d) + (r.d > 0 ? " worse" : " better"); t.style.fill = small ? "var(--muted)" : col;
     const hit = el("rect", { x: 0, y: y - RH / 2, width: W, height: RH, fill: "transparent", "data-tip": `<b>${r.c}</b><br>Gap between most and least favored group:<br>before ${f3(r.b)} → after ${f3(r.a)}<br>${small ? "barely changed" : r.d > 0 ? "got worse (more unequal)" : "got better (more equal)"}` }, svg);
-    hit.style.cursor = "pointer"; hit.onclick = () => { zcat = r.c; $("zcat").value = zcat; chart2(); $("zsec").scrollIntoView({ behavior: "smooth", block: "start" }); };
+    hit.style.cursor = "pointer"; hit.onclick = () => pickZ(r.c, true);
   });
   $("c1").replaceChildren(svg);
-  $("fixednote").innerHTML = `<b>${target}</b> itself: gap ${f3(own.b)} \u2192 ${f3(own.a)}. We removed it on purpose, so it should shrink.` + (own.d > SMALL ? " (It rose here, so the method did not work for this category.)" : own.a > 0.5 * own.b ? " (With this method it did not shrink much.)" : "");
+  $("fixednote").innerHTML = `<b>${target}</b> itself (<a href="#" id="showown">show its groups</a>): gap ${f3(own.b)} \u2192 ${f3(own.a)}. We removed it on purpose, so it should shrink.` + (own.d > SMALL ? " (It rose here, so the method did not work for this category.)" : own.a > 0.5 * own.b ? " (With this method it did not shrink much.)" : "");
+  $("showown").onclick = e => { e.preventDefault(); pickZ(target, true); };
 }
 
 function chart2() {
@@ -434,6 +436,7 @@ function chart2() {
     el("rect", { x: 0, y: cy - RH / 2, width: W, height: RH, fill: "transparent", "data-tip": `<b>${label(g.g)}</b><br>score before ${f3(b[gi])} → after ${f3(a[gi])}<br>${Math.abs(d) <= SMALL ? "barely changed" : d > 0 ? "now linked to more positive words" : "now linked to more negative words"}` }, svg);
   });
   $("c2").replaceChildren(svg);
+  $("zsec").textContent = `Which groups moved? – ${zcat}`;
   $("zfoot").textContent = zcat === target ? `${zcat} is the category we fixed, so the groups here are pulled together on purpose.` : `${zcat} is not the category we fixed. Movement here is a side effect (spillover) of removing ${target} bias.`;
 }
 
@@ -579,8 +582,8 @@ function pairChart() {
   $("pchart").replaceChildren(svg);
 }
 function render(resetZoom) {
+  if (resetZoom || !zcat) zcat = stats().others[0].c;
   baseline(); headline(); chart1();
-  if (resetZoom || !zcat) { zcat = stats().others[0].c; $("zcat").value = zcat; }
   chart2(); network(); table();
   if (ALL.order.length > 1) compare();
   $("model").textContent = D.model; $("method").textContent = D.method; pairChart();
@@ -595,14 +598,13 @@ if (ALL.order.length < 2) { $("modelwrap").hidden = true; $("tab-compare").hidde
 { const o = document.createElement("option"); o.value = "All"; o.textContent = "all 72 groups"; $("bcat").appendChild(o); }
 D.categories.forEach(c => { const o = document.createElement("option"); o.value = o.textContent = c; $("bcat").appendChild(o); });
 $("bcat").onchange = e => { bcat = e.target.value; baseline(); };
-D.targets.forEach(t => { for (const id of ["cat", "zcat"]) { const o = document.createElement("option"); o.value = o.textContent = t; $(id).appendChild(o); } });
+D.targets.forEach(t => { const o = document.createElement("option"); o.value = o.textContent = t; $("cat").appendChild(o); });
 $("cat").value = target;
 $("msel").onchange = e => { setModel(e.target.value); pairDefaults(); render(true); };
 $("cat").onchange = e => { target = e.target.value; pairDefaults(); render(true); };
 $("ga").onchange = $("gb").onchange = pairChart;
 ALL.methodOrder.forEach(id => { const o = document.createElement("option"); o.value = id; o.textContent = D.methods[id].method; $("meth").appendChild(o); });
 $("meth").onchange = e => { MID = e.target.value; useMethod(MID); render(false); };
-$("zcat").onchange = e => { zcat = e.target.value; chart2(); };
 $("thr").oninput = network;
 for (const m of ["valence", "competence"]) $("m-" + m).onclick = () => { metric = m; $("m-valence").setAttribute("aria-pressed", m === "valence"); $("m-competence").setAttribute("aria-pressed", m === "competence"); render(true); };
 document.querySelectorAll("#tabs button").forEach(b => b.onclick = () => {
