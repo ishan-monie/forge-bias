@@ -7,85 +7,106 @@
 <style>
 :root {
   color-scheme: light;
-  --page: #f9f9f7; --surface: #fcfcfb; --ink: #0b0b0b; --ink2: #52514e; --muted: #898781;
-  --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,.10);
-  --blue: #2a78d6; --red: #e34948; --band: rgba(42,120,214,.10); --zone: #efeee9; --warnbg: #fff7e0;
+  --page: #f2f4f7; --surface: #ffffff; --ink: #14202e; --ink2: #4a5a6c; --muted: #8190a2;
+  --grid: #e6eaf0; --axis: #c5cdd8; --border: #dde3ea;
+  --blue: #2563b0; --red: #c8501e; --band: rgba(37,99,176,.09); --zone: #eef1f5; --warnbg: #fff6df;
+  --head: #14233b; --headink: #ffffff; --headsub: #b9c6d8; --btn: #1d3a63; --shadow: 0 1px 2px rgba(20,32,46,.06), 0 4px 16px rgba(20,32,46,.05);
 }
 @media (prefers-color-scheme: dark) {
   :root {
     color-scheme: dark;
-    --page: #0d0d0d; --surface: #1a1a19; --ink: #f0efec; --ink2: #c3c2b7; --muted: #898781;
-    --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,.10);
-    --blue: #3987e5; --red: #e66767; --band: rgba(57,135,229,.18); --zone: #262624; --warnbg: #2b2410;
+    --page: #0d1319; --surface: #162029; --ink: #e8edf3; --ink2: #b0bccb; --muted: #7b8a9b;
+    --grid: #223040; --axis: #34445a; --border: #263445;
+    --blue: #5b9be8; --red: #ee8b5b; --band: rgba(91,155,232,.16); --zone: #1d2935; --warnbg: #2b2410;
+    --head: #0a1018; --btn: #3a6cb0; --shadow: none;
   }
 }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--page); color: var(--ink); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
-main { max-width: 860px; margin: 0 auto; padding: 18px 16px 50px; }
-header { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; justify-content: space-between; }
-h1 { font-size: 22px; margin: 0; }
-.badge { font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 999px; border: 1px solid var(--axis); color: var(--ink2); margin-left: 8px; vertical-align: middle; }
-.meta { color: var(--ink2); font-size: 13px; }
-.lede { color: var(--ink2); margin: 6px 0 0; }
-.banner { margin: 12px 0 0; padding: 8px 12px; border-radius: 8px; background: var(--warnbg); border: 1px solid var(--axis); font-size: 14px; }
-.card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; margin-top: 14px; }
-.panel { margin-top: 0; border-top-left-radius: 0; border-top-right-radius: 0; }
-h2 { font-size: 17px; margin: 0 0 2px; }
+body { margin: 0; background: var(--page); color: var(--ink); font: 16px/1.55 "Segoe UI", system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; }
+.top { background: var(--head); color: var(--headink); }
+.top .in { max-width: 1160px; margin: 0 auto; padding: 26px 32px 24px; display: flex; flex-wrap: wrap; gap: 10px 32px; align-items: flex-end; justify-content: space-between; }
+.top h1 { font-size: 26px; font-weight: 650; letter-spacing: -.01em; margin: 0; line-height: 1.25; }
+.top .sub { color: var(--headsub); margin: 4px 0 0; font-size: 15.5px; max-width: 640px; }
+.badge { font-size: 11px; font-weight: 700; letter-spacing: .08em; padding: 3px 9px; border-radius: 4px; border: 1px solid rgba(255,255,255,.35); color: var(--headsub); margin-left: 12px; vertical-align: middle; }
+.meta { color: var(--headsub); font-size: 13.5px; text-align: right; line-height: 1.6; }
+.meta strong { color: var(--headink); font-weight: 600; }
+main { max-width: 1160px; margin: 0 auto; padding: 24px 32px 64px; }
+.banner { margin: 0 0 18px; padding: 10px 16px; border-radius: 8px; background: var(--warnbg); border: 1px solid var(--axis); border-left: 4px solid #d9a21b; font-size: 14.5px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 28px; box-shadow: var(--shadow); }
+.toolbar { display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; padding: 14px 24px; }
+.panel { margin-top: 16px; padding: 28px 32px 32px; }
+h2 { font-size: 20px; font-weight: 650; letter-spacing: -.005em; margin: 0 0 4px; }
+h2 ~ h2 { margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--grid); }
 p { margin: 6px 0; }
-.cap { color: var(--ink2); font-size: 14.5px; margin: 2px 0 8px; }
-.small { color: var(--ink2); font-size: 13.5px; }
-.controls { display: flex; flex-wrap: wrap; gap: 10px 20px; align-items: center; }
-label.f { font-size: 15px; color: var(--ink2); display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
-select { font: inherit; font-size: 15px; padding: 6px 8px; border-radius: 6px; border: 1px solid var(--axis); background: var(--surface); color: var(--ink); }
-.seg { display: inline-flex; border: 1px solid var(--axis); border-radius: 6px; overflow: hidden; flex-wrap: wrap; }
-.seg button { font: inherit; font-size: 14.5px; padding: 6px 12px; border: 0; background: var(--surface); color: var(--ink2); cursor: pointer; }
-.seg button[aria-pressed="true"] { background: var(--blue); color: #fff; }
-.tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 4px 0 8px; }
-.tile { border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; text-align: center; background: var(--surface); }
-.tile b { display: block; font-size: 38px; line-height: 1.1; }
-.tile span { font-size: 13.5px; color: var(--ink2); }
-.tile.w b { color: var(--red); } .tile.b b { color: var(--blue); } .tile.s b { color: var(--muted); }
-.tabs { display: flex; gap: 4px; margin-top: 14px; border-bottom: 1px solid var(--axis); overflow-x: auto; }
-.tabs button { font: inherit; font-size: 15px; padding: 8px 14px; border: 0; border-bottom: 3px solid transparent; background: none; color: var(--ink2); cursor: pointer; white-space: nowrap; }
-.tabs button[aria-selected="true"] { color: var(--ink); font-weight: 600; border-bottom-color: var(--blue); }
+.lead { font-size: 18px; font-weight: 600; margin: 4px 0 18px; line-height: 1.45; max-width: 900px; }
+.cap { color: var(--ink2); font-size: 15px; margin: 2px 0 14px; max-width: 860px; }
+.small { color: var(--ink2); font-size: 14px; }
+.controls { display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; }
+label.f { font-size: 14.5px; color: var(--ink2); display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+label.f b { color: var(--ink); font-weight: 600; }
+select { font: inherit; font-size: 14.5px; padding: 7px 30px 7px 12px; border-radius: 8px; border: 1px solid var(--axis); background: var(--surface); color: var(--ink); min-width: 150px; max-width: 100%; }
+select:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+.toolbar select { min-width: 0; }
+#meth { max-width: none; }
+.toolbar .controls { gap: 12px 22px; }
+.seg { display: inline-flex; border: 1px solid var(--axis); border-radius: 8px; overflow: hidden; margin-left: auto; }
+.seg button { font: inherit; font-size: 14.5px; font-weight: 500; padding: 8px 14px; border: 0; border-right: 1px solid var(--axis); background: var(--surface); color: var(--ink2); cursor: pointer; }
+.seg button:last-child { border-right: 0; }
+.seg button[aria-pressed="true"] { background: var(--btn); color: #fff; }
+.tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 4px 0 16px; }
+.tile { border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; background: var(--page); border-top: 4px solid var(--muted); }
+.tile b { display: block; font-size: 40px; font-weight: 650; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.tile span { font-size: 14.5px; color: var(--ink2); }
+.tile.w { border-top-color: var(--red); } .tile.b { border-top-color: var(--blue); } .tile.s { border-top-color: var(--muted); }
+.tile.w b { color: var(--red); } .tile.b b { color: var(--blue); } .tile.s b { color: var(--ink); }
+.tabs { display: flex; gap: 2px; margin-top: 20px; border-bottom: 1px solid var(--axis); overflow-x: auto; }
+.tabs button { font: inherit; font-size: 15px; font-weight: 500; padding: 11px 20px; border: 0; border-bottom: 3px solid transparent; margin-bottom: -1px; background: none; color: var(--ink2); cursor: pointer; white-space: nowrap; border-radius: 6px 6px 0 0; }
+.tabs button:hover { background: var(--zone); color: var(--ink); }
+.tabs button[aria-selected="true"] { color: var(--ink); font-weight: 650; border-bottom-color: var(--blue); }
 [hidden] { display: none !important; }
-details.info { margin-top: 8px; font-size: 14px; color: var(--ink2); }
-details.info > summary { cursor: pointer; color: var(--blue); font-size: 14px; list-style: none; }
-details.info > summary::before { content: "\24D8  "; }
-details.info ul, details.info ol { margin: 6px 0 0; padding-left: 20px; }
-details.info li { margin: 4px 0; }
-.ex { background: var(--zone); border-radius: 6px; padding: 6px 10px; margin: 8px 0 0; }
+details.info { margin-top: 18px; font-size: 14.5px; color: var(--ink2); background: var(--page); border: 1px solid var(--border); border-radius: 8px; padding: 10px 16px; }
+details.info > summary { cursor: pointer; color: var(--ink); font-weight: 600; font-size: 14.5px; list-style: none; }
+details.info > summary::before { content: "\25B8  "; color: var(--blue); }
+details.info[open] > summary::before { content: "\25BE  "; }
+details.info ul, details.info ol { margin: 8px 0 2px; padding-left: 22px; }
+details.info li { margin: 6px 0; }
+.ex { background: var(--zone); border-radius: 6px; padding: 8px 12px; margin: 10px 0 0; }
 .up { color: var(--red); } .down { color: var(--blue); }
 svg { display: block; width: 100%; height: auto; }
-svg text { fill: var(--ink); font: 14px system-ui, -apple-system, "Segoe UI", sans-serif; }
+svg text { fill: var(--ink); font: 14px "Segoe UI", system-ui, -apple-system, sans-serif; }
 svg text.m { fill: var(--muted); } svg text.s { fill: var(--ink2); }
-.legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 13.5px; color: var(--ink2); margin: 6px 0; align-items: center; }
-.legend i { display: inline-block; width: 14px; height: 10px; border-radius: 2px; vertical-align: middle; margin-right: 5px; }
-.legend b.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: middle; margin-right: 5px; }
-.scroll { max-height: 480px; overflow-y: auto; border: 1px solid var(--border); border-radius: 6px; }
-table { border-collapse: collapse; width: 100%; font-size: 13px; font-variant-numeric: tabular-nums; }
-th, td { padding: 4px 8px; text-align: right; border-bottom: 1px solid var(--grid); white-space: nowrap; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 20px; font-size: 14px; color: var(--ink2); margin: 10px 0; align-items: center; }
+.legend i { display: inline-block; width: 14px; height: 10px; border-radius: 2px; vertical-align: middle; margin-right: 6px; }
+.legend b.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: middle; margin-right: 6px; }
+.scroll { max-height: 560px; overflow: auto; border: 1px solid var(--border); border-radius: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; font-variant-numeric: tabular-nums; }
+th, td { padding: 7px 14px; text-align: right; border-bottom: 1px solid var(--grid); white-space: nowrap; }
 th:first-child, td:first-child, th:nth-child(2), td:nth-child(2) { text-align: left; }
-thead th { position: sticky; top: 0; background: var(--surface); border-bottom: 1px solid var(--axis); color: var(--ink2); font-weight: 600; }
+thead th { position: sticky; top: 0; background: var(--zone); border-bottom: 1px solid var(--axis); color: var(--ink2); font-weight: 600; }
 tr.tgt td { background: var(--band); }
-button.dl { font: inherit; font-size: 14px; padding: 6px 12px; border-radius: 6px; border: 1px solid var(--axis); background: var(--surface); color: var(--ink); cursor: pointer; }
-.nets { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 6px; }
-@media (max-width: 700px) { .nets { grid-template-columns: 1fr; } .tile b { font-size: 30px; } }
-.nets h3 { font-size: 14.5px; margin: 0; color: var(--ink2); font-weight: 600; }
-input[type=range] { vertical-align: middle; width: 150px; }
-ol.steps { padding-left: 20px; margin: 6px 0; } ol.steps li { margin: 6px 0; }
+button.dl { font: inherit; font-size: 14px; font-weight: 500; padding: 8px 16px; border-radius: 8px; border: 1px solid var(--axis); background: var(--surface); color: var(--ink); cursor: pointer; }
+button.dl:hover { background: var(--zone); border-color: var(--muted); }
+.nets { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 12px; }
+@media (max-width: 800px) { .nets, .tiles { grid-template-columns: 1fr; } .top .in, main { padding-left: 16px; padding-right: 16px; } .panel { padding: 20px 16px; } .meta { text-align: left; } .seg { margin-left: 0; } }
+.nets h3 { font-size: 15px; margin: 0 0 4px; color: var(--ink2); font-weight: 600; }
+.nets > div { background: var(--page); border: 1px solid var(--border); border-radius: 10px; padding: 12px 14px; }
+input[type=range] { vertical-align: middle; width: 200px; accent-color: var(--blue); }
+ol.steps { padding-left: 22px; margin: 10px 0; max-width: 900px; } ol.steps li { margin: 10px 0; }
 a { color: var(--blue); }
-#tip { position: fixed; pointer-events: none; z-index: 9; background: var(--ink); color: var(--page); font-size: 13px; padding: 6px 9px; border-radius: 6px; max-width: 320px; display: none; line-height: 1.4; }
+#tip { position: fixed; pointer-events: none; z-index: 9; background: var(--ink); color: var(--page); font-size: 13px; padding: 7px 11px; border-radius: 6px; max-width: 340px; display: none; line-height: 1.45; box-shadow: 0 4px 14px rgba(0,0,0,.25); }
 </style>
 </head>
 <body>
+<div class="top"><div class="in">
+  <div>
+    <h1>Does fixing one bias move it somewhere else? <span class="badge">PROTOTYPE</span></h1>
+    <p class="sub">We remove one bias from an AI language model, then check what happens to bias toward other groups.</p>
+  </div>
+  <div class="meta">Model: <strong id="model"></strong><br>Method: <strong id="method"></strong></div>
+</div></div>
 <main>
-<header>
-  <h1>Does fixing one bias move it somewhere else? <span class="badge">PROTOTYPE</span></h1>
-  <div class="meta">Model: <strong id="model"></strong> &middot; Method: <strong id="method"></strong></div>
-</header>
-<p class="lede">We remove one bias from an AI language model, then check what happens to bias toward other groups.</p>
-<details class="info" style="margin-top:2px">
+<div class="banner"><b>Prototype, not a finding.</b> Small models, short word lists, no significance tests.</div>
+<details class="info" style="margin:0 0 18px">
   <summary>What does "removing a bias" mean?</summary>
   <ul>
     <li>Inside the model, every word is a point on a giant "map". Words used in similar ways sit close together.</li>
@@ -93,10 +114,9 @@ a { color: var(--blue); }
     <li>Removing a bias means flattening the map along the line that separates the groups (say, racial groups), so they land in the same place. That also nudges every other word, which is why we check the other groups.</li>
   </ul>
 </details>
-<div class="banner"><b>Prototype, not a finding.</b> Small models, short word lists, no significance tests.</div>
 
-<div class="card">
-  <div class="controls">
+<div class="card toolbar">
+  <div class="controls" style="flex:1">
     <label class="f" id="modelwrap"><b>Model:</b> <select id="msel"></select></label>
     <label class="f" id="catwrap"><b>Remove bias:</b> <select id="cat"></select></label>
     <label class="f" id="methwrap"><b>Method:</b> <select id="meth"></select></label>
@@ -120,11 +140,11 @@ a { color: var(--blue); }
 
 <section id="p-base" class="card panel">
   <h2>How biased is each group to begin with?</h2>
-  <p id="blead" style="font-size:18px;font-weight:600;margin:2px 0 8px"></p>
+  <p id="blead" class="lead"></p>
   <p class="cap">No bias has been removed here. This is the model as it comes. Each bar is one group's score: blue = its words sit closer to positive words, red = closer to negative words.</p>
   <label class="f">Show <select id="bcat"></select></label>
   <div id="b1"></div>
-  <h2 style="margin-top:18px">Which categories are most unequal?</h2>
+  <h2>Which categories are most unequal?</h2>
   <p class="cap">Gap = the most favored group's score minus the least favored group's score, within a category. Bigger = the model treats the groups in that category more differently.</p>
   <div id="b2"></div>
   <details class="info"><summary>How to read this</summary>
@@ -138,7 +158,7 @@ a { color: var(--blue); }
 </section>
 
 <section id="p-overview" class="card panel" hidden>
-  <p id="lead" style="font-size:18px;font-weight:600;margin:2px 0 8px"></p>
+  <p id="lead" class="lead"></p>
   <div class="tiles">
     <div class="tile w"><b id="t-worse">0</b><span>categories got worse</span></div>
     <div class="tile s"><b id="t-same">0</b><span>barely changed</span></div>
@@ -317,7 +337,7 @@ function compare() {
   const keys = ALL.order, mods = keys.map(k => ALL.models[k]), rows = mods.map(modelRows);
   const cats = Object.keys(rows[0]).sort((x, y) => rows.reduce((s, r) => s + r[y].d - r[x].d, 0));
   $("cmpcap").textContent = `Removing ${target} bias, measured as ${mText()}. Change in each other category's gap, in each model.`;
-  const W = 760, L = 130, PW = 295, GAP = 20, T = 50, RH = 30, H = T + cats.length * RH + 8;
+  const W = 1040, L = 150, GAP = 40, PW = (W - L - GAP) / 2, T = 50, RH = 30, H = T + cats.length * RH + 8;
   const MM = Math.max(0.02, ...rows.flatMap(r => cats.map(c => Math.abs(r[c].d)))) * 1.1, half = (PW - 70) / 2;
   const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Compare models" });
   let agree = 0;
@@ -356,7 +376,7 @@ document.addEventListener("mousemove", e => {
 function chart1() {
   const { own, others } = stats();
   $("c1sub").textContent = `Change in the ${mText()} gap after removing ${target} bias. Red, right = more unequal. Blue, left = more equal.`;
-  const W = 760, L = 150, R = 110, T = 44, RH = 38, H = T + others.length * RH + 8;
+  const W = 1040, L = 150, R = 110, T = 44, RH = 42, H = T + others.length * RH + 8;
   const M = Math.max(0.02, ...others.map(r => Math.abs(r.d))) * 1.15;
   const w = W - L - R, x = v => L + (v + M) / (2 * M) * w, x0 = x(0);
   const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Change in bias gap for each other category" });
@@ -382,7 +402,7 @@ function chart2() {
   const b = D.before[metric], a = D.after[target][metric], idx = idxOf(zcat);
   const vs = idx.flatMap(i => [b[i], a[i]]).concat([0]);
   let lo = Math.min(...vs), hi = Math.max(...vs); const pad = Math.max((hi - lo) * 0.12, 0.01); lo -= pad; hi += pad;
-  const W = 760, L = 210, R = 70, T = 40, RH = 26, H = T + idx.length * RH + 8, x = v => L + (v - lo) / (hi - lo) * (W - L - R);
+  const W = 1040, L = 210, R = 70, T = 40, RH = 30, H = T + idx.length * RH + 8, x = v => L + (v - lo) / (hi - lo) * (W - L - R);
   const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Group scores before and after" });
   const st = niceStep((hi - lo) / 5);
   for (let v = Math.ceil(lo / st) * st; v <= hi; v += st) {
@@ -440,7 +460,7 @@ const tidx = (i, j) => i * nn - i * (i + 1) / 2 + (j - i - 1);
 
 function thrValue() { const top = +$("thr").value / 100; return sortedBefore[Math.max(0, Math.min(sortedBefore.length - 1, Math.floor((1 - top) * sortedBefore.length)))]; }
 function drawNet(host, sims, thr) {
-  const S = 420, P = 26, svg = el("svg", { viewBox: `0 0 ${S} ${S}`, role: "img", "aria-label": "Group similarity network" });
+  const S = 480, P = 30, svg = el("svg", { viewBox: `0 0 ${S} ${S}`, role: "img", "aria-label": "Group similarity network" });
   const px = n => P + n.x * (S - 2 * P), py = n => P + (1 - n.y) * (S - 2 * P);
   const edges = [];
   for (let i = 0; i < nn; i++) for (let j = i + 1; j < nn; j++) { const s = sims[tidx(i, j)]; if (s >= thr) edges.push([i, j, s]); }
@@ -475,7 +495,7 @@ function baseline() {
   const all = D.groups.map((g, i) => i).sort((i, j) => b[j] - b[i]), hi = all[0], lo = all[all.length - 1];
   const gaps = D.categories.map(c => ({ c, v: gap(b, c) })).sort((p, q) => q.v - p.v);
   $("blead").innerHTML = `Most linked to negative words: <b>${label(D.groups[lo].g)}</b> (${sgn(b[lo])}). Most positive: <b>${label(D.groups[hi].g)}</b> (${sgn(b[hi])}). Most unequal category: <b>${gaps[0].c}</b> (gap ${f3(gaps[0].v)}).`;
-  const W = 760, L = 250, R = 20, T = 30, RH = 20, H = T + idx.length * RH + 8, half = (W - L - R) / 2, mid = L + half, x = v => mid + v / mx * half;
+  const W = 1040, L = 250, R = 20, T = 30, RH = 24, H = T + idx.length * RH + 8, half = (W - L - R) / 2, mid = L + half, x = v => mid + v / mx * half;
   const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Starting score of each group" });
   el("text", { x: L, y: 12, class: "s", style: "font-weight:600" }, svg).textContent = "← more negative words";
   el("text", { x: W - R, y: 12, "text-anchor": "end", class: "s", style: "font-weight:600" }, svg).textContent = "more positive words →";
@@ -527,7 +547,7 @@ function pairChart() {
     `After removing ${target} bias, <b>${label(D.groups[A].g)}</b> and <b>${label(D.groups[B].g)}</b> are <b>${word}</b> (${mText()} measure).`;
   const rows = [A, B], vs = [b[A], b[B], a[A], a[B], 0];
   let lo = Math.min(...vs), hi = Math.max(...vs); const pad = Math.max((hi - lo) * 0.15, 0.01); lo -= pad; hi += pad;
-  const W = 760, L = 230, R = 70, T = 40, RH = 40, H = T + rows.length * RH + 8, x = v => L + (v - lo) / (hi - lo) * (W - L - R);
+  const W = 1040, L = 230, R = 70, T = 40, RH = 40, H = T + rows.length * RH + 8, x = v => L + (v - lo) / (hi - lo) * (W - L - R);
   const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Two groups before and after" });
   const st = niceStep((hi - lo) / 5);
   for (let v = Math.ceil(lo / st) * st; v <= hi; v += st) {
