@@ -11,7 +11,7 @@ This is a prototype, not a research finding: small pre-trained models, short wor
 1. Takes a pre-trained embedding (GloVe 100d and fastText 300d so far).
 2. Scores each of 72 social groups: mean cosine similarity to positive words minus mean cosine similarity to negative words (also for competent vs. incompetent).
 3. Defines a category's **gap** as its highest group score minus its lowest.
-4. "Debiases" one category by removing the subspace spanned by its distinct group centroids from every vector (the neutralize step of Bolukbasi et al., 2016). Full rank by default; `k` can cap the number of directions.
+4. "Debiases" one category with one of four methods: subtract the subspace spanned by its distinct group centroids (the neutralize step of Bolukbasi et al., 2016); the same capped at the top 3 directions; hard debias (neutralize + equalize, Bolukbasi et al., 2016, with the category's groups as the equality set); or INLP (iterative nullspace projection, Ravfogel et al., 2020, run until a held-out linear classifier cannot beat guessing). `k` in the outputs is the number of directions removed.
 5. Re-scores everything and reports how every other category's gap changed (the spillover).
 
 The dashboard (`index.html`) shows the spillover for any chosen category, per-group scores, a before/after similarity network, a comparison of any two groups, a side-by-side comparison of the two models, and CSV downloads (group scores and pairwise similarity).
@@ -30,17 +30,17 @@ python build_dashboard.py  # builds index.html from the results
 ## Files
 
 - `forge_bias.py` - scoring, subspace removal, before/after tables
-- `run.py` - runs every model at full rank and at k=3
+- `run.py` - runs every model with every method
 - `build_dashboard.py`, `dashboard_template_v4.html` - build the single-file dashboard (`index.html`)
 - `dashboard_template_v2.html` - the more technical single-model page (`forge_dashboard_v2.html`)
 - `data/groups_72.csv` - the 72 groups: category, group, words
-- `results_<model>_<fullrank|k3>_<scores|pairwise|spillover>.csv` - outputs
+- `results_<model>_<fullrank|k3|hard|inlp>_<scores|pairwise|spillover>.csv` - outputs
 
 ## Data and credits
 
 - The 72 group word lists and their categories come from Charlesworth et al. (2023), *Journal of Personality and Social Psychology*, via the authors' OSF project: https://osf.io/gzuy4/ (`stigmalists_relativegroups.csv`, `stigmaclusters_relativegroups.csv`). The lists contain offensive terms because they come from the original study of stigma in language. Categories for four rows that were blank in the clusters file (Fertility, Attractiveness) and the merge of Blue/White collar into Occupation were assigned here.
 - Embeddings are loaded through [gensim-data](https://github.com/piskvorky/gensim-data): `glove-wiki-gigaword-100` (Pennington et al., 2014) and `fasttext-wiki-news-subwords-300` (Mikolov et al., 2018).
-- Method: Bolukbasi et al. (2016), "Man is to computer programmer as woman is to homemaker?"
+- Methods: Bolukbasi et al. (2016), "Man is to computer programmer as woman is to homemaker?"; Ravfogel et al. (2020), "Null It Out" (INLP)
 
 ## Known limitations
 

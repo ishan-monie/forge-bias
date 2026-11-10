@@ -1,0 +1,1081 @@
+model,method,target_category,category,group,valence_before,competence_before,valence_after,competence_after,valence_change,competence_change,k
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Sexuality,homosexual_heterosexual,-0.05566,-0.0339,-0.03086,-0.01468,0.0248,0.01921,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Sexuality,heterosexual_homosexual,0.00889,0.02202,-0.03257,-0.00965,-0.04146,-0.03167,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Age,old_young,0.07721,0.05474,0.06328,0.04364,-0.01393,-0.0111,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Age,young_old,0.06498,0.11179,0.05619,0.10608,-0.00879,-0.00571,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Occupation,laborer_manager,0.0359,0.02056,0.04203,0.02654,0.00613,0.00598,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Occupation,manager_laborer,0.0979,0.17011,0.09351,0.16943,-0.00439,-0.00067,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Occupation,server_manager,0.05365,0.00565,0.05968,0.01165,0.00603,0.006,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Occupation,manager_server,0.0979,0.17011,0.09351,0.16943,-0.00439,-0.00067,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Immigration,immigrant_citizen,0.01153,0.05256,0.01721,0.05863,0.00568,0.00607,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Immigration,citizen_immigrant,0.01592,0.04184,0.02121,0.04776,0.00529,0.00593,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Immigration,alien_citizen,-0.08398,0.00572,-0.07679,0.01405,0.00719,0.00833,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Immigration,citizen_alien,0.01592,0.04184,0.02121,0.04776,0.00529,0.00593,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Race,aboriginal_white,0.02351,-0.02014,0.04387,-0.00318,0.02036,0.01696,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Race,white_aboriginal,0.06655,0.05524,0.05383,0.04454,-0.01272,-0.0107,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Race,arabian_white,-0.01801,0.05392,-0.01292,0.05981,0.0051,0.00589,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Race,white_arabian,0.06655,0.05524,0.05383,0.04454,-0.01272,-0.0107,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Race,latino_white,0.03011,0.02775,0.02851,0.02708,-0.0016,-0.00067,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Race,white_latino,0.06655,0.05524,0.05383,0.04454,-0.01272,-0.0107,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Race,asian_white,0.03801,0.08121,0.03633,0.08169,-0.00168,0.00048,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Race,white_asian,0.06655,0.05524,0.05383,0.04454,-0.01272,-0.0107,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Race,black_white,0.00945,-0.03,0.01586,-0.02494,0.00641,0.00506,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Race,white_black,0.06655,0.05524,0.05383,0.04454,-0.01272,-0.0107,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Race,indian_white,-0.01279,0.00379,-0.00464,0.01191,0.00815,0.00812,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Race,white_indian,0.06655,0.05524,0.05383,0.04454,-0.01272,-0.0107,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Marriage,divorced_married,-0.00449,-0.01695,-0.02125,-0.03179,-0.01676,-0.01484,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Marriage,married_divorced,-0.03492,-0.01552,-0.04688,-0.02586,-0.01197,-0.01034,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Religion,atheist_religious,-0.09692,-0.12478,-0.08315,-0.11311,0.01378,0.01167,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Religion,religious_atheist,0.03012,0.01113,0.04256,0.02218,0.01244,0.01105,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Religion,christian_otherrel,0.02951,0.02718,0.04047,0.03637,0.01096,0.00919,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Religion,otherrel_christian,-0.04303,0.02084,-0.0271,0.0363,0.01593,0.01545,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Religion,muslim_christian,-0.05393,0.04073,-0.04264,0.05244,0.01129,0.01171,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Religion,christian_muslim,0.02951,0.02718,0.04047,0.03637,0.01096,0.00919,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Mental health,schizophrenic_sane,-0.1321,-0.0859,-0.13816,-0.08994,-0.00606,-0.00404,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Mental health,sane_schizophrenic,0.1329,0.08391,0.11728,0.07125,-0.01562,-0.01266,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Mental health,autistic_sane,-0.11794,-0.01922,-0.1152,-0.01504,0.00274,0.00418,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Mental health,sane_autistic,0.1329,0.08391,0.11728,0.07125,-0.01562,-0.01266,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Mental health,bipolar_sane,-0.12939,-0.0532,-0.13776,-0.05891,-0.00837,-0.00571,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Mental health,sane_bipolar,0.1329,0.08391,0.11728,0.07125,-0.01562,-0.01266,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Mental health,drugaddict_sober,-0.08419,-0.04201,-0.08856,-0.04442,-0.00437,-0.00241,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Mental health,sober_drugaddict,-0.01889,-0.0588,-0.02013,-0.06107,-0.00125,-0.00227,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Mental health,smoker_nonsmoker,-0.05126,-0.00583,-0.05687,-0.00976,-0.00561,-0.00392,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Mental health,nonsmoker_smoker,-0.02264,-0.02868,-0.02735,-0.03309,-0.00471,-0.00441,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Mental health,depressed_happy,-0.10073,-0.03377,-0.11523,-0.04582,-0.0145,-0.01206,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Mental health,happy_depressed,0.12483,0.04004,0.12024,0.03481,-0.00459,-0.00523,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Mental health,retarded_sane,-0.08764,-0.03065,-0.08906,-0.02998,-0.00142,0.00067,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Mental health,sane_retarded,0.1329,0.08391,0.11728,0.07125,-0.01562,-0.01266,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Mental health,alcoholic_sober,-0.10224,-0.07687,-0.11499,-0.08803,-0.01276,-0.01115,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Mental health,sober_alcoholic,-0.01665,-0.04678,-0.01917,-0.04999,-0.00252,-0.00322,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Height,short_tall,0.00893,0.02015,-0.0042,0.01124,-0.01313,-0.00891,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Height,tall_short,0.05921,0.02363,0.04973,0.01649,-0.00948,-0.00714,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Employment,unemployed_employed,-0.0526,0.03901,-0.05967,0.03443,-0.00708,-0.00459,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Employment,employed_unemployed,0.13525,0.22127,0.12576,0.21719,-0.00949,-0.00408,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Physical disability,deaf_abled,-0.04183,-0.02861,-0.0419,-0.02763,-7e-05,0.00098,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Physical disability,abled_deaf,0.06899,0.1095,0.05283,0.10105,-0.01617,-0.00845,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Physical disability,disabled_abled,-0.06026,-0.03516,-0.0606,-0.03501,-0.00034,0.00016,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Physical disability,abled_disabled,0.06899,0.1095,0.05283,0.10105,-0.01617,-0.00845,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Physical disability,wheelchair_abled,-0.03889,-0.01827,-0.04188,-0.02048,-0.00299,-0.00221,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Physical disability,abled_wheelchair,0.06899,0.1095,0.05283,0.10105,-0.01617,-0.00845,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Physical disability,mute_abled,-0.04458,-0.05722,-0.04695,-0.05929,-0.00238,-0.00208,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Physical disability,abled_mute,0.06899,0.1095,0.05283,0.10105,-0.01617,-0.00845,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Physical disability,blind_abled,-0.04526,-0.01516,-0.05123,-0.01913,-0.00597,-0.00397,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Physical disability,abled_blind,0.06899,0.1095,0.05283,0.10105,-0.01617,-0.00845,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Weight,fat_thin,0.00692,-0.00422,-0.00383,-0.01224,-0.01075,-0.00802,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Weight,thin_fat,0.01064,-0.03238,0.00298,-0.04066,-0.00766,-0.00828,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,SES,uneducated_educated,-0.11548,-0.13254,-0.12268,-0.13793,-0.0072,-0.00539,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,SES,educated_uneducated,0.10124,0.1225,0.09718,0.12139,-0.00406,-0.00112,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,SES,poor_rich,-0.05097,-0.08786,-0.05512,-0.09206,-0.00416,-0.0042,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,SES,rich_poor,0.06318,0.01478,0.05715,0.01014,-0.00603,-0.00465,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Fertility,infertile_fertile,-0.07948,-0.08104,-0.10568,-0.10436,-0.0262,-0.02331,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Fertility,fertile_infertile,-0.04702,-0.0205,-0.05946,-0.03025,-0.01244,-0.00975,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Attractiveness,unattractive_attractive,-0.18279,-0.13155,-0.19,-0.13716,-0.00721,-0.00561,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Sexuality,Attractiveness,attractive_unattractive,0.14842,0.08571,0.13684,0.07534,-0.01158,-0.01037,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Sexuality,homosexual_heterosexual,-0.05566,-0.0339,-0.05259,-0.052,0.00307,-0.0181,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Sexuality,heterosexual_homosexual,0.00889,0.02202,0.01113,0.01644,0.00223,-0.00558,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Age,old_young,0.07721,0.05474,0.07083,0.08074,-0.00638,0.026,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Age,young_old,0.06498,0.11179,0.07407,0.08022,0.00909,-0.03157,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Occupation,laborer_manager,0.0359,0.02056,0.03477,0.02873,-0.00113,0.00817,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Occupation,manager_laborer,0.0979,0.17011,0.09965,0.17142,0.00175,0.00131,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Occupation,server_manager,0.05365,0.00565,0.05421,0.00822,0.00056,0.00256,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Occupation,manager_server,0.0979,0.17011,0.09965,0.17142,0.00175,0.00131,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Immigration,immigrant_citizen,0.01153,0.05256,0.01409,0.04563,0.00256,-0.00693,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Immigration,citizen_immigrant,0.01592,0.04184,0.01442,0.04947,-0.0015,0.00764,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Immigration,alien_citizen,-0.08398,0.00572,-0.08425,0.00063,-0.00027,-0.00509,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Immigration,citizen_alien,0.01592,0.04184,0.01442,0.04947,-0.0015,0.00764,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Race,aboriginal_white,0.02351,-0.02014,0.01922,3e-05,-0.00429,0.02017,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Race,white_aboriginal,0.06655,0.05524,0.06616,0.06124,-0.00039,0.006,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Race,arabian_white,-0.01801,0.05392,-0.01928,0.05825,-0.00127,0.00433,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Race,white_arabian,0.06655,0.05524,0.06616,0.06124,-0.00039,0.006,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Race,latino_white,0.03011,0.02775,0.0291,0.03545,-0.00101,0.0077,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Race,white_latino,0.06655,0.05524,0.06616,0.06124,-0.00039,0.006,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Race,asian_white,0.03801,0.08121,0.03928,0.07878,0.00127,-0.00243,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Race,white_asian,0.06655,0.05524,0.06616,0.06124,-0.00039,0.006,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Race,black_white,0.00945,-0.03,0.00934,-0.0287,-0.00011,0.0013,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Race,white_black,0.06655,0.05524,0.06616,0.06124,-0.00039,0.006,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Race,indian_white,-0.01279,0.00379,-0.01224,0.00159,0.00055,-0.0022,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Race,white_indian,0.06655,0.05524,0.06616,0.06124,-0.00039,0.006,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Marriage,divorced_married,-0.00449,-0.01695,-0.00504,-0.01566,-0.00055,0.00129,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Marriage,married_divorced,-0.03492,-0.01552,-0.03653,-0.01309,-0.00161,0.00243,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Religion,atheist_religious,-0.09692,-0.12478,-0.10206,-0.10709,-0.00514,0.01769,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Religion,religious_atheist,0.03012,0.01113,0.02766,0.02366,-0.00246,0.01254,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Religion,christian_otherrel,0.02951,0.02718,0.0258,0.04426,-0.00371,0.01708,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Religion,otherrel_christian,-0.04303,0.02084,-0.04519,0.02789,-0.00216,0.00705,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Religion,muslim_christian,-0.05393,0.04073,-0.05514,0.04266,-0.00121,0.00193,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Religion,christian_muslim,0.02951,0.02718,0.0258,0.04426,-0.00371,0.01708,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Mental health,schizophrenic_sane,-0.1321,-0.0859,-0.13297,-0.08944,-0.00087,-0.00354,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Mental health,sane_schizophrenic,0.1329,0.08391,0.1331,0.09098,0.0002,0.00707,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Mental health,autistic_sane,-0.11794,-0.01922,-0.11882,-0.02398,-0.00088,-0.00476,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Mental health,sane_autistic,0.1329,0.08391,0.1331,0.09098,0.0002,0.00707,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Mental health,bipolar_sane,-0.12939,-0.0532,-0.13048,-0.05724,-0.00109,-0.00404,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Mental health,sane_bipolar,0.1329,0.08391,0.1331,0.09098,0.0002,0.00707,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Mental health,drugaddict_sober,-0.08419,-0.04201,-0.08212,-0.05797,0.00207,-0.01597,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Mental health,sober_drugaddict,-0.01889,-0.0588,-0.01931,-0.0583,-0.00043,0.0005,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Mental health,smoker_nonsmoker,-0.05126,-0.00583,-0.05099,-0.00996,0.00027,-0.00412,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Mental health,nonsmoker_smoker,-0.02264,-0.02868,-0.02342,-0.02702,-0.00079,0.00166,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Mental health,depressed_happy,-0.10073,-0.03377,-0.10204,-0.03522,-0.00132,-0.00146,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Mental health,happy_depressed,0.12483,0.04004,0.12951,0.03458,0.00468,-0.00546,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Mental health,retarded_sane,-0.08764,-0.03065,-0.08761,-0.03559,2e-05,-0.00494,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Mental health,sane_retarded,0.1329,0.08391,0.1331,0.09098,0.0002,0.00707,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Mental health,alcoholic_sober,-0.10224,-0.07687,-0.10216,-0.0867,7e-05,-0.00982,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Mental health,sober_alcoholic,-0.01665,-0.04678,-0.01692,-0.04686,-0.00027,-8e-05,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Height,short_tall,0.00893,0.02015,0.0106,0.01531,0.00167,-0.00484,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Height,tall_short,0.05921,0.02363,0.06279,0.01444,0.00358,-0.00918,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Employment,unemployed_employed,-0.0526,0.03901,-0.05229,0.03344,0.00031,-0.00558,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Employment,employed_unemployed,0.13525,0.22127,0.13816,0.2201,0.00291,-0.00117,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Physical disability,deaf_abled,-0.04183,-0.02861,-0.04285,-0.02635,-0.00102,0.00226,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Physical disability,abled_deaf,0.06899,0.1095,0.07123,0.10879,0.00224,-0.0007,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Physical disability,disabled_abled,-0.06026,-0.03516,-0.06044,-0.03859,-0.00018,-0.00343,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Physical disability,abled_disabled,0.06899,0.1095,0.07123,0.10879,0.00224,-0.0007,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Physical disability,wheelchair_abled,-0.03889,-0.01827,-0.03886,-0.02133,3e-05,-0.00305,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Physical disability,abled_wheelchair,0.06899,0.1095,0.07123,0.10879,0.00224,-0.0007,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Physical disability,mute_abled,-0.04458,-0.05722,-0.04631,-0.0528,-0.00173,0.00441,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Physical disability,abled_mute,0.06899,0.1095,0.07123,0.10879,0.00224,-0.0007,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Physical disability,blind_abled,-0.04526,-0.01516,-0.04574,-0.01589,-0.00048,-0.00073,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Physical disability,abled_blind,0.06899,0.1095,0.07123,0.10879,0.00224,-0.0007,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Weight,fat_thin,0.00692,-0.00422,0.00667,-0.00023,-0.00025,0.00398,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Weight,thin_fat,0.01064,-0.03238,0.00981,-0.02968,-0.00084,0.0027,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,SES,uneducated_educated,-0.11548,-0.13254,-0.11867,-0.12338,-0.00318,0.00916,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,SES,educated_uneducated,0.10124,0.1225,0.10229,0.12758,0.00105,0.00508,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,SES,poor_rich,-0.05097,-0.08786,-0.05273,-0.08377,-0.00176,0.00409,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,SES,rich_poor,0.06318,0.01478,0.06235,0.02537,-0.00083,0.01059,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Fertility,infertile_fertile,-0.07948,-0.08104,-0.08231,-0.0725,-0.00284,0.00855,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Fertility,fertile_infertile,-0.04702,-0.0205,-0.04614,-0.02916,0.00088,-0.00865,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Attractiveness,unattractive_attractive,-0.18279,-0.13155,-0.18355,-0.14212,-0.00076,-0.01057,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Age,Attractiveness,attractive_unattractive,0.14842,0.08571,0.15539,0.07273,0.00697,-0.01298,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Sexuality,homosexual_heterosexual,-0.05566,-0.0339,-0.05548,-0.01766,0.00018,0.01624,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Sexuality,heterosexual_homosexual,0.00889,0.02202,0.00794,0.02931,-0.00095,0.00729,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Age,old_young,0.07721,0.05474,0.08487,0.05579,0.00766,0.00106,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Age,young_old,0.06498,0.11179,0.07044,0.11282,0.00546,0.00104,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Occupation,laborer_manager,0.0359,0.02056,0.06803,0.05971,0.03213,0.03916,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Occupation,manager_laborer,0.0979,0.17011,0.05651,0.05137,-0.04139,-0.11874,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Occupation,server_manager,0.05365,0.00565,0.06745,0.05767,0.0138,0.05202,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Occupation,manager_server,0.0979,0.17011,0.05651,0.05137,-0.04139,-0.11874,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Immigration,immigrant_citizen,0.01153,0.05256,0.01637,0.05466,0.00484,0.0021,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Immigration,citizen_immigrant,0.01592,0.04184,0.02099,0.04668,0.00507,0.00485,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Immigration,alien_citizen,-0.08398,0.00572,-0.07671,0.02449,0.00727,0.01878,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Immigration,citizen_alien,0.01592,0.04184,0.02099,0.04668,0.00507,0.00485,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Race,aboriginal_white,0.02351,-0.02014,0.0343,-0.01486,0.01079,0.00528,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Race,white_aboriginal,0.06655,0.05524,0.07331,0.04884,0.00676,-0.0064,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Race,arabian_white,-0.01801,0.05392,-0.01523,0.04932,0.00279,-0.0046,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Race,white_arabian,0.06655,0.05524,0.07331,0.04884,0.00676,-0.0064,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Race,latino_white,0.03011,0.02775,0.02991,0.01669,-0.00021,-0.01106,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Race,white_latino,0.06655,0.05524,0.07331,0.04884,0.00676,-0.0064,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Race,asian_white,0.03801,0.08121,0.04289,0.06365,0.00487,-0.01756,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Race,white_asian,0.06655,0.05524,0.07331,0.04884,0.00676,-0.0064,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Race,black_white,0.00945,-0.03,0.01442,-0.02317,0.00497,0.00683,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Race,white_black,0.06655,0.05524,0.07331,0.04884,0.00676,-0.0064,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Race,indian_white,-0.01279,0.00379,-0.00169,0.01825,0.01109,0.01446,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Race,white_indian,0.06655,0.05524,0.07331,0.04884,0.00676,-0.0064,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Marriage,divorced_married,-0.00449,-0.01695,-0.00199,-0.01035,0.0025,0.0066,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Marriage,married_divorced,-0.03492,-0.01552,-0.03411,-0.00467,0.0008,0.01085,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Religion,atheist_religious,-0.09692,-0.12478,-0.08934,-0.09685,0.00759,0.02793,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Religion,religious_atheist,0.03012,0.01113,0.0363,0.01283,0.00617,0.00171,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Religion,christian_otherrel,0.02951,0.02718,0.03837,0.02133,0.00887,-0.00585,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Religion,otherrel_christian,-0.04303,0.02084,-0.03727,0.02397,0.00576,0.00312,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Religion,muslim_christian,-0.05393,0.04073,-0.04893,0.03561,0.005,-0.00512,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Religion,christian_muslim,0.02951,0.02718,0.03837,0.02133,0.00887,-0.00585,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Mental health,schizophrenic_sane,-0.1321,-0.0859,-0.13509,-0.06472,-0.00299,0.02118,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Mental health,sane_schizophrenic,0.1329,0.08391,0.133,0.07983,0.0001,-0.00408,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Mental health,autistic_sane,-0.11794,-0.01922,-0.11981,-0.01252,-0.00187,0.0067,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Mental health,sane_autistic,0.1329,0.08391,0.133,0.07983,0.0001,-0.00408,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Mental health,bipolar_sane,-0.12939,-0.0532,-0.13303,-0.04423,-0.00364,0.00897,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Mental health,sane_bipolar,0.1329,0.08391,0.133,0.07983,0.0001,-0.00408,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Mental health,drugaddict_sober,-0.08419,-0.04201,-0.08584,-0.01551,-0.00165,0.0265,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Mental health,sober_drugaddict,-0.01889,-0.0588,-0.01482,-0.0303,0.00407,0.0285,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Mental health,smoker_nonsmoker,-0.05126,-0.00583,-0.05265,0.01349,-0.00139,0.01932,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Mental health,nonsmoker_smoker,-0.02264,-0.02868,-0.0226,-0.01271,4e-05,0.01598,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Mental health,depressed_happy,-0.10073,-0.03377,-0.10914,-0.05297,-0.00841,-0.0192,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Mental health,happy_depressed,0.12483,0.04004,0.12847,0.05363,0.00364,0.01359,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Mental health,retarded_sane,-0.08764,-0.03065,-0.08861,-0.02659,-0.00097,0.00406,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Mental health,sane_retarded,0.1329,0.08391,0.133,0.07983,0.0001,-0.00408,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Mental health,alcoholic_sober,-0.10224,-0.07687,-0.10341,-0.0561,-0.00118,0.02077,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Mental health,sober_alcoholic,-0.01665,-0.04678,-0.01415,-0.02114,0.00251,0.02564,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Height,short_tall,0.00893,0.02015,0.01106,0.0256,0.00213,0.00545,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Height,tall_short,0.05921,0.02363,0.07299,0.06374,0.01378,0.04012,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Employment,unemployed_employed,-0.0526,0.03901,-0.05111,0.02223,0.00149,-0.01679,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Employment,employed_unemployed,0.13525,0.22127,0.1324,0.16886,-0.00285,-0.05241,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Physical disability,deaf_abled,-0.04183,-0.02861,-0.04054,-0.02222,0.0013,0.00639,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Physical disability,abled_deaf,0.06899,0.1095,0.07178,0.12104,0.00279,0.01155,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Physical disability,disabled_abled,-0.06026,-0.03516,-0.05838,-0.02624,0.00188,0.00892,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Physical disability,abled_disabled,0.06899,0.1095,0.07178,0.12104,0.00279,0.01155,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Physical disability,wheelchair_abled,-0.03889,-0.01827,-0.03732,-0.01536,0.00157,0.00291,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Physical disability,abled_wheelchair,0.06899,0.1095,0.07178,0.12104,0.00279,0.01155,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Physical disability,mute_abled,-0.04458,-0.05722,-0.047,-0.0547,-0.00242,0.00251,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Physical disability,abled_mute,0.06899,0.1095,0.07178,0.12104,0.00279,0.01155,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Physical disability,blind_abled,-0.04526,-0.01516,-0.0472,-0.02573,-0.00195,-0.01057,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Physical disability,abled_blind,0.06899,0.1095,0.07178,0.12104,0.00279,0.01155,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Weight,fat_thin,0.00692,-0.00422,0.01142,0.01486,0.00449,0.01907,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Weight,thin_fat,0.01064,-0.03238,0.01598,-0.00552,0.00534,0.02686,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,SES,uneducated_educated,-0.11548,-0.13254,-0.10868,-0.10326,0.00681,0.02928,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,SES,educated_uneducated,0.10124,0.1225,0.09976,0.10534,-0.00147,-0.01717,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,SES,poor_rich,-0.05097,-0.08786,-0.04325,-0.068,0.00771,0.01986,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,SES,rich_poor,0.06318,0.01478,0.07321,0.02148,0.01003,0.00669,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Fertility,infertile_fertile,-0.07948,-0.08104,-0.07651,-0.06608,0.00297,0.01496,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Fertility,fertile_infertile,-0.04702,-0.0205,-0.04245,0.00656,0.00457,0.02707,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Attractiveness,unattractive_attractive,-0.18279,-0.13155,-0.18824,-0.11371,-0.00545,0.01784,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Occupation,Attractiveness,attractive_unattractive,0.14842,0.08571,0.1495,0.09018,0.00108,0.00447,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Sexuality,homosexual_heterosexual,-0.05566,-0.0339,-0.02152,-0.01862,0.03414,0.01528,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Sexuality,heterosexual_homosexual,0.00889,0.02202,0.03209,0.03147,0.02319,0.00945,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Age,old_young,0.07721,0.05474,0.06823,0.04779,-0.00898,-0.00694,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Age,young_old,0.06498,0.11179,0.05636,0.10621,-0.00862,-0.00558,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Occupation,laborer_manager,0.0359,0.02056,0.03206,0.01494,-0.00384,-0.00561,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Occupation,manager_laborer,0.0979,0.17011,0.02495,0.13821,-0.07295,-0.0319,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Occupation,server_manager,0.05365,0.00565,0.04527,-0.0019,-0.00839,-0.00756,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Occupation,manager_server,0.0979,0.17011,0.02495,0.13821,-0.07295,-0.0319,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Immigration,immigrant_citizen,0.01153,0.05256,0.02324,0.04914,0.01171,-0.00343,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Immigration,citizen_immigrant,0.01592,0.04184,0.01287,0.03929,-0.00305,-0.00255,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Immigration,alien_citizen,-0.08398,0.00572,0.02025,0.04512,0.10423,0.03941,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Immigration,citizen_alien,0.01592,0.04184,0.01287,0.03929,-0.00305,-0.00255,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Race,aboriginal_white,0.02351,-0.02014,0.0186,-0.02117,-0.00491,-0.00103,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Race,white_aboriginal,0.06655,0.05524,0.06548,0.05172,-0.00107,-0.00352,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Race,arabian_white,-0.01801,0.05392,0.00222,0.06087,0.02024,0.00695,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Race,white_arabian,0.06655,0.05524,0.06548,0.05172,-0.00107,-0.00352,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Race,latino_white,0.03011,0.02775,0.04624,0.0306,0.01612,0.00285,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Race,white_latino,0.06655,0.05524,0.06548,0.05172,-0.00107,-0.00352,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Race,asian_white,0.03801,0.08121,0.01937,0.07017,-0.01865,-0.01104,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Race,white_asian,0.06655,0.05524,0.06548,0.05172,-0.00107,-0.00352,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Race,black_white,0.00945,-0.03,0.0334,-0.02123,0.02395,0.00877,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Race,white_black,0.06655,0.05524,0.06548,0.05172,-0.00107,-0.00352,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Race,indian_white,-0.01279,0.00379,-0.01416,0.0017,-0.00137,-0.00209,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Race,white_indian,0.06655,0.05524,0.06548,0.05172,-0.00107,-0.00352,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Marriage,divorced_married,-0.00449,-0.01695,0.02571,-0.00896,0.0302,0.00799,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Marriage,married_divorced,-0.03492,-0.01552,-0.01872,-0.00991,0.0162,0.00561,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Religion,atheist_religious,-0.09692,-0.12478,-0.05874,-0.10591,0.03818,0.01887,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Religion,religious_atheist,0.03012,0.01113,0.03805,0.01595,0.00793,0.00482,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Religion,christian_otherrel,0.02951,0.02718,0.03534,0.02882,0.00583,0.00164,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Religion,otherrel_christian,-0.04303,0.02084,-0.01867,0.03203,0.02436,0.01119,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Religion,muslim_christian,-0.05393,0.04073,-0.0419,0.045,0.01203,0.00427,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Religion,christian_muslim,0.02951,0.02718,0.03534,0.02882,0.00583,0.00164,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Mental health,schizophrenic_sane,-0.1321,-0.0859,-0.11193,-0.07663,0.02017,0.00927,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Mental health,sane_schizophrenic,0.1329,0.08391,0.13133,0.0806,-0.00157,-0.00331,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Mental health,autistic_sane,-0.11794,-0.01922,-0.11344,-0.01839,0.0045,0.00083,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Mental health,sane_autistic,0.1329,0.08391,0.13133,0.0806,-0.00157,-0.00331,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Mental health,bipolar_sane,-0.12939,-0.0532,-0.12284,-0.05068,0.00655,0.00252,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Mental health,sane_bipolar,0.1329,0.08391,0.13133,0.0806,-0.00157,-0.00331,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Mental health,drugaddict_sober,-0.08419,-0.04201,-0.02624,-0.01726,0.05795,0.02475,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Mental health,sober_drugaddict,-0.01889,-0.0588,-0.00756,-0.05442,0.01133,0.00438,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Mental health,smoker_nonsmoker,-0.05126,-0.00583,-0.0076,0.01309,0.04366,0.01893,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Mental health,nonsmoker_smoker,-0.02264,-0.02868,-0.01583,-0.0269,0.0068,0.00178,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Mental health,depressed_happy,-0.10073,-0.03377,-0.11217,-0.04202,-0.01145,-0.00826,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Mental health,happy_depressed,0.12483,0.04004,0.10746,0.03034,-0.01737,-0.0097,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Mental health,retarded_sane,-0.08764,-0.03065,-0.06257,-0.02156,0.02507,0.00909,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Mental health,sane_retarded,0.1329,0.08391,0.13133,0.0806,-0.00157,-0.00331,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Mental health,alcoholic_sober,-0.10224,-0.07687,-0.06583,-0.06303,0.0364,0.01384,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Mental health,sober_alcoholic,-0.01665,-0.04678,-0.00795,-0.04387,0.0087,0.00291,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Height,short_tall,0.00893,0.02015,0.02426,0.02883,0.01532,0.00868,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Height,tall_short,0.05921,0.02363,0.06745,0.03042,0.00825,0.00679,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Employment,unemployed_employed,-0.0526,0.03901,-0.05531,0.03259,-0.00271,-0.00642,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Employment,employed_unemployed,0.13525,0.22127,0.11358,0.20831,-0.02167,-0.01296,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Physical disability,deaf_abled,-0.04183,-0.02861,-0.02606,-0.02244,0.01578,0.00618,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Physical disability,abled_deaf,0.06899,0.1095,0.07536,0.11238,0.00637,0.00289,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Physical disability,disabled_abled,-0.06026,-0.03516,-0.05581,-0.03504,0.00445,0.00012,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Physical disability,abled_disabled,0.06899,0.1095,0.07536,0.11238,0.00637,0.00289,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Physical disability,wheelchair_abled,-0.03889,-0.01827,-0.03814,-0.02,0.00075,-0.00173,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Physical disability,abled_wheelchair,0.06899,0.1095,0.07536,0.11238,0.00637,0.00289,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Physical disability,mute_abled,-0.04458,-0.05722,-0.0343,-0.05299,0.01028,0.00423,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Physical disability,abled_mute,0.06899,0.1095,0.07536,0.11238,0.00637,0.00289,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Physical disability,blind_abled,-0.04526,-0.01516,-0.03568,-0.01249,0.00958,0.00267,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Physical disability,abled_blind,0.06899,0.1095,0.07536,0.11238,0.00637,0.00289,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Weight,fat_thin,0.00692,-0.00422,0.02705,0.00396,0.02012,0.00818,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Weight,thin_fat,0.01064,-0.03238,0.01198,-0.03101,0.00134,0.00137,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,SES,uneducated_educated,-0.11548,-0.13254,-0.07923,-0.11898,0.03625,0.01356,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,SES,educated_uneducated,0.10124,0.1225,0.09867,0.12182,-0.00256,-0.00068,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,SES,poor_rich,-0.05097,-0.08786,-0.04939,-0.09249,0.00158,-0.00463,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,SES,rich_poor,0.06318,0.01478,0.05143,0.01042,-0.01175,-0.00436,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Fertility,infertile_fertile,-0.07948,-0.08104,-0.05946,-0.07481,0.02002,0.00623,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Fertility,fertile_infertile,-0.04702,-0.0205,-0.02607,-0.0109,0.02095,0.0096,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Attractiveness,unattractive_attractive,-0.18279,-0.13155,-0.14962,-0.11701,0.03317,0.01454,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Immigration,Attractiveness,attractive_unattractive,0.14842,0.08571,0.13236,0.07753,-0.01606,-0.00818,2
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Sexuality,homosexual_heterosexual,-0.05566,-0.0339,-0.05565,-0.0086,1e-05,0.0253,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Sexuality,heterosexual_homosexual,0.00889,0.02202,-0.02639,0.0129,-0.03528,-0.00912,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Age,old_young,0.07721,0.05474,0.05541,0.02297,-0.0218,-0.03177,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Age,young_old,0.06498,0.11179,0.04422,0.08294,-0.02076,-0.02885,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Occupation,laborer_manager,0.0359,0.02056,0.02269,0.00484,-0.01321,-0.01571,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Occupation,manager_laborer,0.0979,0.17011,0.06397,0.12915,-0.03393,-0.04096,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Occupation,server_manager,0.05365,0.00565,0.05522,0.01051,0.00156,0.00486,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Occupation,manager_server,0.0979,0.17011,0.06397,0.12915,-0.03393,-0.04096,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Immigration,immigrant_citizen,0.01153,0.05256,-0.00754,0.02521,-0.01907,-0.02735,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Immigration,citizen_immigrant,0.01592,0.04184,0.00641,0.02926,-0.00951,-0.01257,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Immigration,alien_citizen,-0.08398,0.00572,-0.09898,-0.01076,-0.01501,-0.01648,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Immigration,citizen_alien,0.01592,0.04184,0.00641,0.02926,-0.00951,-0.01257,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Race,aboriginal_white,0.02351,-0.02014,0.01705,0.0064,-0.00646,0.02654,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Race,white_aboriginal,0.06655,0.05524,0.01074,0.00096,-0.05581,-0.05428,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Race,arabian_white,-0.01801,0.05392,0.01581,0.0042,0.03382,-0.04972,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Race,white_arabian,0.06655,0.05524,0.01074,0.00096,-0.05581,-0.05428,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Race,latino_white,0.03011,0.02775,0.01594,0.00424,-0.01417,-0.02352,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Race,white_latino,0.06655,0.05524,0.01074,0.00096,-0.05581,-0.05428,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Race,asian_white,0.03801,0.08121,0.01623,0.00651,-0.02179,-0.0747,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Race,white_asian,0.06655,0.05524,0.01074,0.00096,-0.05581,-0.05428,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Race,black_white,0.00945,-0.03,0.01718,0.00386,0.00773,0.03386,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Race,white_black,0.06655,0.05524,0.01074,0.00096,-0.05581,-0.05428,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Race,indian_white,-0.01279,0.00379,0.01678,0.00691,0.02957,0.00312,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Race,white_indian,0.06655,0.05524,0.01074,0.00096,-0.05581,-0.05428,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Marriage,divorced_married,-0.00449,-0.01695,-0.01921,-0.03554,-0.01472,-0.01859,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Marriage,married_divorced,-0.03492,-0.01552,-0.05009,-0.02426,-0.01517,-0.00874,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Religion,atheist_religious,-0.09692,-0.12478,-0.08493,-0.11152,0.012,0.01326,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Religion,religious_atheist,0.03012,0.01113,0.04826,0.0168,0.01813,0.00567,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Religion,christian_otherrel,0.02951,0.02718,0.02897,0.01787,-0.00054,-0.00931,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Religion,otherrel_christian,-0.04303,0.02084,-0.01821,0.00529,0.02482,-0.01556,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Religion,muslim_christian,-0.05393,0.04073,-0.0103,0.01613,0.04363,-0.0246,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Religion,christian_muslim,0.02951,0.02718,0.02897,0.01787,-0.00054,-0.00931,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Mental health,schizophrenic_sane,-0.1321,-0.0859,-0.13811,-0.06656,-0.00601,0.01934,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Mental health,sane_schizophrenic,0.1329,0.08391,0.13045,0.06539,-0.00245,-0.01852,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Mental health,autistic_sane,-0.11794,-0.01922,-0.12616,-0.01054,-0.00823,0.00868,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Mental health,sane_autistic,0.1329,0.08391,0.13045,0.06539,-0.00245,-0.01852,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Mental health,bipolar_sane,-0.12939,-0.0532,-0.15024,-0.05414,-0.02085,-0.00094,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Mental health,sane_bipolar,0.1329,0.08391,0.13045,0.06539,-0.00245,-0.01852,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Mental health,drugaddict_sober,-0.08419,-0.04201,-0.08959,-0.02337,-0.0054,0.01863,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Mental health,sober_drugaddict,-0.01889,-0.0588,-0.01142,-0.03487,0.00747,0.02392,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Mental health,smoker_nonsmoker,-0.05126,-0.00583,-0.06064,-0.00845,-0.00938,-0.00262,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Mental health,nonsmoker_smoker,-0.02264,-0.02868,-0.0215,-0.02042,0.00114,0.00826,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Mental health,depressed_happy,-0.10073,-0.03377,-0.11824,-0.0608,-0.01752,-0.02704,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Mental health,happy_depressed,0.12483,0.04004,0.14289,0.04885,0.01807,0.00881,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Mental health,retarded_sane,-0.08764,-0.03065,-0.09314,-0.03099,-0.00551,-0.00034,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Mental health,sane_retarded,0.1329,0.08391,0.13045,0.06539,-0.00245,-0.01852,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Mental health,alcoholic_sober,-0.10224,-0.07687,-0.12231,-0.08251,-0.02008,-0.00563,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Mental health,sober_alcoholic,-0.01665,-0.04678,-0.0123,-0.02659,0.00435,0.02018,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Height,short_tall,0.00893,0.02015,-0.00987,0.01828,-0.0188,-0.00187,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Height,tall_short,0.05921,0.02363,0.0532,0.03036,-0.00601,0.00674,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Employment,unemployed_employed,-0.0526,0.03901,-0.07748,0.00454,-0.02488,-0.03447,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Employment,employed_unemployed,0.13525,0.22127,0.11017,0.17285,-0.02508,-0.04842,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Physical disability,deaf_abled,-0.04183,-0.02861,-0.03448,-0.0226,0.00735,0.00602,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Physical disability,abled_deaf,0.06899,0.1095,0.0622,0.10144,-0.0068,-0.00806,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Physical disability,disabled_abled,-0.06026,-0.03516,-0.05994,-0.03486,0.00032,0.0003,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Physical disability,abled_disabled,0.06899,0.1095,0.0622,0.10144,-0.0068,-0.00806,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Physical disability,wheelchair_abled,-0.03889,-0.01827,-0.04504,-0.02699,-0.00615,-0.00872,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Physical disability,abled_wheelchair,0.06899,0.1095,0.0622,0.10144,-0.0068,-0.00806,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Physical disability,mute_abled,-0.04458,-0.05722,-0.04722,-0.04516,-0.00264,0.01205,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Physical disability,abled_mute,0.06899,0.1095,0.0622,0.10144,-0.0068,-0.00806,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Physical disability,blind_abled,-0.04526,-0.01516,-0.04989,-0.02793,-0.00464,-0.01277,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Physical disability,abled_blind,0.06899,0.1095,0.0622,0.10144,-0.0068,-0.00806,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Weight,fat_thin,0.00692,-0.00422,-0.00408,-0.00711,-0.011,-0.00289,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Weight,thin_fat,0.01064,-0.03238,0.02029,-0.01,0.00965,0.02239,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,SES,uneducated_educated,-0.11548,-0.13254,-0.12181,-0.11671,-0.00633,0.01583,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,SES,educated_uneducated,0.10124,0.1225,0.09176,0.09606,-0.00947,-0.02644,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,SES,poor_rich,-0.05097,-0.08786,-0.04402,-0.08546,0.00694,0.0024,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,SES,rich_poor,0.06318,0.01478,0.04701,-0.00414,-0.01617,-0.01893,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Fertility,infertile_fertile,-0.07948,-0.08104,-0.09865,-0.08777,-0.01917,-0.00672,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Fertility,fertile_infertile,-0.04702,-0.0205,-0.05594,-0.01895,-0.00892,0.00156,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Attractiveness,unattractive_attractive,-0.18279,-0.13155,-0.19017,-0.11458,-0.00738,0.01697,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Race,Attractiveness,attractive_unattractive,0.14842,0.08571,0.14197,0.08074,-0.00646,-0.00497,6
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Sexuality,homosexual_heterosexual,-0.05566,-0.0339,-0.05205,-0.03368,0.0036,0.00022,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Sexuality,heterosexual_homosexual,0.00889,0.02202,0.01021,0.02297,0.00132,0.00096,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Age,old_young,0.07721,0.05474,0.06683,0.0574,-0.01038,0.00266,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Age,young_old,0.06498,0.11179,0.0533,0.11578,-0.01168,0.00399,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Occupation,laborer_manager,0.0359,0.02056,0.0298,0.02129,-0.0061,0.00073,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Occupation,manager_laborer,0.0979,0.17011,0.09318,0.17125,-0.00472,0.00115,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Occupation,server_manager,0.05365,0.00565,0.05056,0.00593,-0.00309,0.00028,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Occupation,manager_server,0.0979,0.17011,0.09318,0.17125,-0.00472,0.00115,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Immigration,immigrant_citizen,0.01153,0.05256,0.00225,0.05414,-0.00928,0.00158,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Immigration,citizen_immigrant,0.01592,0.04184,0.01291,0.04237,-0.00301,0.00053,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Immigration,alien_citizen,-0.08398,0.00572,-0.09776,0.00596,-0.01378,0.00024,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Immigration,citizen_alien,0.01592,0.04184,0.01291,0.04237,-0.00301,0.00053,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Race,aboriginal_white,0.02351,-0.02014,0.02279,-0.01974,-0.00072,0.0004,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Race,white_aboriginal,0.06655,0.05524,0.06145,0.05574,-0.0051,0.0005,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Race,arabian_white,-0.01801,0.05392,-0.02542,0.05418,-0.0074,0.00026,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Race,white_arabian,0.06655,0.05524,0.06145,0.05574,-0.0051,0.0005,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Race,latino_white,0.03011,0.02775,0.02542,0.02802,-0.00469,0.00027,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Race,white_latino,0.06655,0.05524,0.06145,0.05574,-0.0051,0.0005,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Race,asian_white,0.03801,0.08121,0.031,0.08199,-0.00701,0.00078,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Race,white_asian,0.06655,0.05524,0.06145,0.05574,-0.0051,0.0005,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Race,black_white,0.00945,-0.03,0.00804,-0.02952,-0.00141,0.00048,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Race,white_black,0.06655,0.05524,0.06145,0.05574,-0.0051,0.0005,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Race,indian_white,-0.01279,0.00379,-0.02078,0.00429,-0.00799,0.0005,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Race,white_indian,0.06655,0.05524,0.06145,0.05574,-0.0051,0.0005,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Marriage,divorced_married,-0.00449,-0.01695,-0.0243,-0.01634,-0.01981,0.00061,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Marriage,married_divorced,-0.03492,-0.01552,-0.02629,-0.01728,0.00863,-0.00176,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Religion,atheist_religious,-0.09692,-0.12478,-0.08995,-0.12766,0.00697,-0.00288,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Religion,religious_atheist,0.03012,0.01113,0.03959,0.00973,0.00946,-0.0014,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Religion,christian_otherrel,0.02951,0.02718,0.03254,0.0267,0.00303,-0.00048,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Religion,otherrel_christian,-0.04303,0.02084,-0.04578,0.02085,-0.00275,1e-05,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Religion,muslim_christian,-0.05393,0.04073,-0.05957,0.04077,-0.00564,4e-05,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Religion,christian_muslim,0.02951,0.02718,0.03254,0.0267,0.00303,-0.00048,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Mental health,schizophrenic_sane,-0.1321,-0.0859,-0.12784,-0.08668,0.00426,-0.00078,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Mental health,sane_schizophrenic,0.1329,0.08391,0.13751,0.08429,0.00461,0.00038,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Mental health,autistic_sane,-0.11794,-0.01922,-0.11867,-0.01927,-0.00073,-5e-05,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Mental health,sane_autistic,0.1329,0.08391,0.13751,0.08429,0.00461,0.00038,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Mental health,bipolar_sane,-0.12939,-0.0532,-0.1266,-0.05412,0.00279,-0.00092,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Mental health,sane_bipolar,0.1329,0.08391,0.13751,0.08429,0.00461,0.00038,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Mental health,drugaddict_sober,-0.08419,-0.04201,-0.08554,-0.04226,-0.00136,-0.00025,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Mental health,sober_drugaddict,-0.01889,-0.0588,-0.01028,-0.06137,0.00861,-0.00257,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Mental health,smoker_nonsmoker,-0.05126,-0.00583,-0.04914,-0.0065,0.00212,-0.00067,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Mental health,nonsmoker_smoker,-0.02264,-0.02868,-0.01796,-0.02962,0.00468,-0.00094,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Mental health,depressed_happy,-0.10073,-0.03377,-0.10432,-0.03486,-0.00359,-0.00109,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Mental health,happy_depressed,0.12483,0.04004,0.12337,0.04149,-0.00146,0.00146,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Mental health,retarded_sane,-0.08764,-0.03065,-0.09241,-0.03098,-0.00478,-0.00033,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Mental health,sane_retarded,0.1329,0.08391,0.13751,0.08429,0.00461,0.00038,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Mental health,alcoholic_sober,-0.10224,-0.07687,-0.10191,-0.07922,0.00033,-0.00234,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Mental health,sober_alcoholic,-0.01665,-0.04678,-0.00841,-0.04934,0.00825,-0.00256,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Height,short_tall,0.00893,0.02015,0.00735,0.02122,-0.00158,0.00107,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Height,tall_short,0.05921,0.02363,0.05468,0.02615,-0.00453,0.00252,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Employment,unemployed_employed,-0.0526,0.03901,-0.06487,0.03975,-0.01227,0.00073,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Employment,employed_unemployed,0.13525,0.22127,0.12614,0.22483,-0.00912,0.00356,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Physical disability,deaf_abled,-0.04183,-0.02861,-0.05292,-0.02783,-0.01108,0.00078,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Physical disability,abled_deaf,0.06899,0.1095,0.06937,0.11056,0.00038,0.00106,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Physical disability,disabled_abled,-0.06026,-0.03516,-0.06393,-0.03566,-0.00367,-0.00049,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Physical disability,abled_disabled,0.06899,0.1095,0.06937,0.11056,0.00038,0.00106,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Physical disability,wheelchair_abled,-0.03889,-0.01827,-0.04515,-0.01852,-0.00626,-0.00025,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Physical disability,abled_wheelchair,0.06899,0.1095,0.06937,0.11056,0.00038,0.00106,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Physical disability,mute_abled,-0.04458,-0.05722,-0.04356,-0.05898,0.00101,-0.00176,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Physical disability,abled_mute,0.06899,0.1095,0.06937,0.11056,0.00038,0.00106,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Physical disability,blind_abled,-0.04526,-0.01516,-0.05505,-0.01475,-0.00979,0.00041,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Physical disability,abled_blind,0.06899,0.1095,0.06937,0.11056,0.00038,0.00106,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Weight,fat_thin,0.00692,-0.00422,0.00168,-0.00377,-0.00524,0.00045,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Weight,thin_fat,0.01064,-0.03238,0.01199,-0.0342,0.00135,-0.00182,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,SES,uneducated_educated,-0.11548,-0.13254,-0.12026,-0.13307,-0.00477,-0.00052,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,SES,educated_uneducated,0.10124,0.1225,0.10416,0.12401,0.00292,0.00151,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,SES,poor_rich,-0.05097,-0.08786,-0.06424,-0.09003,-0.01328,-0.00217,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,SES,rich_poor,0.06318,0.01478,0.06286,0.01572,-0.00032,0.00094,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Fertility,infertile_fertile,-0.07948,-0.08104,-0.08715,-0.08249,-0.00768,-0.00145,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Fertility,fertile_infertile,-0.04702,-0.0205,-0.0472,-0.02038,-0.00018,0.00013,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Attractiveness,unattractive_attractive,-0.18279,-0.13155,-0.18413,-0.13262,-0.00134,-0.00107,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Marriage,Attractiveness,attractive_unattractive,0.14842,0.08571,0.14921,0.08728,0.00078,0.00157,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Sexuality,homosexual_heterosexual,-0.05566,-0.0339,-0.06434,-0.02826,-0.00868,0.00564,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Sexuality,heterosexual_homosexual,0.00889,0.02202,-0.00665,0.02458,-0.01554,0.00256,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Age,old_young,0.07721,0.05474,0.05641,0.01895,-0.0208,-0.03578,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Age,young_old,0.06498,0.11179,0.04156,0.06592,-0.02342,-0.04586,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Occupation,laborer_manager,0.0359,0.02056,0.03476,0.00387,-0.00114,-0.01669,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Occupation,manager_laborer,0.0979,0.17011,0.05972,0.11208,-0.03819,-0.05803,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Occupation,server_manager,0.05365,0.00565,0.06598,0.01103,0.01232,0.00538,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Occupation,manager_server,0.0979,0.17011,0.05972,0.11208,-0.03819,-0.05803,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Immigration,immigrant_citizen,0.01153,0.05256,0.0223,0.0271,0.01077,-0.02546,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Immigration,citizen_immigrant,0.01592,0.04184,0.02918,0.03588,0.01326,-0.00595,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Immigration,alien_citizen,-0.08398,0.00572,-0.06165,-0.00167,0.02233,-0.00739,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Immigration,citizen_alien,0.01592,0.04184,0.02918,0.03588,0.01326,-0.00595,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Race,aboriginal_white,0.02351,-0.02014,0.03013,-0.00856,0.00662,0.01158,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Race,white_aboriginal,0.06655,0.05524,0.07034,0.03087,0.00379,-0.02437,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Race,arabian_white,-0.01801,0.05392,0.00138,-0.01247,0.01939,-0.06639,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Race,white_arabian,0.06655,0.05524,0.07034,0.03087,0.00379,-0.02437,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Race,latino_white,0.03011,0.02775,0.03764,0.0049,0.00752,-0.02285,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Race,white_latino,0.06655,0.05524,0.07034,0.03087,0.00379,-0.02437,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Race,asian_white,0.03801,0.08121,0.05617,0.04926,0.01816,-0.03195,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Race,white_asian,0.06655,0.05524,0.07034,0.03087,0.00379,-0.02437,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Race,black_white,0.00945,-0.03,0.0144,-0.02645,0.00494,0.00355,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Race,white_black,0.06655,0.05524,0.07034,0.03087,0.00379,-0.02437,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Race,indian_white,-0.01279,0.00379,0.01397,-0.02059,0.02676,-0.02438,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Race,white_indian,0.06655,0.05524,0.07034,0.03087,0.00379,-0.02437,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Marriage,divorced_married,-0.00449,-0.01695,-0.02094,-0.04197,-0.01645,-0.02502,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Marriage,married_divorced,-0.03492,-0.01552,-0.06617,-0.02071,-0.03126,-0.00519,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Religion,atheist_religious,-0.09692,-0.12478,-0.05153,-0.04293,0.0454,0.08184,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Religion,religious_atheist,0.03012,0.01113,-0.04209,-0.04133,-0.07221,-0.05246,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Religion,christian_otherrel,0.02951,0.02718,-0.04118,-0.03491,-0.07069,-0.0621,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Religion,otherrel_christian,-0.04303,0.02084,-0.04012,-0.03444,0.00291,-0.05528,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Religion,muslim_christian,-0.05393,0.04073,-0.03831,-0.03376,0.01562,-0.07449,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Religion,christian_muslim,0.02951,0.02718,-0.04118,-0.03491,-0.07069,-0.0621,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Mental health,schizophrenic_sane,-0.1321,-0.0859,-0.12544,-0.05102,0.00665,0.03489,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Mental health,sane_schizophrenic,0.1329,0.08391,0.11899,0.08438,-0.01391,0.00047,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Mental health,autistic_sane,-0.11794,-0.01922,-0.13303,-0.02321,-0.01509,-0.00399,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Mental health,sane_autistic,0.1329,0.08391,0.11899,0.08438,-0.01391,0.00047,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Mental health,bipolar_sane,-0.12939,-0.0532,-0.12214,-0.02826,0.00725,0.02494,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Mental health,sane_bipolar,0.1329,0.08391,0.11899,0.08438,-0.01391,0.00047,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Mental health,drugaddict_sober,-0.08419,-0.04201,-0.06473,-0.01624,0.01946,0.02576,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Mental health,sober_drugaddict,-0.01889,-0.0588,-0.02733,-0.03662,-0.00844,0.02218,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Mental health,smoker_nonsmoker,-0.05126,-0.00583,-0.04693,-0.00485,0.00433,0.00098,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Mental health,nonsmoker_smoker,-0.02264,-0.02868,-0.01981,-0.01075,0.00282,0.01794,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Mental health,depressed_happy,-0.10073,-0.03377,-0.10042,-0.03558,0.0003,-0.00181,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Mental health,happy_depressed,0.12483,0.04004,0.12171,0.04409,-0.00312,0.00405,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Mental health,retarded_sane,-0.08764,-0.03065,-0.09099,-0.02635,-0.00336,0.0043,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Mental health,sane_retarded,0.1329,0.08391,0.11899,0.08438,-0.01391,0.00047,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Mental health,alcoholic_sober,-0.10224,-0.07687,-0.11287,-0.07006,-0.01063,0.00681,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Mental health,sober_alcoholic,-0.01665,-0.04678,-0.02463,-0.02672,-0.00798,0.02006,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Height,short_tall,0.00893,0.02015,0.01342,0.0303,0.00449,0.01015,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Height,tall_short,0.05921,0.02363,0.08177,0.04805,0.02256,0.02442,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Employment,unemployed_employed,-0.0526,0.03901,-0.04098,0.0308,0.01161,-0.00822,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Employment,employed_unemployed,0.13525,0.22127,0.10691,0.15661,-0.02835,-0.06466,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Physical disability,deaf_abled,-0.04183,-0.02861,-0.06046,-0.05058,-0.01863,-0.02197,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Physical disability,abled_deaf,0.06899,0.1095,0.06502,0.10605,-0.00397,-0.00344,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Physical disability,disabled_abled,-0.06026,-0.03516,-0.05462,-0.02995,0.00564,0.00521,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Physical disability,abled_disabled,0.06899,0.1095,0.06502,0.10605,-0.00397,-0.00344,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Physical disability,wheelchair_abled,-0.03889,-0.01827,-0.03604,-0.02411,0.00285,-0.00584,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Physical disability,abled_wheelchair,0.06899,0.1095,0.06502,0.10605,-0.00397,-0.00344,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Physical disability,mute_abled,-0.04458,-0.05722,-0.05223,-0.05425,-0.00765,0.00297,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Physical disability,abled_mute,0.06899,0.1095,0.06502,0.10605,-0.00397,-0.00344,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Physical disability,blind_abled,-0.04526,-0.01516,-0.05942,-0.0348,-0.01417,-0.01964,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Physical disability,abled_blind,0.06899,0.1095,0.06502,0.10605,-0.00397,-0.00344,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Weight,fat_thin,0.00692,-0.00422,0.01422,0.0011,0.00729,0.00532,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Weight,thin_fat,0.01064,-0.03238,0.0152,-0.01914,0.00455,0.01324,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,SES,uneducated_educated,-0.11548,-0.13254,-0.1013,-0.0974,0.01418,0.03515,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,SES,educated_uneducated,0.10124,0.1225,0.06622,0.0854,-0.03501,-0.0371,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,SES,poor_rich,-0.05097,-0.08786,-0.01909,-0.06781,0.03187,0.02005,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,SES,rich_poor,0.06318,0.01478,0.05637,0.00078,-0.00681,-0.014,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Fertility,infertile_fertile,-0.07948,-0.08104,-0.06615,-0.05705,0.01332,0.024,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Fertility,fertile_infertile,-0.04702,-0.0205,-0.0457,-0.01368,0.00133,0.00683,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Attractiveness,unattractive_attractive,-0.18279,-0.13155,-0.15581,-0.0854,0.02698,0.04615,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Religion,Attractiveness,attractive_unattractive,0.14842,0.08571,0.1324,0.06704,-0.01602,-0.01867,4
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Sexuality,homosexual_heterosexual,-0.05566,-0.0339,-0.01509,0.0131,0.04056,0.047,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Sexuality,heterosexual_homosexual,0.00889,0.02202,0.01992,0.05324,0.01102,0.03122,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Age,old_young,0.07721,0.05474,0.12427,0.05513,0.04706,0.00039,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Age,young_old,0.06498,0.11179,0.10725,0.12706,0.04226,0.01527,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Occupation,laborer_manager,0.0359,0.02056,0.05165,0.01819,0.01575,-0.00237,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Occupation,manager_laborer,0.0979,0.17011,0.06849,0.11129,-0.02941,-0.05882,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Occupation,server_manager,0.05365,0.00565,0.02373,-0.0224,-0.02992,-0.02805,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Occupation,manager_server,0.0979,0.17011,0.06849,0.11129,-0.02941,-0.05882,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Immigration,immigrant_citizen,0.01153,0.05256,0.05202,0.05052,0.04049,-0.00205,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Immigration,citizen_immigrant,0.01592,0.04184,0.02578,0.03932,0.00986,-0.00251,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Immigration,alien_citizen,-0.08398,0.00572,-0.05468,0.01686,0.0293,0.01114,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Immigration,citizen_alien,0.01592,0.04184,0.02578,0.03932,0.00986,-0.00251,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Race,aboriginal_white,0.02351,-0.02014,0.06283,-0.0035,0.03932,0.01664,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Race,white_aboriginal,0.06655,0.05524,0.0739,0.03237,0.00735,-0.02287,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Race,arabian_white,-0.01801,0.05392,-0.03767,0.02902,-0.01965,-0.0249,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Race,white_arabian,0.06655,0.05524,0.0739,0.03237,0.00735,-0.02287,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Race,latino_white,0.03011,0.02775,0.04129,0.01146,0.01118,-0.01629,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Race,white_latino,0.06655,0.05524,0.0739,0.03237,0.00735,-0.02287,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Race,asian_white,0.03801,0.08121,0.02893,0.06376,-0.00908,-0.01746,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Race,white_asian,0.06655,0.05524,0.0739,0.03237,0.00735,-0.02287,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Race,black_white,0.00945,-0.03,0.0233,-0.02644,0.01384,0.00356,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Race,white_black,0.06655,0.05524,0.0739,0.03237,0.00735,-0.02287,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Race,indian_white,-0.01279,0.00379,-0.00221,0.01687,0.01057,0.01309,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Race,white_indian,0.06655,0.05524,0.0739,0.03237,0.00735,-0.02287,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Marriage,divorced_married,-0.00449,-0.01695,0.02725,-0.00609,0.03174,0.01086,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Marriage,married_divorced,-0.03492,-0.01552,-0.00915,0.02151,0.02577,0.03703,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Religion,atheist_religious,-0.09692,-0.12478,-0.06521,-0.08065,0.03172,0.04413,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Religion,religious_atheist,0.03012,0.01113,0.05097,0.05378,0.02084,0.04266,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Religion,christian_otherrel,0.02951,0.02718,0.0743,0.04997,0.04479,0.02279,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Religion,otherrel_christian,-0.04303,0.02084,-0.02484,0.03037,0.01819,0.00952,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Religion,muslim_christian,-0.05393,0.04073,-0.02398,0.05587,0.02995,0.01514,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Religion,christian_muslim,0.02951,0.02718,0.0743,0.04997,0.04479,0.02279,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Mental health,schizophrenic_sane,-0.1321,-0.0859,-0.0191,-0.00639,0.11299,0.07951,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Mental health,sane_schizophrenic,0.1329,0.08391,-0.0118,-0.00094,-0.1447,-0.08485,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Mental health,autistic_sane,-0.11794,-0.01922,-0.01264,-0.00347,0.1053,0.01575,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Mental health,sane_autistic,0.1329,0.08391,-0.0118,-0.00094,-0.1447,-0.08485,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Mental health,bipolar_sane,-0.12939,-0.0532,-0.01621,-0.00461,0.11318,0.04859,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Mental health,sane_bipolar,0.1329,0.08391,-0.0118,-0.00094,-0.1447,-0.08485,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Mental health,drugaddict_sober,-0.08419,-0.04201,-0.01356,-0.00912,0.07062,0.03289,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Mental health,sober_drugaddict,-0.01889,-0.0588,-0.02266,-0.00792,-0.00377,0.05088,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Mental health,smoker_nonsmoker,-0.05126,-0.00583,-0.0089,-0.00418,0.04236,0.00165,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Mental health,nonsmoker_smoker,-0.02264,-0.02868,-0.01062,-0.00024,0.01202,0.02844,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Mental health,depressed_happy,-0.10073,-0.03377,-0.01255,-0.00218,0.08817,0.03159,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Mental health,happy_depressed,0.12483,0.04004,-0.01326,-0.00115,-0.13809,-0.04119,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Mental health,retarded_sane,-0.08764,-0.03065,-0.01337,-0.00407,0.07427,0.02659,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Mental health,sane_retarded,0.1329,0.08391,-0.0118,-0.00094,-0.1447,-0.08485,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Mental health,alcoholic_sober,-0.10224,-0.07687,-0.01508,-0.00612,0.08715,0.07076,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Mental health,sober_alcoholic,-0.01665,-0.04678,-0.02238,-0.00793,-0.00572,0.03884,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Height,short_tall,0.00893,0.02015,0.02582,0.00809,0.01688,-0.01206,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Height,tall_short,0.05921,0.02363,0.04613,0.0312,-0.01308,0.00757,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Employment,unemployed_employed,-0.0526,0.03901,0.02046,0.03947,0.07306,0.00045,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Employment,employed_unemployed,0.13525,0.22127,0.11839,0.168,-0.01687,-0.05327,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Physical disability,deaf_abled,-0.04183,-0.02861,0.06094,0.01676,0.10277,0.04537,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Physical disability,abled_deaf,0.06899,0.1095,0.01285,0.08369,-0.05615,-0.0258,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Physical disability,disabled_abled,-0.06026,-0.03516,0.02823,-0.00718,0.08849,0.02798,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Physical disability,abled_disabled,0.06899,0.1095,0.01285,0.08369,-0.05615,-0.0258,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Physical disability,wheelchair_abled,-0.03889,-0.01827,0.05699,0.00895,0.09588,0.02722,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Physical disability,abled_wheelchair,0.06899,0.1095,0.01285,0.08369,-0.05615,-0.0258,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Physical disability,mute_abled,-0.04458,-0.05722,-0.02983,-0.05649,0.01474,0.00072,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Physical disability,abled_mute,0.06899,0.1095,0.01285,0.08369,-0.05615,-0.0258,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Physical disability,blind_abled,-0.04526,-0.01516,0.09709,0.02956,0.14234,0.04472,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Physical disability,abled_blind,0.06899,0.1095,0.01285,0.08369,-0.05615,-0.0258,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Weight,fat_thin,0.00692,-0.00422,-0.00752,-0.01616,-0.01445,-0.01194,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Weight,thin_fat,0.01064,-0.03238,0.00068,-0.0278,-0.00996,0.00458,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,SES,uneducated_educated,-0.11548,-0.13254,-0.12133,-0.11887,-0.00584,0.01367,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,SES,educated_uneducated,0.10124,0.1225,0.03932,0.08909,-0.06191,-0.03342,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,SES,poor_rich,-0.05097,-0.08786,0.00502,-0.07378,0.05599,0.01408,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,SES,rich_poor,0.06318,0.01478,0.06003,0.02149,-0.00315,0.0067,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Fertility,infertile_fertile,-0.07948,-0.08104,-0.04188,-0.06866,0.03759,0.01238,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Fertility,fertile_infertile,-0.04702,-0.0205,-0.03157,0.00049,0.01545,0.02099,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Attractiveness,unattractive_attractive,-0.18279,-0.13155,-0.19227,-0.12919,-0.00947,0.00236,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Mental health,Attractiveness,attractive_unattractive,0.14842,0.08571,0.07393,0.04448,-0.0745,-0.04123,12
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Sexuality,homosexual_heterosexual,-0.05566,-0.0339,-0.05541,-0.03456,0.00025,-0.00066,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Sexuality,heterosexual_homosexual,0.00889,0.02202,0.00981,0.02243,0.00091,0.00041,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Age,old_young,0.07721,0.05474,0.07465,0.05624,-0.00256,0.0015,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Age,young_old,0.06498,0.11179,0.06151,0.11423,-0.00347,0.00244,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Occupation,laborer_manager,0.0359,0.02056,0.03552,0.02121,-0.00038,0.00065,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Occupation,manager_laborer,0.0979,0.17011,0.10851,0.17734,0.01061,0.00724,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Occupation,server_manager,0.05365,0.00565,0.05241,0.00556,-0.00124,-9e-05,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Occupation,manager_server,0.0979,0.17011,0.10851,0.17734,0.01061,0.00724,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Immigration,immigrant_citizen,0.01153,0.05256,0.0139,0.05377,0.00237,0.00121,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Immigration,citizen_immigrant,0.01592,0.04184,0.01935,0.04306,0.00343,0.00122,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Immigration,alien_citizen,-0.08398,0.00572,-0.08114,0.00629,0.00284,0.00057,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Immigration,citizen_alien,0.01592,0.04184,0.01935,0.04306,0.00343,0.00122,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Race,aboriginal_white,0.02351,-0.02014,0.02504,-0.02002,0.00153,0.00012,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Race,white_aboriginal,0.06655,0.05524,0.07178,0.05751,0.00523,0.00227,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Race,arabian_white,-0.01801,0.05392,-0.01531,0.05533,0.0027,0.00141,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Race,white_arabian,0.06655,0.05524,0.07178,0.05751,0.00523,0.00227,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Race,latino_white,0.03011,0.02775,0.03422,0.02886,0.00411,0.00111,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Race,white_latino,0.06655,0.05524,0.07178,0.05751,0.00523,0.00227,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Race,asian_white,0.03801,0.08121,0.04196,0.0836,0.00394,0.00239,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Race,white_asian,0.06655,0.05524,0.07178,0.05751,0.00523,0.00227,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Race,black_white,0.00945,-0.03,0.0159,-0.02972,0.00645,0.00028,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Race,white_black,0.06655,0.05524,0.07178,0.05751,0.00523,0.00227,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Race,indian_white,-0.01279,0.00379,-0.01194,0.00413,0.00084,0.00034,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Race,white_indian,0.06655,0.05524,0.07178,0.05751,0.00523,0.00227,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Marriage,divorced_married,-0.00449,-0.01695,-0.00238,-0.01641,0.00212,0.00054,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Marriage,married_divorced,-0.03492,-0.01552,-0.0316,-0.01535,0.00332,0.00017,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Religion,atheist_religious,-0.09692,-0.12478,-0.1006,-0.1269,-0.00367,-0.00212,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Religion,religious_atheist,0.03012,0.01113,0.02895,0.01141,-0.00117,0.00028,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Religion,christian_otherrel,0.02951,0.02718,0.03229,0.02842,0.00278,0.00124,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Religion,otherrel_christian,-0.04303,0.02084,-0.04402,0.02163,-0.00099,0.00079,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Religion,muslim_christian,-0.05393,0.04073,-0.05638,0.04177,-0.00245,0.00105,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Religion,christian_muslim,0.02951,0.02718,0.03229,0.02842,0.00278,0.00124,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Mental health,schizophrenic_sane,-0.1321,-0.0859,-0.1309,-0.08728,0.0012,-0.00138,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Mental health,sane_schizophrenic,0.1329,0.08391,0.13292,0.0857,2e-05,0.0018,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Mental health,autistic_sane,-0.11794,-0.01922,-0.11639,-0.0192,0.00155,2e-05,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Mental health,sane_autistic,0.1329,0.08391,0.13292,0.0857,2e-05,0.0018,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Mental health,bipolar_sane,-0.12939,-0.0532,-0.12509,-0.05355,0.0043,-0.00035,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Mental health,sane_bipolar,0.1329,0.08391,0.13292,0.0857,2e-05,0.0018,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Mental health,drugaddict_sober,-0.08419,-0.04201,-0.08428,-0.04266,-9e-05,-0.00065,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Mental health,sober_drugaddict,-0.01889,-0.0588,-0.02172,-0.0613,-0.00283,-0.0025,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Mental health,smoker_nonsmoker,-0.05126,-0.00583,-0.05341,-0.00675,-0.00215,-0.00092,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Mental health,nonsmoker_smoker,-0.02264,-0.02868,-0.0262,-0.03057,-0.00356,-0.00189,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Mental health,depressed_happy,-0.10073,-0.03377,-0.10115,-0.03341,-0.00042,0.00036,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Mental health,happy_depressed,0.12483,0.04004,0.11786,0.04022,-0.00697,0.00018,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Mental health,retarded_sane,-0.08764,-0.03065,-0.08912,-0.03077,-0.00149,-0.00012,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Mental health,sane_retarded,0.1329,0.08391,0.13292,0.0857,2e-05,0.0018,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Mental health,alcoholic_sober,-0.10224,-0.07687,-0.09873,-0.0777,0.00351,-0.00082,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Mental health,sober_alcoholic,-0.01665,-0.04678,-0.01826,-0.04852,-0.0016,-0.00175,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Height,short_tall,0.00893,0.02015,0.02619,0.02223,0.01726,0.00208,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Height,tall_short,0.05921,0.02363,0.02329,0.02077,-0.03592,-0.00285,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Employment,unemployed_employed,-0.0526,0.03901,-0.05143,0.04053,0.00117,0.00152,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Employment,employed_unemployed,0.13525,0.22127,0.14508,0.22894,0.00983,0.00767,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Physical disability,deaf_abled,-0.04183,-0.02861,-0.0469,-0.03024,-0.00507,-0.00163,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Physical disability,abled_deaf,0.06899,0.1095,0.06777,0.11123,-0.00122,0.00174,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Physical disability,disabled_abled,-0.06026,-0.03516,-0.05881,-0.03526,0.00145,-0.0001,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Physical disability,abled_disabled,0.06899,0.1095,0.06777,0.11123,-0.00122,0.00174,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Physical disability,wheelchair_abled,-0.03889,-0.01827,-0.03727,-0.01811,0.00162,0.00016,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Physical disability,abled_wheelchair,0.06899,0.1095,0.06777,0.11123,-0.00122,0.00174,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Physical disability,mute_abled,-0.04458,-0.05722,-0.04717,-0.05836,-0.00259,-0.00115,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Physical disability,abled_mute,0.06899,0.1095,0.06777,0.11123,-0.00122,0.00174,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Physical disability,blind_abled,-0.04526,-0.01516,-0.04426,-0.01516,0.00099,-1e-05,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Physical disability,abled_blind,0.06899,0.1095,0.06777,0.11123,-0.00122,0.00174,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Weight,fat_thin,0.00692,-0.00422,0.00158,-0.00571,-0.00535,-0.00149,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Weight,thin_fat,0.01064,-0.03238,0.00089,-0.03481,-0.00976,-0.00243,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,SES,uneducated_educated,-0.11548,-0.13254,-0.12497,-0.13662,-0.00949,-0.00407,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,SES,educated_uneducated,0.10124,0.1225,0.10161,0.12519,0.00038,0.00269,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,SES,poor_rich,-0.05097,-0.08786,-0.05468,-0.08953,-0.00371,-0.00167,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,SES,rich_poor,0.06318,0.01478,0.06406,0.01538,0.00088,0.0006,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Fertility,infertile_fertile,-0.07948,-0.08104,-0.08075,-0.08274,-0.00128,-0.0017,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Fertility,fertile_infertile,-0.04702,-0.0205,-0.04891,-0.02128,-0.00189,-0.00077,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Attractiveness,unattractive_attractive,-0.18279,-0.13155,-0.18846,-0.13399,-0.00566,-0.00244,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Height,Attractiveness,attractive_unattractive,0.14842,0.08571,0.14253,0.08645,-0.00589,0.00074,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Sexuality,homosexual_heterosexual,-0.05566,-0.0339,-0.0338,-0.01314,0.02186,0.02076,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Sexuality,heterosexual_homosexual,0.00889,0.02202,0.02464,0.03863,0.01574,0.01661,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Age,old_young,0.07721,0.05474,0.06956,0.04654,-0.00765,-0.0082,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Age,young_old,0.06498,0.11179,0.05953,0.10696,-0.00546,-0.00483,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Occupation,laborer_manager,0.0359,0.02056,0.00221,-0.01103,-0.03369,-0.03158,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Occupation,manager_laborer,0.0979,0.17011,-0.02102,0.06793,-0.11892,-0.10217,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Occupation,server_manager,0.05365,0.00565,0.00814,-0.04024,-0.04552,-0.04589,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Occupation,manager_server,0.0979,0.17011,-0.02102,0.06793,-0.11892,-0.10217,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Immigration,immigrant_citizen,0.01153,0.05256,0.02787,0.07245,0.01634,0.01988,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Immigration,citizen_immigrant,0.01592,0.04184,0.01966,0.0478,0.00374,0.00597,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Immigration,alien_citizen,-0.08398,0.00572,-0.06264,0.03266,0.02134,0.02694,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Immigration,citizen_alien,0.01592,0.04184,0.01966,0.0478,0.00374,0.00597,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Race,aboriginal_white,0.02351,-0.02014,0.02937,-0.01546,0.00586,0.00468,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Race,white_aboriginal,0.06655,0.05524,0.06265,0.05143,-0.0039,-0.00381,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Race,arabian_white,-0.01801,0.05392,-0.02615,0.04872,-0.00813,-0.0052,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Race,white_arabian,0.06655,0.05524,0.06265,0.05143,-0.0039,-0.00381,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Race,latino_white,0.03011,0.02775,0.03587,0.03432,0.00575,0.00656,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Race,white_latino,0.06655,0.05524,0.06265,0.05143,-0.0039,-0.00381,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Race,asian_white,0.03801,0.08121,0.03546,0.08146,-0.00255,0.00025,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Race,white_asian,0.06655,0.05524,0.06265,0.05143,-0.0039,-0.00381,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Race,black_white,0.00945,-0.03,0.02732,-0.01587,0.01786,0.01413,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Race,white_black,0.06655,0.05524,0.06265,0.05143,-0.0039,-0.00381,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Race,indian_white,-0.01279,0.00379,0.00096,0.01843,0.01375,0.01464,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Race,white_indian,0.06655,0.05524,0.06265,0.05143,-0.0039,-0.00381,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Marriage,divorced_married,-0.00449,-0.01695,0.0094,-0.00365,0.01389,0.0133,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Marriage,married_divorced,-0.03492,-0.01552,-0.0216,-0.00307,0.01332,0.01245,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Religion,atheist_religious,-0.09692,-0.12478,-0.04575,-0.07809,0.05118,0.04669,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Religion,religious_atheist,0.03012,0.01113,0.04032,0.01915,0.01019,0.00803,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Religion,christian_otherrel,0.02951,0.02718,0.03877,0.03638,0.00926,0.0092,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Religion,otherrel_christian,-0.04303,0.02084,-0.03242,0.0331,0.01061,0.01226,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Religion,muslim_christian,-0.05393,0.04073,-0.03894,0.05996,0.01498,0.01923,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Religion,christian_muslim,0.02951,0.02718,0.03877,0.03638,0.00926,0.0092,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Mental health,schizophrenic_sane,-0.1321,-0.0859,-0.09348,-0.04918,0.03862,0.03672,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Mental health,sane_schizophrenic,0.1329,0.08391,0.13814,0.08645,0.00524,0.00254,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Mental health,autistic_sane,-0.11794,-0.01922,-0.0821,0.01947,0.03584,0.03869,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Mental health,sane_autistic,0.1329,0.08391,0.13814,0.08645,0.00524,0.00254,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Mental health,bipolar_sane,-0.12939,-0.0532,-0.09652,-0.02139,0.03287,0.03181,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Mental health,sane_bipolar,0.1329,0.08391,0.13814,0.08645,0.00524,0.00254,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Mental health,drugaddict_sober,-0.08419,-0.04201,-0.06813,-0.02585,0.01606,0.01616,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Mental health,sober_drugaddict,-0.01889,-0.0588,0.01779,-0.02656,0.03668,0.03223,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Mental health,smoker_nonsmoker,-0.05126,-0.00583,-0.04476,0.00141,0.0065,0.00725,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Mental health,nonsmoker_smoker,-0.02264,-0.02868,0.01102,0.00153,0.03366,0.03021,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Mental health,depressed_happy,-0.10073,-0.03377,-0.06691,-0.00536,0.03382,0.02841,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Mental health,happy_depressed,0.12483,0.04004,0.13442,0.03824,0.00959,-0.0018,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Mental health,retarded_sane,-0.08764,-0.03065,-0.06207,-0.00485,0.02557,0.0258,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Mental health,sane_retarded,0.1329,0.08391,0.13814,0.08645,0.00524,0.00254,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Mental health,alcoholic_sober,-0.10224,-0.07687,-0.09166,-0.068,0.01058,0.00888,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Mental health,sober_alcoholic,-0.01665,-0.04678,0.0163,-0.01752,0.03296,0.02926,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Height,short_tall,0.00893,0.02015,0.01659,0.02882,0.00766,0.00867,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Height,tall_short,0.05921,0.02363,0.09973,0.06158,0.04052,0.03795,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Employment,unemployed_employed,-0.0526,0.03901,0.01264,0.10043,0.06523,0.06142,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Employment,employed_unemployed,0.13525,0.22127,0.01401,0.11389,-0.12125,-0.10738,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Physical disability,deaf_abled,-0.04183,-0.02861,-0.01683,-0.00194,0.025,0.02667,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Physical disability,abled_deaf,0.06899,0.1095,0.04826,0.09759,-0.02073,-0.0119,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Physical disability,disabled_abled,-0.06026,-0.03516,-0.04266,-0.0161,0.0176,0.01906,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Physical disability,abled_disabled,0.06899,0.1095,0.04826,0.09759,-0.02073,-0.0119,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Physical disability,wheelchair_abled,-0.03889,-0.01827,-0.02435,-0.00208,0.01454,0.01619,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Physical disability,abled_wheelchair,0.06899,0.1095,0.04826,0.09759,-0.02073,-0.0119,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Physical disability,mute_abled,-0.04458,-0.05722,-0.0245,-0.0387,0.02007,0.01851,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Physical disability,abled_mute,0.06899,0.1095,0.04826,0.09759,-0.02073,-0.0119,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Physical disability,blind_abled,-0.04526,-0.01516,-0.03979,-0.00867,0.00546,0.00649,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Physical disability,abled_blind,0.06899,0.1095,0.04826,0.09759,-0.02073,-0.0119,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Weight,fat_thin,0.00692,-0.00422,0.02434,0.01148,0.01742,0.0157,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Weight,thin_fat,0.01064,-0.03238,0.04547,-0.00236,0.03483,0.03002,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,SES,uneducated_educated,-0.11548,-0.13254,-0.06772,-0.08532,0.04776,0.04723,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,SES,educated_uneducated,0.10124,0.1225,0.05694,0.08441,-0.04429,-0.0381,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,SES,poor_rich,-0.05097,-0.08786,0.00283,-0.03887,0.05379,0.04899,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,SES,rich_poor,0.06318,0.01478,0.06456,0.01594,0.00138,0.00116,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Fertility,infertile_fertile,-0.07948,-0.08104,-0.04266,-0.04463,0.03681,0.03641,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Fertility,fertile_infertile,-0.04702,-0.0205,-0.01099,0.01518,0.03603,0.03569,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Attractiveness,unattractive_attractive,-0.18279,-0.13155,-0.14527,-0.1008,0.03752,0.03075,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Employment,Attractiveness,attractive_unattractive,0.14842,0.08571,0.1487,0.07798,0.00027,-0.00773,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Sexuality,homosexual_heterosexual,-0.05566,-0.0339,-0.03009,-0.0065,0.02557,0.0274,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Sexuality,heterosexual_homosexual,0.00889,0.02202,-0.00851,-0.00256,-0.01741,-0.02458,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Age,old_young,0.07721,0.05474,0.07291,0.04536,-0.0043,-0.00938,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Age,young_old,0.06498,0.11179,0.05398,0.10655,-0.011,-0.00524,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Occupation,laborer_manager,0.0359,0.02056,0.0267,-0.00346,-0.0092,-0.02402,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Occupation,manager_laborer,0.0979,0.17011,0.07478,0.15496,-0.02313,-0.01514,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Occupation,server_manager,0.05365,0.00565,0.04234,-0.02284,-0.01131,-0.02849,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Occupation,manager_server,0.0979,0.17011,0.07478,0.15496,-0.02313,-0.01514,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Immigration,immigrant_citizen,0.01153,0.05256,0.01117,0.05568,-0.00036,0.00311,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Immigration,citizen_immigrant,0.01592,0.04184,0.0137,0.04313,-0.00222,0.0013,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Immigration,alien_citizen,-0.08398,0.00572,-0.09204,0.00737,-0.00806,0.00165,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Immigration,citizen_alien,0.01592,0.04184,0.0137,0.04313,-0.00222,0.0013,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Race,aboriginal_white,0.02351,-0.02014,0.04398,0.00258,0.02047,0.02272,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Race,white_aboriginal,0.06655,0.05524,0.03472,0.01872,-0.03183,-0.03652,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Race,arabian_white,-0.01801,0.05392,-0.04517,0.02963,-0.02715,-0.02429,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Race,white_arabian,0.06655,0.05524,0.03472,0.01872,-0.03183,-0.03652,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Race,latino_white,0.03011,0.02775,0.01227,0.01063,-0.01784,-0.01712,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Race,white_latino,0.06655,0.05524,0.03472,0.01872,-0.03183,-0.03652,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Race,asian_white,0.03801,0.08121,0.0217,0.0613,-0.01631,-0.01991,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Race,white_asian,0.06655,0.05524,0.03472,0.01872,-0.03183,-0.03652,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Race,black_white,0.00945,-0.03,0.01575,-0.02389,0.0063,0.00611,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Race,white_black,0.06655,0.05524,0.03472,0.01872,-0.03183,-0.03652,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Race,indian_white,-0.01279,0.00379,-0.00952,-0.00018,0.00327,-0.00397,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Race,white_indian,0.06655,0.05524,0.03472,0.01872,-0.03183,-0.03652,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Marriage,divorced_married,-0.00449,-0.01695,0.004,-0.01356,0.00849,0.0034,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Marriage,married_divorced,-0.03492,-0.01552,-0.02925,-0.01894,0.00567,-0.00342,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Religion,atheist_religious,-0.09692,-0.12478,-0.074,-0.11143,0.02292,0.01334,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Religion,religious_atheist,0.03012,0.01113,0.04631,0.02374,0.01618,0.01262,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Religion,christian_otherrel,0.02951,0.02718,0.04318,0.04309,0.01367,0.0159,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Religion,otherrel_christian,-0.04303,0.02084,-0.03911,0.0349,0.00392,0.01406,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Religion,muslim_christian,-0.05393,0.04073,-0.0671,0.03525,-0.01318,-0.00548,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Religion,christian_muslim,0.02951,0.02718,0.04318,0.04309,0.01367,0.0159,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Mental health,schizophrenic_sane,-0.1321,-0.0859,-0.10974,-0.05074,0.02235,0.03516,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Mental health,sane_schizophrenic,0.1329,0.08391,0.10973,0.04175,-0.02316,-0.04216,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Mental health,autistic_sane,-0.11794,-0.01922,-0.09725,0.02141,0.02069,0.04063,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Mental health,sane_autistic,0.1329,0.08391,0.10973,0.04175,-0.02316,-0.04216,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Mental health,bipolar_sane,-0.12939,-0.0532,-0.11445,-0.02024,0.01494,0.03296,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Mental health,sane_bipolar,0.1329,0.08391,0.10973,0.04175,-0.02316,-0.04216,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Mental health,drugaddict_sober,-0.08419,-0.04201,-0.08633,-0.0405,-0.00214,0.00151,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Mental health,sober_drugaddict,-0.01889,-0.0588,-0.00591,-0.05664,0.01298,0.00216,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Mental health,smoker_nonsmoker,-0.05126,-0.00583,-0.05138,-0.00854,-0.00012,-0.00271,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Mental health,nonsmoker_smoker,-0.02264,-0.02868,-0.008,-0.0248,0.01463,0.00388,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Mental health,depressed_happy,-0.10073,-0.03377,-0.10493,-0.01752,-0.00421,0.01624,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Mental health,happy_depressed,0.12483,0.04004,0.11837,0.02583,-0.00646,-0.01421,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Mental health,retarded_sane,-0.08764,-0.03065,-0.07279,-0.00074,0.01484,0.02991,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Mental health,sane_retarded,0.1329,0.08391,0.10973,0.04175,-0.02316,-0.04216,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Mental health,alcoholic_sober,-0.10224,-0.07687,-0.09657,-0.06481,0.00566,0.01207,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Mental health,sober_alcoholic,-0.01665,-0.04678,-0.00528,-0.04466,0.01137,0.00211,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Height,short_tall,0.00893,0.02015,-0.02746,-0.02466,-0.03639,-0.04481,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Height,tall_short,0.05921,0.02363,0.02271,-0.01472,-0.0365,-0.03835,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Employment,unemployed_employed,-0.0526,0.03901,-0.04655,0.05402,0.00605,0.015,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Employment,employed_unemployed,0.13525,0.22127,0.09906,0.18162,-0.03619,-0.03965,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Physical disability,deaf_abled,-0.04183,-0.02861,-0.01103,0.01335,0.0308,0.04196,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Physical disability,abled_deaf,0.06899,0.1095,-0.01763,0.00454,-0.08663,-0.10496,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Physical disability,disabled_abled,-0.06026,-0.03516,-0.00971,0.01401,0.05055,0.04917,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Physical disability,abled_disabled,0.06899,0.1095,-0.01763,0.00454,-0.08663,-0.10496,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Physical disability,wheelchair_abled,-0.03889,-0.01827,-0.01194,0.01566,0.02695,0.03393,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Physical disability,abled_wheelchair,0.06899,0.1095,-0.01763,0.00454,-0.08663,-0.10496,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Physical disability,mute_abled,-0.04458,-0.05722,-0.01205,0.01289,0.03253,0.07011,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Physical disability,abled_mute,0.06899,0.1095,-0.01763,0.00454,-0.08663,-0.10496,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Physical disability,blind_abled,-0.04526,-0.01516,-0.00893,0.01412,0.03633,0.02927,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Physical disability,abled_blind,0.06899,0.1095,-0.01763,0.00454,-0.08663,-0.10496,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Weight,fat_thin,0.00692,-0.00422,-0.02814,-0.04746,-0.03507,-0.04324,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Weight,thin_fat,0.01064,-0.03238,-0.01002,-0.07523,-0.02067,-0.04285,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,SES,uneducated_educated,-0.11548,-0.13254,-0.14047,-0.15937,-0.02499,-0.02683,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,SES,educated_uneducated,0.10124,0.1225,0.06407,0.08759,-0.03716,-0.03491,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,SES,poor_rich,-0.05097,-0.08786,-0.02517,-0.07094,0.0258,0.01692,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,SES,rich_poor,0.06318,0.01478,0.02308,-0.03498,-0.0401,-0.04976,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Fertility,infertile_fertile,-0.07948,-0.08104,-0.08374,-0.08926,-0.00426,-0.00821,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Fertility,fertile_infertile,-0.04702,-0.0205,-0.05727,-0.03861,-0.01025,-0.0181,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Attractiveness,unattractive_attractive,-0.18279,-0.13155,-0.19196,-0.13811,-0.00916,-0.00656,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Physical disability,Attractiveness,attractive_unattractive,0.14842,0.08571,0.12573,0.04399,-0.0227,-0.04172,5
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Sexuality,homosexual_heterosexual,-0.05566,-0.0339,-0.05526,-0.03783,0.0004,-0.00393,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Sexuality,heterosexual_homosexual,0.00889,0.02202,0.00924,0.01892,0.00034,-0.0031,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Age,old_young,0.07721,0.05474,0.08105,0.04666,0.00384,-0.00807,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Age,young_old,0.06498,0.11179,0.068,0.10641,0.00301,-0.00538,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Occupation,laborer_manager,0.0359,0.02056,0.03825,0.01503,0.00235,-0.00553,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Occupation,manager_laborer,0.0979,0.17011,0.10102,0.16516,0.00312,-0.00495,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Occupation,server_manager,0.05365,0.00565,0.0554,-4e-05,0.00175,-0.0057,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Occupation,manager_server,0.0979,0.17011,0.10102,0.16516,0.00312,-0.00495,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Immigration,immigrant_citizen,0.01153,0.05256,0.01281,0.04806,0.00128,-0.0045,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Immigration,citizen_immigrant,0.01592,0.04184,0.017,0.04292,0.00108,0.00108,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Immigration,alien_citizen,-0.08398,0.00572,-0.08432,-0.00174,-0.00034,-0.00746,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Immigration,citizen_alien,0.01592,0.04184,0.017,0.04292,0.00108,0.00108,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Race,aboriginal_white,0.02351,-0.02014,0.02383,-0.021,0.00032,-0.00086,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Race,white_aboriginal,0.06655,0.05524,0.07032,0.04951,0.00377,-0.00573,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Race,arabian_white,-0.01801,0.05392,-0.01773,0.04924,0.00029,-0.00468,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Race,white_arabian,0.06655,0.05524,0.07032,0.04951,0.00377,-0.00573,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Race,latino_white,0.03011,0.02775,0.03218,0.01979,0.00207,-0.00797,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Race,white_latino,0.06655,0.05524,0.07032,0.04951,0.00377,-0.00573,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Race,asian_white,0.03801,0.08121,0.04023,0.07465,0.00222,-0.00657,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Race,white_asian,0.06655,0.05524,0.07032,0.04951,0.00377,-0.00573,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Race,black_white,0.00945,-0.03,0.01008,-0.03495,0.00063,-0.00495,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Race,white_black,0.06655,0.05524,0.07032,0.04951,0.00377,-0.00573,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Race,indian_white,-0.01279,0.00379,-0.01279,0.002,-0.0,-0.00178,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Race,white_indian,0.06655,0.05524,0.07032,0.04951,0.00377,-0.00573,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Marriage,divorced_married,-0.00449,-0.01695,-0.00394,-0.02016,0.00055,-0.00321,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Marriage,married_divorced,-0.03492,-0.01552,-0.03611,-0.0123,-0.00119,0.00321,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Religion,atheist_religious,-0.09692,-0.12478,-0.09778,-0.1275,-0.00086,-0.00272,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Religion,religious_atheist,0.03012,0.01113,0.03022,0.01122,9e-05,9e-05,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Religion,christian_otherrel,0.02951,0.02718,0.03072,0.02378,0.00121,-0.0034,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Religion,otherrel_christian,-0.04303,0.02084,-0.04282,0.01612,0.00021,-0.00472,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Religion,muslim_christian,-0.05393,0.04073,-0.05391,0.03822,2e-05,-0.00251,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Religion,christian_muslim,0.02951,0.02718,0.03072,0.02378,0.00121,-0.0034,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Mental health,schizophrenic_sane,-0.1321,-0.0859,-0.13353,-0.09325,-0.00143,-0.00735,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Mental health,sane_schizophrenic,0.1329,0.08391,0.13474,0.0826,0.00185,-0.00131,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Mental health,autistic_sane,-0.11794,-0.01922,-0.11897,-0.02569,-0.00103,-0.00647,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Mental health,sane_autistic,0.1329,0.08391,0.13474,0.0826,0.00185,-0.00131,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Mental health,bipolar_sane,-0.12939,-0.0532,-0.13192,-0.06051,-0.00253,-0.00731,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Mental health,sane_bipolar,0.1329,0.08391,0.13474,0.0826,0.00185,-0.00131,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Mental health,drugaddict_sober,-0.08419,-0.04201,-0.08495,-0.05245,-0.00076,-0.01044,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Mental health,sober_drugaddict,-0.01889,-0.0588,-0.02106,-0.05593,-0.00218,0.00287,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Mental health,smoker_nonsmoker,-0.05126,-0.00583,-0.0517,-0.01459,-0.00044,-0.00876,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Mental health,nonsmoker_smoker,-0.02264,-0.02868,-0.02276,-0.02895,-0.00012,-0.00027,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Mental health,depressed_happy,-0.10073,-0.03377,-0.103,-0.03959,-0.00227,-0.00582,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Mental health,happy_depressed,0.12483,0.04004,0.12644,0.04009,0.00161,5e-05,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Mental health,retarded_sane,-0.08764,-0.03065,-0.09036,-0.04098,-0.00272,-0.01033,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Mental health,sane_retarded,0.1329,0.08391,0.13474,0.0826,0.00185,-0.00131,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Mental health,alcoholic_sober,-0.10224,-0.07687,-0.10379,-0.09123,-0.00155,-0.01435,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Mental health,sober_alcoholic,-0.01665,-0.04678,-0.01901,-0.04413,-0.00235,0.00265,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Height,short_tall,0.00893,0.02015,0.00942,0.01696,0.00049,-0.00319,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Height,tall_short,0.05921,0.02363,0.05946,0.02929,0.00025,0.00567,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Employment,unemployed_employed,-0.0526,0.03901,-0.05315,0.03246,-0.00055,-0.00655,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Employment,employed_unemployed,0.13525,0.22127,0.14182,0.2171,0.00657,-0.00417,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Physical disability,deaf_abled,-0.04183,-0.02861,-0.04144,-0.03492,0.0004,-0.00631,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Physical disability,abled_deaf,0.06899,0.1095,0.07015,0.10957,0.00115,7e-05,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Physical disability,disabled_abled,-0.06026,-0.03516,-0.06079,-0.03843,-0.00053,-0.00326,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Physical disability,abled_disabled,0.06899,0.1095,0.07015,0.10957,0.00115,7e-05,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Physical disability,wheelchair_abled,-0.03889,-0.01827,-0.03895,-0.02345,-6e-05,-0.00518,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Physical disability,abled_wheelchair,0.06899,0.1095,0.07015,0.10957,0.00115,7e-05,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Physical disability,mute_abled,-0.04458,-0.05722,-0.04506,-0.06051,-0.00048,-0.0033,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Physical disability,abled_mute,0.06899,0.1095,0.07015,0.10957,0.00115,7e-05,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Physical disability,blind_abled,-0.04526,-0.01516,-0.04491,-0.02247,0.00035,-0.00731,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Physical disability,abled_blind,0.06899,0.1095,0.07015,0.10957,0.00115,7e-05,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Weight,fat_thin,0.00692,-0.00422,0.01686,-0.012,0.00993,-0.00778,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Weight,thin_fat,0.01064,-0.03238,-0.00051,-0.02005,-0.01115,0.01233,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,SES,uneducated_educated,-0.11548,-0.13254,-0.11632,-0.14013,-0.00083,-0.00759,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,SES,educated_uneducated,0.10124,0.1225,0.10497,0.11835,0.00373,-0.00415,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,SES,poor_rich,-0.05097,-0.08786,-0.05145,-0.09325,-0.00049,-0.00539,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,SES,rich_poor,0.06318,0.01478,0.06399,0.01413,0.00081,-0.00065,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Fertility,infertile_fertile,-0.07948,-0.08104,-0.08024,-0.08368,-0.00077,-0.00264,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Fertility,fertile_infertile,-0.04702,-0.0205,-0.0497,-0.0178,-0.00267,0.00271,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Attractiveness,unattractive_attractive,-0.18279,-0.13155,-0.18586,-0.13389,-0.00306,-0.00234,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Weight,Attractiveness,attractive_unattractive,0.14842,0.08571,0.14808,0.09133,-0.00034,0.00562,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Sexuality,homosexual_heterosexual,-0.05566,-0.0339,-0.03078,-0.00677,0.02488,0.02712,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Sexuality,heterosexual_homosexual,0.00889,0.02202,0.03845,0.05399,0.02956,0.03197,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Age,old_young,0.07721,0.05474,0.05332,0.02627,-0.02389,-0.02847,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Age,young_old,0.06498,0.11179,0.03319,0.0765,-0.0318,-0.03529,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Occupation,laborer_manager,0.0359,0.02056,0.04866,0.04599,0.01276,0.02543,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Occupation,manager_laborer,0.0979,0.17011,-0.00495,0.05158,-0.10285,-0.11853,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Occupation,server_manager,0.05365,0.00565,0.07191,0.02163,0.01826,0.01598,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Occupation,manager_server,0.0979,0.17011,-0.00495,0.05158,-0.10285,-0.11853,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Immigration,immigrant_citizen,0.01153,0.05256,0.03306,0.09215,0.02153,0.03959,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Immigration,citizen_immigrant,0.01592,0.04184,0.00483,0.04072,-0.01109,-0.00112,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Immigration,alien_citizen,-0.08398,0.00572,-0.04757,0.06483,0.0364,0.05911,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Immigration,citizen_alien,0.01592,0.04184,0.00483,0.04072,-0.01109,-0.00112,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Race,aboriginal_white,0.02351,-0.02014,0.03592,-0.00069,0.01241,0.01945,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Race,white_aboriginal,0.06655,0.05524,0.05093,0.0364,-0.01562,-0.01884,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Race,arabian_white,-0.01801,0.05392,-0.07386,-0.00311,-0.05585,-0.05703,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Race,white_arabian,0.06655,0.05524,0.05093,0.0364,-0.01562,-0.01884,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Race,latino_white,0.03011,0.02775,0.0245,0.02202,-0.00562,-0.00573,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Race,white_latino,0.06655,0.05524,0.05093,0.0364,-0.01562,-0.01884,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Race,asian_white,0.03801,0.08121,-0.00215,0.04061,-0.04017,-0.0406,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Race,white_asian,0.06655,0.05524,0.05093,0.0364,-0.01562,-0.01884,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Race,black_white,0.00945,-0.03,0.03902,-0.00229,0.02957,0.02771,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Race,white_black,0.06655,0.05524,0.05093,0.0364,-0.01562,-0.01884,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Race,indian_white,-0.01279,0.00379,-0.00078,0.02304,0.012,0.01925,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Race,white_indian,0.06655,0.05524,0.05093,0.0364,-0.01562,-0.01884,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Marriage,divorced_married,-0.00449,-0.01695,0.00448,-0.00074,0.00897,0.01621,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Marriage,married_divorced,-0.03492,-0.01552,-0.04561,-0.02201,-0.0107,-0.0065,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Religion,atheist_religious,-0.09692,-0.12478,-0.04455,-0.06812,0.05238,0.05666,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Religion,religious_atheist,0.03012,0.01113,0.01116,-0.02206,-0.01897,-0.03319,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Religion,christian_otherrel,0.02951,0.02718,-0.0006,0.0001,-0.03011,-0.02708,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Religion,otherrel_christian,-0.04303,0.02084,-0.07767,-0.0079,-0.03465,-0.02874,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Religion,muslim_christian,-0.05393,0.04073,-0.08411,0.02518,-0.03018,-0.01555,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Religion,christian_muslim,0.02951,0.02718,-0.0006,0.0001,-0.03011,-0.02708,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Mental health,schizophrenic_sane,-0.1321,-0.0859,-0.07789,-0.03599,0.05421,0.04991,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Mental health,sane_schizophrenic,0.1329,0.08391,0.14689,0.04802,0.01399,-0.03588,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Mental health,autistic_sane,-0.11794,-0.01922,-0.07864,0.01564,0.0393,0.03487,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Mental health,sane_autistic,0.1329,0.08391,0.14689,0.04802,0.01399,-0.03588,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Mental health,bipolar_sane,-0.12939,-0.0532,-0.10686,-0.03162,0.02253,0.02159,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Mental health,sane_bipolar,0.1329,0.08391,0.14689,0.04802,0.01399,-0.03588,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Mental health,drugaddict_sober,-0.08419,-0.04201,-0.04349,0.00388,0.04069,0.04588,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Mental health,sober_drugaddict,-0.01889,-0.0588,0.02817,-0.02151,0.04706,0.03729,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Mental health,smoker_nonsmoker,-0.05126,-0.00583,-0.02986,0.02603,0.0214,0.03186,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Mental health,nonsmoker_smoker,-0.02264,-0.02868,0.01962,0.00797,0.04226,0.03665,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Mental health,depressed_happy,-0.10073,-0.03377,-0.0776,-0.02437,0.02312,0.00939,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Mental health,happy_depressed,0.12483,0.04004,0.15702,0.03588,0.03219,-0.00416,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Mental health,retarded_sane,-0.08764,-0.03065,-0.04294,0.00188,0.0447,0.03254,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Mental health,sane_retarded,0.1329,0.08391,0.14689,0.04802,0.01399,-0.03588,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Mental health,alcoholic_sober,-0.10224,-0.07687,-0.07895,-0.05203,0.02329,0.02484,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Mental health,sober_alcoholic,-0.01665,-0.04678,0.02172,-0.01719,0.03837,0.02959,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Height,short_tall,0.00893,0.02015,-0.00032,0.01196,-0.00926,-0.00819,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Height,tall_short,0.05921,0.02363,0.11147,0.06793,0.05227,0.0443,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Employment,unemployed_employed,-0.0526,0.03901,-0.02389,0.08581,0.0287,0.04679,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Employment,employed_unemployed,0.13525,0.22127,0.04213,0.10754,-0.09312,-0.11373,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Physical disability,deaf_abled,-0.04183,-0.02861,0.02059,0.0284,0.06242,0.05701,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Physical disability,abled_deaf,0.06899,0.1095,0.09135,0.11778,0.02235,0.00829,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Physical disability,disabled_abled,-0.06026,-0.03516,-0.02928,0.00047,0.03098,0.03563,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Physical disability,abled_disabled,0.06899,0.1095,0.09135,0.11778,0.02235,0.00829,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Physical disability,wheelchair_abled,-0.03889,-0.01827,-0.02087,0.00741,0.01802,0.02569,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Physical disability,abled_wheelchair,0.06899,0.1095,0.09135,0.11778,0.02235,0.00829,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Physical disability,mute_abled,-0.04458,-0.05722,-0.00873,-0.03482,0.03585,0.02239,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Physical disability,abled_mute,0.06899,0.1095,0.09135,0.11778,0.02235,0.00829,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Physical disability,blind_abled,-0.04526,-0.01516,-0.012,0.00639,0.03325,0.02155,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Physical disability,abled_blind,0.06899,0.1095,0.09135,0.11778,0.02235,0.00829,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Weight,fat_thin,0.00692,-0.00422,0.04455,0.02299,0.03763,0.02721,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Weight,thin_fat,0.01064,-0.03238,0.05587,0.01153,0.04522,0.04391,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,SES,uneducated_educated,-0.11548,-0.13254,0.03544,0.01477,0.15093,0.14732,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,SES,educated_uneducated,0.10124,0.1225,0.03658,0.01468,-0.06465,-0.10783,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,SES,poor_rich,-0.05097,-0.08786,0.03329,0.01198,0.08426,0.09984,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,SES,rich_poor,0.06318,0.01478,0.03052,0.01141,-0.03266,-0.00337,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Fertility,infertile_fertile,-0.07948,-0.08104,0.01064,0.01394,0.09011,0.09498,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Fertility,fertile_infertile,-0.04702,-0.0205,-0.00213,0.02562,0.04489,0.04612,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Attractiveness,unattractive_attractive,-0.18279,-0.13155,-0.10019,-0.05761,0.0826,0.07394,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),SES,Attractiveness,attractive_unattractive,0.14842,0.08571,0.15059,0.06069,0.00216,-0.02502,3
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Sexuality,homosexual_heterosexual,-0.05566,-0.0339,-0.05792,-0.03814,-0.00226,-0.00424,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Sexuality,heterosexual_homosexual,0.00889,0.02202,0.01535,0.03324,0.00646,0.01122,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Age,old_young,0.07721,0.05474,0.084,0.06523,0.00678,0.01049,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Age,young_old,0.06498,0.11179,0.06443,0.10971,-0.00055,-0.00208,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Occupation,laborer_manager,0.0359,0.02056,0.03863,0.02341,0.00273,0.00285,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Occupation,manager_laborer,0.0979,0.17011,0.1036,0.17911,0.00569,0.009,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Occupation,server_manager,0.05365,0.00565,0.0533,0.00213,-0.00035,-0.00352,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Occupation,manager_server,0.0979,0.17011,0.1036,0.17911,0.00569,0.009,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Immigration,immigrant_citizen,0.01153,0.05256,0.01887,0.06509,0.00734,0.01253,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Immigration,citizen_immigrant,0.01592,0.04184,0.01957,0.04778,0.00365,0.00595,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Immigration,alien_citizen,-0.08398,0.00572,-0.07847,0.01567,0.0055,0.00995,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Immigration,citizen_alien,0.01592,0.04184,0.01957,0.04778,0.00365,0.00595,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Race,aboriginal_white,0.02351,-0.02014,0.02588,-0.01597,0.00237,0.00417,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Race,white_aboriginal,0.06655,0.05524,0.07763,0.07414,0.01108,0.0189,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Race,arabian_white,-0.01801,0.05392,-0.0133,0.06245,0.00471,0.00853,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Race,white_arabian,0.06655,0.05524,0.07763,0.07414,0.01108,0.0189,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Race,latino_white,0.03011,0.02775,0.03438,0.03423,0.00426,0.00648,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Race,white_latino,0.06655,0.05524,0.07763,0.07414,0.01108,0.0189,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Race,asian_white,0.03801,0.08121,0.03835,0.08076,0.00034,-0.00046,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Race,white_asian,0.06655,0.05524,0.07763,0.07414,0.01108,0.0189,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Race,black_white,0.00945,-0.03,0.01676,-0.01688,0.0073,0.01312,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Race,white_black,0.06655,0.05524,0.07763,0.07414,0.01108,0.0189,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Race,indian_white,-0.01279,0.00379,-0.01061,0.00693,0.00218,0.00314,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Race,white_indian,0.06655,0.05524,0.07763,0.07414,0.01108,0.0189,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Marriage,divorced_married,-0.00449,-0.01695,0.00625,0.00088,0.01074,0.01783,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Marriage,married_divorced,-0.03492,-0.01552,-0.03396,-0.0138,0.00095,0.00171,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Religion,atheist_religious,-0.09692,-0.12478,-0.09045,-0.11386,0.00647,0.01092,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Religion,religious_atheist,0.03012,0.01113,0.03059,0.01007,0.00047,-0.00105,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Religion,christian_otherrel,0.02951,0.02718,0.03709,0.04036,0.00758,0.01318,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Religion,otherrel_christian,-0.04303,0.02084,-0.04218,0.02245,0.00085,0.00161,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Religion,muslim_christian,-0.05393,0.04073,-0.05078,0.04593,0.00315,0.0052,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Religion,christian_muslim,0.02951,0.02718,0.03709,0.04036,0.00758,0.01318,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Mental health,schizophrenic_sane,-0.1321,-0.0859,-0.12798,-0.0777,0.00412,0.00821,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Mental health,sane_schizophrenic,0.1329,0.08391,0.13489,0.08319,0.00199,-0.00072,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Mental health,autistic_sane,-0.11794,-0.01922,-0.11497,-0.01419,0.00297,0.00503,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Mental health,sane_autistic,0.1329,0.08391,0.13489,0.08319,0.00199,-0.00072,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Mental health,bipolar_sane,-0.12939,-0.0532,-0.12636,-0.04569,0.00303,0.00751,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Mental health,sane_bipolar,0.1329,0.08391,0.13489,0.08319,0.00199,-0.00072,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Mental health,drugaddict_sober,-0.08419,-0.04201,-0.08721,-0.0484,-0.00302,-0.00639,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Mental health,sober_drugaddict,-0.01889,-0.0588,-0.02404,-0.07022,-0.00515,-0.01143,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Mental health,smoker_nonsmoker,-0.05126,-0.00583,-0.04779,0.00164,0.00347,0.00747,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Mental health,nonsmoker_smoker,-0.02264,-0.02868,-0.01894,-0.02263,0.0037,0.00606,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Mental health,depressed_happy,-0.10073,-0.03377,-0.09118,-0.0123,0.00955,0.02147,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Mental health,happy_depressed,0.12483,0.04004,0.13321,0.05275,0.00838,0.01271,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Mental health,retarded_sane,-0.08764,-0.03065,-0.08245,-0.02206,0.00519,0.00859,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Mental health,sane_retarded,0.1329,0.08391,0.13489,0.08319,0.00199,-0.00072,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Mental health,alcoholic_sober,-0.10224,-0.07687,-0.10236,-0.0792,-0.00013,-0.00232,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Mental health,sober_alcoholic,-0.01665,-0.04678,-0.02167,-0.05769,-0.00501,-0.01091,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Height,short_tall,0.00893,0.02015,0.00848,0.01858,-0.00045,-0.00157,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Height,tall_short,0.05921,0.02363,0.0566,0.01765,-0.00261,-0.00598,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Employment,unemployed_employed,-0.0526,0.03901,-0.0426,0.05821,0.01,0.0192,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Employment,employed_unemployed,0.13525,0.22127,0.14724,0.24094,0.01199,0.01967,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Physical disability,deaf_abled,-0.04183,-0.02861,-0.03179,-0.01276,0.01004,0.01585,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Physical disability,abled_deaf,0.06899,0.1095,0.07107,0.1086,0.00208,-0.0009,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Physical disability,disabled_abled,-0.06026,-0.03516,-0.05504,-0.02672,0.00522,0.00844,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Physical disability,abled_disabled,0.06899,0.1095,0.07107,0.1086,0.00208,-0.0009,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Physical disability,wheelchair_abled,-0.03889,-0.01827,-0.03271,-0.00763,0.00618,0.01065,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Physical disability,abled_wheelchair,0.06899,0.1095,0.07107,0.1086,0.00208,-0.0009,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Physical disability,mute_abled,-0.04458,-0.05722,-0.03885,-0.04762,0.00572,0.0096,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Physical disability,abled_mute,0.06899,0.1095,0.07107,0.1086,0.00208,-0.0009,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Physical disability,blind_abled,-0.04526,-0.01516,-0.03357,0.00431,0.01169,0.01947,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Physical disability,abled_blind,0.06899,0.1095,0.07107,0.1086,0.00208,-0.0009,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Weight,fat_thin,0.00692,-0.00422,0.00887,-0.00155,0.00195,0.00267,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Weight,thin_fat,0.01064,-0.03238,0.00513,-0.04304,-0.00552,-0.01066,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,SES,uneducated_educated,-0.11548,-0.13254,-0.10386,-0.11221,0.01163,0.02033,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,SES,educated_uneducated,0.10124,0.1225,0.10283,0.12201,0.00159,-0.00049,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,SES,poor_rich,-0.05097,-0.08786,-0.03809,-0.06561,0.01287,0.02225,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,SES,rich_poor,0.06318,0.01478,0.06861,0.02156,0.00543,0.00677,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Fertility,infertile_fertile,-0.07948,-0.08104,-0.05099,-0.0295,0.02849,0.05155,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Fertility,fertile_infertile,-0.04702,-0.0205,-0.05686,-0.04185,-0.00984,-0.02135,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Attractiveness,unattractive_attractive,-0.18279,-0.13155,-0.17547,-0.11413,0.00732,0.01742,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Fertility,Attractiveness,attractive_unattractive,0.14842,0.08571,0.14542,0.07831,-0.003,-0.0074,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Sexuality,homosexual_heterosexual,-0.05566,-0.0339,-0.00528,-0.0003,0.05038,0.0336,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Sexuality,heterosexual_homosexual,0.00889,0.02202,0.00896,0.024,7e-05,0.00199,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Age,old_young,0.07721,0.05474,0.00521,0.01002,-0.072,-0.04472,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Age,young_old,0.06498,0.11179,-0.02448,0.06023,-0.08946,-0.05156,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Occupation,laborer_manager,0.0359,0.02056,0.01025,0.00381,-0.02565,-0.01675,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Occupation,manager_laborer,0.0979,0.17011,0.00186,0.11284,-0.09604,-0.05727,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Occupation,server_manager,0.05365,0.00565,0.03747,-0.00557,-0.01618,-0.01123,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Occupation,manager_server,0.0979,0.17011,0.00186,0.11284,-0.09604,-0.05727,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Immigration,immigrant_citizen,0.01153,0.05256,-0.03263,0.02608,-0.04416,-0.02648,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Immigration,citizen_immigrant,0.01592,0.04184,-0.03301,0.01349,-0.04893,-0.02835,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Immigration,alien_citizen,-0.08398,0.00572,-0.07588,0.01436,0.0081,0.00865,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Immigration,citizen_alien,0.01592,0.04184,-0.03301,0.01349,-0.04893,-0.02835,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Race,aboriginal_white,0.02351,-0.02014,0.00717,-0.03179,-0.01634,-0.01165,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Race,white_aboriginal,0.06655,0.05524,0.02948,0.03348,-0.03707,-0.02176,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Race,arabian_white,-0.01801,0.05392,-0.04405,0.04103,-0.02604,-0.01289,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Race,white_arabian,0.06655,0.05524,0.02948,0.03348,-0.03707,-0.02176,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Race,latino_white,0.03011,0.02775,-0.02296,-0.00564,-0.05307,-0.0334,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Race,white_latino,0.06655,0.05524,0.02948,0.03348,-0.03707,-0.02176,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Race,asian_white,0.03801,0.08121,-0.06871,0.01549,-0.10672,-0.06573,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Race,white_asian,0.06655,0.05524,0.02948,0.03348,-0.03707,-0.02176,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Race,black_white,0.00945,-0.03,0.03384,-0.0147,0.02439,0.0153,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Race,white_black,0.06655,0.05524,0.02948,0.03348,-0.03707,-0.02176,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Race,indian_white,-0.01279,0.00379,-0.05379,-0.02087,-0.04101,-0.02465,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Race,white_indian,0.06655,0.05524,0.02948,0.03348,-0.03707,-0.02176,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Marriage,divorced_married,-0.00449,-0.01695,0.01002,-0.00695,0.01451,0.01,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Marriage,married_divorced,-0.03492,-0.01552,-0.01776,-0.00292,0.01715,0.0126,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Religion,atheist_religious,-0.09692,-0.12478,0.01449,-0.05477,0.11141,0.07,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Religion,religious_atheist,0.03012,0.01113,0.00883,-0.00149,-0.02129,-0.01262,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Religion,christian_otherrel,0.02951,0.02718,0.03126,0.0287,0.00175,0.00152,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Religion,otherrel_christian,-0.04303,0.02084,-0.03846,0.02696,0.00457,0.00611,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Religion,muslim_christian,-0.05393,0.04073,-0.06071,0.04041,-0.00678,-0.00032,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Religion,christian_muslim,0.02951,0.02718,0.03126,0.0287,0.00175,0.00152,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Mental health,schizophrenic_sane,-0.1321,-0.0859,-0.02969,-0.017,0.10241,0.0689,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Mental health,sane_schizophrenic,0.1329,0.08391,0.07755,0.05103,-0.05534,-0.03288,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Mental health,autistic_sane,-0.11794,-0.01922,-0.03311,0.04028,0.08483,0.0595,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Mental health,sane_autistic,0.1329,0.08391,0.07755,0.05103,-0.05534,-0.03288,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Mental health,bipolar_sane,-0.12939,-0.0532,-0.02555,0.01828,0.10384,0.07148,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Mental health,sane_bipolar,0.1329,0.08391,0.07755,0.05103,-0.05534,-0.03288,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Mental health,drugaddict_sober,-0.08419,-0.04201,-0.04155,-0.01301,0.04264,0.02899,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Mental health,sober_drugaddict,-0.01889,-0.0588,0.00504,-0.04388,0.02393,0.01492,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Mental health,smoker_nonsmoker,-0.05126,-0.00583,-0.03282,0.00748,0.01843,0.01331,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Mental health,nonsmoker_smoker,-0.02264,-0.02868,0.00179,-0.01132,0.02442,0.01736,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Mental health,depressed_happy,-0.10073,-0.03377,-0.02971,0.02106,0.07102,0.05483,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Mental health,happy_depressed,0.12483,0.04004,0.07645,0.01445,-0.04838,-0.02559,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Mental health,retarded_sane,-0.08764,-0.03065,-0.00116,0.02957,0.08647,0.06022,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Mental health,sane_retarded,0.1329,0.08391,0.07755,0.05103,-0.05534,-0.03288,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Mental health,alcoholic_sober,-0.10224,-0.07687,-0.06213,-0.04843,0.0401,0.02844,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Mental health,sober_alcoholic,-0.01665,-0.04678,0.00258,-0.03434,0.01924,0.01244,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Height,short_tall,0.00893,0.02015,0.02525,0.03258,0.01632,0.01243,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Height,tall_short,0.05921,0.02363,0.04084,0.0129,-0.01837,-0.01072,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Employment,unemployed_employed,-0.0526,0.03901,-0.04223,0.04987,0.01037,0.01086,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Employment,employed_unemployed,0.13525,0.22127,0.02545,0.1585,-0.1098,-0.06277,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Physical disability,deaf_abled,-0.04183,-0.02861,0.00729,0.00398,0.04912,0.03259,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Physical disability,abled_deaf,0.06899,0.1095,0.03868,0.09453,-0.03031,-0.01497,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Physical disability,disabled_abled,-0.06026,-0.03516,0.0119,0.01247,0.07217,0.04764,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Physical disability,abled_disabled,0.06899,0.1095,0.03868,0.09453,-0.03031,-0.01497,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Physical disability,wheelchair_abled,-0.03889,-0.01827,0.01925,0.0208,0.05814,0.03907,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Physical disability,abled_wheelchair,0.06899,0.1095,0.03868,0.09453,-0.03031,-0.01497,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Physical disability,mute_abled,-0.04458,-0.05722,-0.01017,-0.03409,0.0344,0.02313,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Physical disability,abled_mute,0.06899,0.1095,0.03868,0.09453,-0.03031,-0.01497,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Physical disability,blind_abled,-0.04526,-0.01516,-0.01216,0.00935,0.03309,0.02451,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Physical disability,abled_blind,0.06899,0.1095,0.03868,0.09453,-0.03031,-0.01497,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Weight,fat_thin,0.00692,-0.00422,0.03419,0.01467,0.02726,0.01889,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Weight,thin_fat,0.01064,-0.03238,0.01893,-0.02629,0.00828,0.00609,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,SES,uneducated_educated,-0.11548,-0.13254,-0.03056,-0.0774,0.08492,0.05515,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,SES,educated_uneducated,0.10124,0.1225,0.01699,0.07282,-0.08425,-0.04969,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,SES,poor_rich,-0.05097,-0.08786,-0.02213,-0.06831,0.02884,0.01955,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,SES,rich_poor,0.06318,0.01478,-0.01121,-0.03273,-0.07439,-0.04751,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Fertility,infertile_fertile,-0.07948,-0.08104,0.01613,-0.01788,0.0956,0.06317,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Fertility,fertile_infertile,-0.04702,-0.0205,-0.03435,-0.00969,0.01267,0.01082,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Attractiveness,unattractive_attractive,-0.18279,-0.13155,0.00584,-0.00245,0.18863,0.1291,1
+GloVe wiki-gigaword 100d,Hard debias (Bolukbasi neutralize + equalize),Attractiveness,Attractiveness,attractive_unattractive,0.14842,0.08571,-0.00089,-0.00499,-0.14931,-0.0907,1

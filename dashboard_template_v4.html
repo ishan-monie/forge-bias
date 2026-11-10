@@ -275,11 +275,20 @@ a { color: var(--blue); }
     <li><b>Bar</b> = gap after minus gap before. "Worse" / "better" means a change of at least 0.005.</li>
   </ol>
   <p class="small" id="kline"></p>
+  <details class="info"><summary>The debiasing methods you can choose</summary>
+    <ul>
+      <li><b>Subtract group subspace</b> (Bolukbasi et al., 2016, the “neutralize” step): find every direction along which the category's groups differ and delete it from all words.</li>
+      <li><b>Subtract top 3 directions:</b> the same, but only the 3 strongest directions. It changes the model less, but usually removes less of the bias.</li>
+      <li><b>Hard debias</b> (Bolukbasi et al., 2016, neutralize plus “equalize”): also puts the category's groups at equal distance from every other word, so they differ only along the removed directions, by equal amounts. Our groups are word lists rather than word pairs, so the groups themselves form the set that gets equalized.</li>
+      <li><b>INLP</b> (Ravfogel et al., 2020): train a simple classifier to guess which group a word belongs to, delete the directions it used, and repeat until it can no longer beat guessing on held-out words. Finds hidden bias directions, but the number removed varies and it can fail on small word lists.</li>
+      <li>All four assume bias is a straight-line direction in the model. A method that works on one model may do little on another.</li>
+    </ul>
+  </details>
   <details class="info" open><summary>Where this can mislead</summary>
     <ul>
       <li>Words like "white", "black", "native" or "dumb" have several meanings blended into one point.</li>
       <li>The models reflect how Wikipedia and news write about groups, not how people feel.</li>
-      <li>Short word lists make scores noisy. The category we fixed always drops to about zero by design.</li>
+      <li>Short word lists make scores noisy. The category we fixed usually drops to about zero, but not with every method.</li>
       <li>There is no gender category in these 72 groups.</li>
     </ul>
   </details>
@@ -289,6 +298,15 @@ a { color: var(--blue); }
 
 <script>
 const ALL = /*__DATA__*/null;
+// every model carries every method's "after" results under .methods; useMethod copies the chosen one onto the model
+function useMethod(id) { for (const k of ALL.order) { Object.assign(ALL.models[k], ALL.models[k].methods[id]); ALL.models[k].methodId = id; } }
+let MID = ALL.methodOrder[0]; useMethod(MID);
+const MNOTE = {
+  fullrank: "All directions that separate the groups were removed.",
+  k3: "Only the 3 strongest directions were removed (fewer if the category has fewer), so less of the model is changed.",
+  hard: "The same directions as the first method are removed, then the category's groups are set to differ only along those directions, by equal amounts (the “equalize” step).",
+  inlp: "Directions were found by repeatedly training a simple classifier to tell the groups apart and removing what it used, until it could do no better than guessing on held-out words."
+};
 let M = ALL.order[0], D = ALL.models[M];
 const $ = id => document.getElementById(id);
 let target = D.targets.includes("Race") ? "Race" : D.targets[0], metric = "valence";
@@ -319,7 +337,7 @@ function headline() {
   $("headline2").innerHTML = (grew.length ? `Biggest worsening: <b>${top.c}</b> (gap ${f3(top.b)} \u2192 ${f3(top.a)}). ` : `No other category got noticeably worse. `) +
     (grew.length > shr.length ? `Mostly it did not help the others.` : grew.length === 0 ? `` : `Fixing one bias is not a free fix.`);
   const k = D.k[target], nd = D.nDistinct[target];
-  $("kline").innerHTML = `Currently selected: ${target}, ${D.name}. We deleted k = ${k} direction${k > 1 ? "s" : ""} (all of them; ${nd} distinct group${nd > 1 ? "s" : ""}).`;
+  $("kline").innerHTML = `Currently selected: ${target}, ${D.name}, ${D.method}. We removed k = ${k} direction${k > 1 ? "s" : ""} (the category has ${nd} distinct group${nd > 1 ? "s" : ""}). ${MNOTE[MID]}`;
   const b = D.before[metric], idx = idxOf(target).sort((i, j) => b[j] - b[i]), hi = idx[0], lo = idx[idx.length - 1];
   $("example").innerHTML = `<b>Example (${target}):</b> most favored <b>${short(D.groups[hi].g)}</b> (${sgn(b[hi])}), least favored <b>${short(D.groups[lo].g)}</b> (${sgn(b[lo])}). Gap = ${sgn(b[hi])} \u2212 ${sgn(b[lo])} = <b>${f3(b[hi] - b[lo])}</b>.`;
 }
@@ -394,7 +412,7 @@ function chart1() {
     el("rect", { x: 0, y: y - RH / 2, width: W, height: RH, fill: "transparent", "data-tip": `<b>${r.c}</b><br>Gap between most and least favored group:<br>before ${f3(r.b)} → after ${f3(r.a)}<br>${small ? "barely changed" : r.d > 0 ? "got worse (more unequal)" : "got better (more equal)"}` }, svg);
   });
   $("c1").replaceChildren(svg);
-  $("fixednote").innerHTML = `<b>${target}</b> itself: gap ${f3(own.b)} \u2192 ${f3(own.a)}. Expected, since we removed it on purpose.` + (own.d > SMALL ? " (It rose here, so the method did not fully work.)" : "");
+  $("fixednote").innerHTML = `<b>${target}</b> itself: gap ${f3(own.b)} \u2192 ${f3(own.a)}. We removed it on purpose, so it should shrink.` + (own.d > SMALL ? " (It rose here, so the method did not work for this category.)" : own.a > 0.5 * own.b ? " (With this method it did not shrink much.)" : "");
 }
 
 function chart2() {
@@ -446,13 +464,13 @@ function csv(rs, cols = ["model", "method", "target_category", "k", "category", 
 const PCOLS = ["model", "method", "target_category", "k", "group_a", "group_b", "similarity_before", "similarity_after"];
 function pairRows(t) {
   const P = D.pairs;
-  return P.a.map((ai, i) => ({ model: D.model, method: D.method, target_category: t, k: D.k[t], group_a: D.groups[ai].g, group_b: D.groups[P.b[i]].g, similarity_before: P.before[i], similarity_after: P.after[t][i] }));
+  return P.a.map((ai, i) => ({ model: D.model, method: D.method, target_category: t, k: D.k[t], group_a: D.groups[ai].g, group_b: D.groups[P.b[i]].g, similarity_before: P.before[i], similarity_after: D.pairsAfter[t][i] }));
 }
 function download(name, text) { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([text], { type: "text/csv" })); a.download = name; document.body.appendChild(a); a.click(); a.remove(); }
-$("dl1").onclick = () => download(`llm_bias_${target.replace(/\W+/g, "_")}_k${D.k[target]}.csv`, csv(rowsFor(target)));
-$("dl2").onclick = () => download("llm_bias_all_categories_fullrank.csv", csv(D.targets.flatMap(rowsFor)));
-$("dl3").onclick = () => download(`llm_bias_pairwise_${target.replace(/\W+/g, "_")}_k${D.k[target]}.csv`, csv(pairRows(target), PCOLS));
-$("dl4").onclick = () => download("llm_bias_pairwise_all_categories_fullrank.csv", csv(D.targets.flatMap(pairRows), PCOLS));
+$("dl1").onclick = () => download(`llm_bias_${MID}_${target.replace(/\W+/g, "_")}_k${D.k[target]}.csv`, csv(rowsFor(target)));
+$("dl2").onclick = () => download(`llm_bias_${MID}_all_categories.csv`, csv(D.targets.flatMap(rowsFor)));
+$("dl3").onclick = () => download(`llm_bias_pairwise_${MID}_${target.replace(/\W+/g, "_")}_k${D.k[target]}.csv`, csv(pairRows(target), PCOLS));
+$("dl4").onclick = () => download(`llm_bias_pairwise_${MID}_all_categories.csv`, csv(D.targets.flatMap(pairRows), PCOLS));
 
 let nn = D.nodes.length, sortedBefore = [...D.simBefore].sort((p, q) => p - q);
 const tidx = (i, j) => i * nn - i * (i + 1) / 2 + (j - i - 1);
@@ -588,7 +606,8 @@ $("cat").value = target;
 $("msel").onchange = e => { setModel(e.target.value); pairDefaults(); render(true); };
 $("cat").onchange = e => { target = e.target.value; pairDefaults(); render(true); };
 $("ga").onchange = $("gb").onchange = pairChart;
-{ const o = document.createElement("option"); o.textContent = D.method; $("meth").appendChild(o); }
+ALL.methodOrder.forEach(id => { const o = document.createElement("option"); o.value = id; o.textContent = D.methods[id].method; $("meth").appendChild(o); });
+$("meth").onchange = e => { MID = e.target.value; useMethod(MID); render(false); };
 $("zcat").onchange = e => { zcat = e.target.value; chart2(); };
 $("thr").oninput = network;
 for (const m of ["valence", "competence"]) $("m-" + m).onclick = () => { metric = m; $("m-valence").setAttribute("aria-pressed", m === "valence"); $("m-competence").setAttribute("aria-pressed", m === "competence"); render(true); };

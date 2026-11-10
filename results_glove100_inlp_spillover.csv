@@ -1,0 +1,451 @@
+model,method,target_category,category,is_target,metric,gap_before,gap_after,gap_change,k,target_n_groups,target_n_distinct
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Sexuality,True,valence,0.06455,0.01519,-0.04936,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Sexuality,True,competence,0.05591,0.03213,-0.02378,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Age,False,valence,0.01223,0.00887,-0.00336,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Age,False,competence,0.05705,0.05971,0.00266,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Occupation,False,valence,0.062,0.05288,-0.00912,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Occupation,False,competence,0.16445,0.1662,0.00175,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Immigration,False,valence,0.0999,0.0949,-0.00499,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Immigration,False,competence,0.04685,0.04584,-0.00101,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Race,False,valence,0.08456,0.06701,-0.01756,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Race,False,competence,0.11121,0.1155,0.00429,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Marriage,False,valence,0.03042,0.02819,-0.00223,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Marriage,False,competence,0.00143,0.00244,0.00101,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Religion,False,valence,0.12705,0.13355,0.0065,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Religion,False,competence,0.1655,0.17133,0.00582,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Mental health,False,valence,0.265,0.26012,-0.00488,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Mental health,False,competence,0.16981,0.16985,4e-05,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Height,False,valence,0.05028,0.0534,0.00312,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Height,False,competence,0.00348,0.00408,0.0006,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Employment,False,valence,0.18785,0.1927,0.00485,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Employment,False,competence,0.18226,0.18725,0.00499,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Physical disability,False,valence,0.12926,0.11467,-0.01459,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Physical disability,False,competence,0.16671,0.16487,-0.00184,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Weight,False,valence,0.00372,0.00539,0.00167,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Weight,False,competence,0.02816,0.0286,0.00043,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,SES,False,valence,0.21672,0.22737,0.01065,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,SES,False,competence,0.25505,0.26341,0.00836,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Fertility,False,valence,0.03245,0.04299,0.01054,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Fertility,False,competence,0.06054,0.06809,0.00755,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Attractiveness,False,valence,0.33122,0.33369,0.00247,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Sexuality,Attractiveness,False,competence,0.21726,0.22071,0.00345,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Sexuality,False,valence,0.06455,0.06006,-0.00449,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Sexuality,False,competence,0.05591,0.06837,0.01246,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Age,True,valence,0.01223,0.0065,-0.00573,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Age,True,competence,0.05705,0.01343,-0.04361,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Occupation,False,valence,0.062,0.06612,0.00412,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Occupation,False,competence,0.16445,0.16166,-0.00279,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Immigration,False,valence,0.0999,0.09892,-0.00098,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Immigration,False,competence,0.04685,0.047,0.00016,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Race,False,valence,0.08456,0.08368,-0.00089,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Race,False,competence,0.11121,0.11165,0.00044,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Marriage,False,valence,0.03042,0.03095,0.00053,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Marriage,False,competence,0.00143,0.00113,-0.00031,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Religion,False,valence,0.12705,0.1313,0.00425,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Religion,False,competence,0.1655,0.15544,-0.01007,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Mental health,False,valence,0.265,0.2647,-0.00029,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Mental health,False,competence,0.16981,0.17729,0.00748,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Height,False,valence,0.05028,0.05255,0.00227,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Height,False,competence,0.00348,0.00023,-0.00324,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Employment,False,valence,0.18785,0.19081,0.00296,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Employment,False,competence,0.18226,0.18108,-0.00117,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Physical disability,False,valence,0.12926,0.13181,0.00255,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Physical disability,False,competence,0.16671,0.16474,-0.00197,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Weight,False,valence,0.00372,0.00518,0.00146,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Weight,False,competence,0.02816,0.03301,0.00484,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,SES,False,valence,0.21672,0.22153,0.00481,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,SES,False,competence,0.25505,0.25175,-0.0033,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Fertility,False,valence,0.03245,0.03993,0.00748,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Fertility,False,competence,0.06054,0.04435,-0.01619,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Attractiveness,False,valence,0.33122,0.33721,0.00599,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Age,Attractiveness,False,competence,0.21726,0.21541,-0.00185,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Sexuality,False,valence,0.06455,0.06597,0.00142,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Sexuality,False,competence,0.05591,0.05836,0.00245,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Age,False,valence,0.01223,0.01257,0.00034,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Age,False,competence,0.05705,0.05722,0.00017,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Occupation,True,valence,0.062,0.10858,0.04658,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Occupation,True,competence,0.16445,0.13784,-0.02661,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Immigration,False,valence,0.0999,0.10603,0.00613,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Immigration,False,competence,0.04685,0.04106,-0.00579,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Race,False,valence,0.08456,0.08843,0.00387,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Race,False,competence,0.11121,0.1131,0.00189,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Marriage,False,valence,0.03042,0.03103,0.00061,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Marriage,False,competence,0.00143,0.00115,-0.00028,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Religion,False,valence,0.12705,0.14018,0.01313,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Religion,False,competence,0.1655,0.16054,-0.00496,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Mental health,False,valence,0.265,0.27674,0.01174,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Mental health,False,competence,0.16981,0.17079,0.00098,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Height,False,valence,0.05028,0.04745,-0.00282,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Height,False,competence,0.00348,0.01469,0.01122,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Employment,False,valence,0.18785,0.20569,0.01784,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Employment,False,competence,0.18226,0.18022,-0.00204,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Physical disability,False,valence,0.12926,0.12958,0.00033,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Physical disability,False,competence,0.16671,0.17616,0.00945,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Weight,False,valence,0.00372,0.00265,-0.00107,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Weight,False,competence,0.02816,0.02727,-0.00089,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,SES,False,valence,0.21672,0.23219,0.01547,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,SES,False,competence,0.25505,0.25233,-0.00272,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Fertility,False,valence,0.03245,0.0325,5e-05,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Fertility,False,competence,0.06054,0.06498,0.00444,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Attractiveness,False,valence,0.33122,0.3433,0.01209,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Occupation,Attractiveness,False,competence,0.21726,0.22288,0.00563,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Sexuality,False,valence,0.06455,0.0581,-0.00646,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Sexuality,False,competence,0.05591,0.05228,-0.00363,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Age,False,valence,0.01223,0.0062,-0.00603,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Age,False,competence,0.05705,0.06278,0.00573,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Occupation,False,valence,0.062,0.02355,-0.03845,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Occupation,False,competence,0.16445,0.15045,-0.01401,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Immigration,True,valence,0.0999,0.02764,-0.07226,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Immigration,True,competence,0.04685,0.02842,-0.01843,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Race,False,valence,0.08456,0.09943,0.01487,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Race,False,competence,0.11121,0.09562,-0.01559,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Marriage,False,valence,0.03042,0.04845,0.01802,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Marriage,False,competence,0.00143,0.00827,0.00684,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Religion,False,valence,0.12705,0.11319,-0.01386,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Religion,False,competence,0.1655,0.15925,-0.00625,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Mental health,False,valence,0.265,0.24108,-0.02391,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Mental health,False,competence,0.16981,0.14914,-0.02067,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Height,False,valence,0.05028,0.05907,0.00879,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Height,False,competence,0.00348,0.00936,0.00589,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Employment,False,valence,0.18785,0.18072,-0.00713,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Employment,False,competence,0.18226,0.17728,-0.00498,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Physical disability,False,valence,0.12926,0.13263,0.00337,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Physical disability,False,competence,0.16671,0.15958,-0.00713,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Weight,False,valence,0.00372,0.01449,0.01077,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Weight,False,competence,0.02816,0.03779,0.00963,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,SES,False,valence,0.21672,0.19278,-0.02394,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,SES,False,competence,0.25505,0.24053,-0.01452,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Fertility,False,valence,0.03245,0.03307,0.00061,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Fertility,False,competence,0.06054,0.06085,0.00031,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Attractiveness,False,valence,0.33122,0.29206,-0.03915,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Immigration,Attractiveness,False,competence,0.21726,0.19604,-0.02122,2,4,3
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Sexuality,False,valence,0.06455,0.04861,-0.01595,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Sexuality,False,competence,0.05591,0.05487,-0.00104,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Age,False,valence,0.01223,0.00182,-0.01041,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Age,False,competence,0.05705,0.04454,-0.01251,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Occupation,False,valence,0.062,0.07174,0.00974,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Occupation,False,competence,0.16445,0.18884,0.02439,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Immigration,False,valence,0.0999,0.09815,-0.00175,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Immigration,False,competence,0.04685,0.04971,0.00286,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Race,True,valence,0.08456,0.06855,-0.01601,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Race,True,competence,0.11121,0.07404,-0.03717,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Marriage,False,valence,0.03042,0.02822,-0.0022,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Marriage,False,competence,0.00143,0.00306,0.00163,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Religion,False,valence,0.12705,0.14797,0.02092,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Religion,False,competence,0.1655,0.16879,0.00328,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Mental health,False,valence,0.265,0.30042,0.03542,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Mental health,False,competence,0.16981,0.19634,0.02653,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Height,False,valence,0.05028,0.04896,-0.00132,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Height,False,competence,0.00348,0.00708,0.0036,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Employment,False,valence,0.18785,0.19283,0.00498,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Employment,False,competence,0.18226,0.18811,0.00585,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Physical disability,False,valence,0.12926,0.13184,0.00259,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Physical disability,False,competence,0.16671,0.15291,-0.0138,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Weight,False,valence,0.00372,0.00478,0.00106,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Weight,False,competence,0.02816,0.02626,-0.0019,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,SES,False,valence,0.21672,0.24199,0.02527,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,SES,False,competence,0.25505,0.26655,0.0115,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Fertility,False,valence,0.03245,0.04338,0.01093,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Fertility,False,competence,0.06054,0.05654,-0.004,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Attractiveness,False,valence,0.33122,0.35734,0.02612,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Race,Attractiveness,False,competence,0.21726,0.22078,0.00353,12,12,7
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Sexuality,False,valence,0.06455,0.06497,0.00042,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Sexuality,False,competence,0.05591,0.05587,-4e-05,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Age,False,valence,0.01223,0.01186,-0.00037,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Age,False,competence,0.05705,0.05813,0.00108,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Occupation,False,valence,0.062,0.06001,-0.00199,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Occupation,False,competence,0.16445,0.15953,-0.00492,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Immigration,False,valence,0.0999,0.09757,-0.00232,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Immigration,False,competence,0.04685,0.04442,-0.00242,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Race,False,valence,0.08456,0.08137,-0.00319,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Race,False,competence,0.11121,0.11466,0.00345,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Marriage,True,valence,0.03042,0.05067,0.02025,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Marriage,True,competence,0.00143,0.03656,0.03512,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Religion,False,valence,0.12705,0.12551,-0.00153,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Religion,False,competence,0.1655,0.17871,0.01321,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Mental health,False,valence,0.265,0.26749,0.0025,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Mental health,False,competence,0.16981,0.17177,0.00196,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Height,False,valence,0.05028,0.05435,0.00407,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Height,False,competence,0.00348,0.01096,0.00749,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Employment,False,valence,0.18785,0.18197,-0.00588,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Employment,False,competence,0.18226,0.16794,-0.01432,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Physical disability,False,valence,0.12926,0.12604,-0.00321,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Physical disability,False,competence,0.16671,0.16793,0.00122,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Weight,False,valence,0.00372,0.00018,-0.00354,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Weight,False,competence,0.02816,0.03434,0.00617,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,SES,False,valence,0.21672,0.20954,-0.00718,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,SES,False,competence,0.25505,0.24006,-0.01498,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Fertility,False,valence,0.03245,0.02858,-0.00388,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Fertility,False,competence,0.06054,0.05372,-0.00682,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Attractiveness,False,valence,0.33122,0.32967,-0.00155,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Marriage,Attractiveness,False,competence,0.21726,0.21274,-0.00452,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Sexuality,False,valence,0.06455,0.05352,-0.01103,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Sexuality,False,competence,0.05591,0.05322,-0.00269,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Age,False,valence,0.01223,0.01559,0.00336,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Age,False,competence,0.05705,0.04402,-0.01303,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Occupation,False,valence,0.062,0.05739,-0.00461,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Occupation,False,competence,0.16445,0.14676,-0.0177,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Immigration,False,valence,0.0999,0.10304,0.00314,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Immigration,False,competence,0.04685,0.04694,0.0001,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Race,False,valence,0.08456,0.06807,-0.01649,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Race,False,competence,0.11121,0.10235,-0.00886,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Marriage,False,valence,0.03042,0.05214,0.02171,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Marriage,False,competence,0.00143,0.01365,0.01222,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Religion,True,valence,0.12705,0.0728,-0.05425,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Religion,True,competence,0.1655,0.0774,-0.0881,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Mental health,False,valence,0.265,0.25854,-0.00645,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Mental health,False,competence,0.16981,0.16323,-0.00658,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Height,False,valence,0.05028,0.07284,0.02257,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Height,False,competence,0.00348,0.0028,-0.00068,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Employment,False,valence,0.18785,0.16898,-0.01887,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Employment,False,competence,0.18226,0.14932,-0.03293,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Physical disability,False,valence,0.12926,0.11555,-0.01371,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Physical disability,False,competence,0.16671,0.14817,-0.01854,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Weight,False,valence,0.00372,0.00796,0.00424,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Weight,False,competence,0.02816,0.03131,0.00315,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,SES,False,valence,0.21672,0.21088,-0.00584,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,SES,False,competence,0.25505,0.23007,-0.02498,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Fertility,False,valence,0.03245,0.03055,-0.0019,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Fertility,False,competence,0.06054,0.04158,-0.01896,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Attractiveness,False,valence,0.33122,0.32223,-0.00899,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Religion,Attractiveness,False,competence,0.21726,0.19124,-0.02602,4,6,5
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Sexuality,False,valence,0.06455,0.01374,-0.05081,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Sexuality,False,competence,0.05591,0.04379,-0.01212,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Age,False,valence,0.01223,0.00525,-0.00698,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Age,False,competence,0.05705,0.06883,0.01178,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Occupation,False,valence,0.062,0.06333,0.00133,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Occupation,False,competence,0.16445,0.17514,0.01069,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Immigration,False,valence,0.0999,0.09789,-0.002,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Immigration,False,competence,0.04685,0.04214,-0.00471,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Race,False,valence,0.08456,0.0629,-0.02166,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Race,False,competence,0.11121,0.12156,0.01034,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Marriage,False,valence,0.03042,0.03695,0.00652,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Marriage,False,competence,0.00143,0.00776,0.00633,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Religion,False,valence,0.12705,0.14147,0.01443,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Religion,False,competence,0.1655,0.18209,0.01659,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Mental health,True,valence,0.265,0.11954,-0.14545,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Mental health,True,competence,0.16981,0.10844,-0.06137,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Height,False,valence,0.05028,0.00109,-0.04918,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Height,False,competence,0.00348,0.01365,0.01017,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Employment,False,valence,0.18785,0.1568,-0.03105,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Employment,False,competence,0.18226,0.17818,-0.00407,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Physical disability,False,valence,0.12926,0.06229,-0.06697,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Physical disability,False,competence,0.16671,0.14339,-0.02332,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Weight,False,valence,0.00372,0.02389,0.02017,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Weight,False,competence,0.02816,0.04032,0.01215,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,SES,False,valence,0.21672,0.18538,-0.03134,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,SES,False,competence,0.25505,0.245,-0.01005,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Fertility,False,valence,0.03245,0.00223,-0.03023,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Fertility,False,competence,0.06054,0.05058,-0.00996,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Attractiveness,False,valence,0.33122,0.21557,-0.11565,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Mental health,Attractiveness,False,competence,0.21726,0.182,-0.03526,12,16,13
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Sexuality,False,valence,0.06455,0.06695,0.0024,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Sexuality,False,competence,0.05591,0.0566,0.00068,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Age,False,valence,0.01223,0.01273,0.0005,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Age,False,competence,0.05705,0.05741,0.00037,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Occupation,False,valence,0.062,0.06846,0.00646,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Occupation,False,competence,0.16445,0.16855,0.00409,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Immigration,False,valence,0.0999,0.09997,7e-05,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Immigration,False,competence,0.04685,0.04732,0.00048,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Race,False,valence,0.08456,0.08894,0.00437,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Race,False,competence,0.11121,0.11248,0.00126,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Marriage,False,valence,0.03042,0.03024,-0.00018,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Marriage,False,competence,0.00143,0.00119,-0.00024,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Religion,False,valence,0.12705,0.12954,0.00249,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Religion,False,competence,0.1655,0.16714,0.00163,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Mental health,False,valence,0.265,0.26443,-0.00056,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Mental health,False,competence,0.16981,0.1729,0.00309,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Height,True,valence,0.05028,0.01222,-0.03805,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Height,True,competence,0.00348,0.0028,-0.00067,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Employment,False,valence,0.18785,0.19263,0.00478,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Employment,False,competence,0.18226,0.18626,0.00401,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Physical disability,False,valence,0.12926,0.12929,3e-05,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Physical disability,False,competence,0.16671,0.1688,0.00209,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Weight,False,valence,0.00372,0.00034,-0.00338,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Weight,False,competence,0.02816,0.02891,0.00074,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,SES,False,valence,0.21672,0.22227,0.00555,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,SES,False,competence,0.25505,0.25858,0.00353,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Fertility,False,valence,0.03245,0.03294,0.00049,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Fertility,False,competence,0.06054,0.06132,0.00078,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Attractiveness,False,valence,0.33122,0.33082,-0.0004,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Height,Attractiveness,False,competence,0.21726,0.21924,0.00198,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Sexuality,False,valence,0.06455,0.05565,-0.0089,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Sexuality,False,competence,0.05591,0.04853,-0.00738,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Age,False,valence,0.01223,0.01127,-0.00096,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Age,False,competence,0.05705,0.05811,0.00106,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Occupation,False,valence,0.062,0.00929,-0.05271,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Occupation,False,competence,0.16445,0.12529,-0.03917,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Immigration,False,valence,0.0999,0.08963,-0.01027,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Immigration,False,competence,0.04685,0.03938,-0.00747,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Race,False,valence,0.08456,0.09278,0.00821,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Race,False,competence,0.11121,0.10062,-0.0106,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Marriage,False,valence,0.03042,0.0405,0.01007,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Marriage,False,competence,0.00143,0.0072,0.00576,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Religion,False,valence,0.12705,0.08794,-0.0391,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Religion,False,competence,0.1655,0.13748,-0.02803,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Mental health,False,valence,0.265,0.23554,-0.02945,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Mental health,False,competence,0.16981,0.14687,-0.02294,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Height,False,valence,0.05028,0.07933,0.02905,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Height,False,competence,0.00348,0.02725,0.02378,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Employment,True,valence,0.18785,0.01687,-0.17098,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Employment,True,competence,0.18226,0.028,-0.15426,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Physical disability,False,valence,0.12926,0.08726,-0.042,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Physical disability,False,competence,0.16671,0.14311,-0.0236,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Weight,False,valence,0.00372,0.00666,0.00294,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Weight,False,competence,0.02816,0.0271,-0.00107,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,SES,False,valence,0.21672,0.13735,-0.07937,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,SES,False,competence,0.25505,0.17962,-0.07543,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Fertility,False,valence,0.03245,0.02255,-0.00991,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Fertility,False,competence,0.06054,0.0522,-0.00834,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Attractiveness,False,valence,0.33122,0.29041,-0.04081,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Employment,Attractiveness,False,competence,0.21726,0.177,-0.04026,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Sexuality,False,valence,0.06455,0.04461,-0.01994,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Sexuality,False,competence,0.05591,0.01919,-0.03673,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Age,False,valence,0.01223,0.01158,-0.00065,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Age,False,competence,0.05705,0.05868,0.00163,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Occupation,False,valence,0.062,0.06143,-0.00057,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Occupation,False,competence,0.16445,0.18549,0.02104,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Immigration,False,valence,0.0999,0.10529,0.00539,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Immigration,False,competence,0.04685,0.04953,0.00268,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Race,False,valence,0.08456,0.0906,0.00604,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Race,False,competence,0.11121,0.10277,-0.00844,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Marriage,False,valence,0.03042,0.03125,0.00083,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Marriage,False,competence,0.00143,0.00745,0.00602,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Religion,False,valence,0.12705,0.12164,-0.00541,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Religion,False,competence,0.1655,0.14895,-0.01655,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Mental health,False,valence,0.265,0.2544,-0.0106,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Mental health,False,competence,0.16981,0.1355,-0.03431,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Height,False,valence,0.05028,0.04363,-0.00664,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Height,False,competence,0.00348,0.00485,0.00138,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Employment,False,valence,0.18785,0.1793,-0.00855,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Employment,False,competence,0.18226,0.163,-0.01926,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Physical disability,True,valence,0.12926,0.08418,-0.04508,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Physical disability,True,competence,0.16671,0.07158,-0.09513,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Weight,False,valence,0.00372,0.00087,-0.00285,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Weight,False,competence,0.02816,0.04432,0.01615,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,SES,False,valence,0.21672,0.23115,0.01443,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,SES,False,competence,0.25505,0.27229,0.01725,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Fertility,False,valence,0.03245,0.03071,-0.00174,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Fertility,False,competence,0.06054,0.05206,-0.00848,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Attractiveness,False,valence,0.33122,0.33734,0.00612,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Physical disability,Attractiveness,False,competence,0.21726,0.20793,-0.00933,5,10,6
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Sexuality,False,valence,0.06455,0.06375,-0.0008,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Sexuality,False,competence,0.05591,0.05737,0.00145,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Age,False,valence,0.01223,0.01168,-0.00055,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Age,False,competence,0.05705,0.05721,0.00016,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Occupation,False,valence,0.062,0.06499,0.00299,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Occupation,False,competence,0.16445,0.16444,-1e-05,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Immigration,False,valence,0.0999,0.09652,-0.00338,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Immigration,False,competence,0.04685,0.04836,0.00152,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Race,False,valence,0.08456,0.08649,0.00193,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Race,False,competence,0.11121,0.10916,-0.00205,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Marriage,False,valence,0.03042,0.03253,0.00211,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Marriage,False,competence,0.00143,0.0035,0.00207,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Religion,False,valence,0.12705,0.12867,0.00163,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Religion,False,competence,0.1655,0.16582,0.00032,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Mental health,False,valence,0.265,0.26509,9e-05,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Mental health,False,competence,0.16981,0.17156,0.00175,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Height,False,valence,0.05028,0.04699,-0.00329,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Height,False,competence,0.00348,0.00658,0.0031,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Employment,False,valence,0.18785,0.194,0.00615,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Employment,False,competence,0.18226,0.18124,-0.00101,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Physical disability,False,valence,0.12926,0.1316,0.00234,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Physical disability,False,competence,0.16671,0.16782,0.00111,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Weight,True,valence,0.00372,0.01616,0.01245,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Weight,True,competence,0.02816,0.01703,-0.01113,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,SES,False,valence,0.21672,0.21932,0.0026,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,SES,False,competence,0.25505,0.25579,0.00074,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Fertility,False,valence,0.03245,0.03016,-0.00229,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Fertility,False,competence,0.06054,0.06251,0.00197,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Attractiveness,False,valence,0.33122,0.33201,0.00079,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Weight,Attractiveness,False,competence,0.21726,0.22006,0.00281,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Sexuality,False,valence,0.06455,0.06445,-0.0001,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Sexuality,False,competence,0.05591,0.05507,-0.00084,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Age,False,valence,0.01223,0.0168,0.00457,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Age,False,competence,0.05705,0.05722,0.00018,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Occupation,False,valence,0.062,0.01681,-0.04519,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Occupation,False,competence,0.16445,0.12373,-0.04073,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Immigration,False,valence,0.0999,0.09507,-0.00483,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Immigration,False,competence,0.04685,0.05693,0.01009,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Race,False,valence,0.08456,0.1049,0.02033,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Race,False,competence,0.11121,0.09646,-0.01476,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Marriage,False,valence,0.03042,0.05002,0.0196,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Marriage,False,competence,0.00143,0.01964,0.0182,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Religion,False,valence,0.12705,0.08899,-0.03806,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Religion,False,competence,0.1655,0.14547,-0.02004,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Mental health,False,valence,0.265,0.26486,-0.00013,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Mental health,False,competence,0.16981,0.13406,-0.03575,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Height,False,valence,0.05028,0.07855,0.02827,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Height,False,competence,0.00348,0.02056,0.01709,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Employment,False,valence,0.18785,0.10073,-0.08712,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Employment,False,competence,0.18226,0.08905,-0.0932,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Physical disability,False,valence,0.12926,0.10615,-0.02311,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Physical disability,False,competence,0.16671,0.15825,-0.00846,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Weight,False,valence,0.00372,0.00512,0.00141,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Weight,False,competence,0.02816,0.03034,0.00218,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,SES,True,valence,0.21672,0.05364,-0.16308,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,SES,True,competence,0.25505,0.10386,-0.15119,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Fertility,False,valence,0.03245,0.00312,-0.02933,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Fertility,False,competence,0.06054,0.02864,-0.03189,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Attractiveness,False,valence,0.33122,0.26606,-0.06516,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),SES,Attractiveness,False,competence,0.21726,0.15183,-0.06543,3,4,4
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Sexuality,False,valence,0.06455,0.07113,0.00658,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Sexuality,False,competence,0.05591,0.06777,0.01185,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Age,False,valence,0.01223,0.01957,0.00735,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Age,False,competence,0.05705,0.04298,-0.01407,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Occupation,False,valence,0.062,0.06468,0.00268,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Occupation,False,competence,0.16445,0.17597,0.01151,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Immigration,False,valence,0.0999,0.09817,-0.00172,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Immigration,False,competence,0.04685,0.05054,0.00369,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Race,False,valence,0.08456,0.09063,0.00607,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Race,False,competence,0.11121,0.09797,-0.01324,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Marriage,False,valence,0.03042,0.03697,0.00655,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Marriage,False,competence,0.00143,0.00983,0.00839,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Religion,False,valence,0.12705,0.12754,0.00049,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Religion,False,competence,0.1655,0.1553,-0.0102,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Mental health,False,valence,0.265,0.25818,-0.00682,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Mental health,False,competence,0.16981,0.16035,-0.00946,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Height,False,valence,0.05028,0.04672,-0.00355,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Height,False,competence,0.00348,0.0034,-8e-05,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Employment,False,valence,0.18785,0.19071,0.00286,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Employment,False,competence,0.18226,0.1859,0.00364,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Physical disability,False,valence,0.12926,0.1247,-0.00456,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Physical disability,False,competence,0.16671,0.15581,-0.0109,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Weight,False,valence,0.00372,0.00265,-0.00107,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Weight,False,competence,0.02816,0.03936,0.0112,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,SES,False,valence,0.21672,0.20561,-0.01111,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,SES,False,competence,0.25505,0.23241,-0.02263,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Fertility,True,valence,0.03245,0.00285,-0.02961,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Fertility,True,competence,0.06054,0.00303,-0.05751,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Attractiveness,False,valence,0.33122,0.31826,-0.01296,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Fertility,Attractiveness,False,competence,0.21726,0.19022,-0.02704,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Sexuality,False,valence,0.06455,0.02425,-0.0403,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Sexuality,False,competence,0.05591,0.02873,-0.02718,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Age,False,valence,0.01223,0.03062,0.0184,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Age,False,competence,0.05705,0.04828,-0.00876,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Occupation,False,valence,0.062,0.01913,-0.04287,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Occupation,False,competence,0.16445,0.13293,-0.03152,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Immigration,False,valence,0.0999,0.0626,-0.0373,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Immigration,False,competence,0.04685,0.02352,-0.02333,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Race,False,valence,0.08456,0.08348,-0.00108,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Race,False,competence,0.11121,0.07388,-0.03733,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Marriage,False,valence,0.03042,0.04287,0.01245,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Marriage,False,competence,0.00143,0.00577,0.00434,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Religion,False,valence,0.12705,0.09862,-0.02843,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Religion,False,competence,0.1655,0.11481,-0.05069,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Mental health,False,valence,0.265,0.16896,-0.09604,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Mental health,False,competence,0.16981,0.11659,-0.05322,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Height,False,valence,0.05028,0.00052,-0.04975,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Height,False,competence,0.00348,0.02976,0.02628,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Employment,False,valence,0.18785,0.11105,-0.0768,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Employment,False,competence,0.18226,0.13054,-0.05172,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Physical disability,False,valence,0.12926,0.07865,-0.0506,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Physical disability,False,competence,0.16671,0.14425,-0.02246,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Weight,False,valence,0.00372,0.028,0.02429,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Weight,False,competence,0.02816,0.04938,0.02122,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,SES,False,valence,0.21672,0.10126,-0.11546,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,SES,False,competence,0.25505,0.17962,-0.07542,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Fertility,False,valence,0.03245,0.04933,0.01688,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Fertility,False,competence,0.06054,0.0074,-0.05314,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Attractiveness,True,valence,0.33122,0.06469,-0.26652,1,2,2
+GloVe wiki-gigaword 100d,INLP (iterative nullspace projection),Attractiveness,Attractiveness,True,competence,0.21726,0.03466,-0.1826,1,2,2

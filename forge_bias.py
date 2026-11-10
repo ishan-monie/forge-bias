@@ -128,16 +128,76 @@ def subtract_subspace(vecs, basis):
     return out
 
 
+def hard_debias(vecs, basis, category, groups=GROUPS):
+    """Bolukbasi et al. (2016) hard debias = neutralize + equalize.
+    Neutralize: every vector (concept words and other categories' groups) loses its component in `basis`.
+    Equalize: the target category's groups are the equality set. Each group's centroid is moved to
+    nu + a * unit(its bias-part - mean bias-part), where nu = the mean centroid with its bias-part removed,
+    so all groups share the same non-bias part and differ only along the bias directions, by equal amounts.
+    Each group's words move with their centroid (words keep their offset from it)."""
+    out = subtract_subspace(vecs, basis)
+    cent = {g: vecs[("group", g)].mean(axis=0) for g in groups[category]}
+    uniq = {}
+    for c in cent.values():
+        uniq.setdefault(tuple(np.round(c, 6)), c)
+    mu = np.mean(list(uniq.values()), axis=0)
+    proj = lambda v: (v @ basis.T) @ basis
+    nu = mu - proj(mu)
+    for g, c in cent.items():
+        dev = proj(c) - proj(mu)
+        nd = np.linalg.norm(dev)
+        a = np.sqrt(max(float(c @ c - nu @ nu), 0.0))
+        new_c = nu + (a * dev / nd if nd > 1e-9 else 0)
+        out[("group", g)] = vecs[("group", g)] + (new_c - c)
+    return out
+
+
+def _ridge(X, y, n_classes, lam=0.5):
+    """Linear (ridge) classifier, one-vs-rest on centred one-hot targets. Returns d x n_classes weights."""
+    Y = np.eye(n_classes)[y]; Y = Y - Y.mean(0)
+    return X.T @ np.linalg.solve(X @ X.T + lam * np.eye(len(X)), Y)
+
+
+def _cv_accuracy(X, y, n_classes, folds=3, seed=0):
+    idx = np.random.default_rng(seed).permutation(len(X)); ok = 0
+    for f in range(folds):
+        te = idx[f::folds]; tr = np.setdiff1d(idx, te)
+        ok += (np.argmax(X[te] @ _ridge(X[tr], y[tr], n_classes), 1) == y[te]).sum()
+    return ok / len(X)
+
+
+def inlp_subspace(vecs, category, groups=GROUPS, max_iter=10, margin=0.05):
+    """Iterative nullspace projection (Ravfogel et al., 2020), on the category's groups.
+    Train a linear classifier to tell the groups apart from their word vectors, take the directions it uses,
+    remove them, and repeat. Stop when a held-out (3-fold) classifier is no better than always guessing
+    the biggest group (+margin), or after max_iter rounds. Returns the orthonormal basis of everything removed."""
+    names, _ = distinct_centroids(vecs, category, groups)
+    X = np.vstack([_unit(vecs[("group", g)]) for g in names])
+    y = np.concatenate([[i] * len(vecs[("group", g)]) for i, g in enumerate(names)])
+    base = np.bincount(y).max() / len(y)
+    basis = np.zeros((0, X.shape[1]))
+    for it in range(max_iter):
+        Xp = X - (X @ basis.T) @ basis
+        if it > 0 and _cv_accuracy(Xp, y, len(names)) <= base + margin:
+            break
+        _, s, vt = np.linalg.svd(_ridge(Xp, y, len(names)).T, full_matrices=False)
+        new = vt[: int((s > s.max() * 1e-6).sum())]
+        new = new - (new @ basis.T) @ basis
+        basis = np.linalg.qr(np.vstack([basis, new]).T)[0].T
+    return basis
+
+
 def category_gap(scores, category, col):
     """Within-category gap = max - min group score (the double difference, generalised)."""
     v = scores.loc[scores["category"] == category, col]
     return float(v.max() - v.min())
 
 
-def run_experiment(kv, groups=GROUPS, concepts=CONCEPTS, k=None):
+def run_experiment(kv, groups=GROUPS, concepts=CONCEPTS, k=None, method="neutralize"):
     """Before/after tables for every debiasable category.
     k=None uses the full rank of each category's distinct-group subspace; k=int caps it.
-    Every output table carries the k actually used."""
+    method: "neutralize" (subtract the subspace), "hard" (neutralize + equalize) or "inlp" (iterative nullspace projection).
+    Every output table carries the k (number of directions) actually used."""
     vecs, dropped = build_vectors(kv, groups, concepts)
     base_scores = bias_scores(vecs, groups)
     base_pairs = pairwise(vecs, groups)
@@ -145,10 +205,14 @@ def run_experiment(kv, groups=GROUPS, concepts=CONCEPTS, k=None):
     for cat in groups:
         if len(distinct_centroids(vecs, cat, groups)[0]) < 2:
             continue
-        basis = category_subspace(vecs, cat, groups, k=k)
+        if method == "inlp":
+            basis = inlp_subspace(vecs, cat, groups)
+            after_vecs = subtract_subspace(vecs, basis)
+        else:
+            basis = category_subspace(vecs, cat, groups, k=k)
+            after_vecs = hard_debias(vecs, basis, cat, groups) if method == "hard" else subtract_subspace(vecs, basis)
         k_used = int(basis.shape[0])
         n_distinct = len(distinct_centroids(vecs, cat, groups)[0])
-        after_vecs = subtract_subspace(vecs, basis)
         after_scores = bias_scores(after_vecs, groups)
         after_pairs = pairwise(after_vecs, groups)
 

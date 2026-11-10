@@ -1,9 +1,10 @@
-"""Run the experiment for every embedding model, full rank and capped at k=3.
+"""Run the experiment for every embedding model and every debiasing method.
 
     python run.py              # all models in MODELS
     python run.py glove100     # just one (by slug)
 
-Writes results_<slug>_<fullrank|k3>_<scores|pairwise|spillover>.csv. Every table has `model`, `method` and `k`.
+Writes results_<slug>_<fullrank|k3|hard|inlp>_<scores|pairwise|spillover>.csv. Every table has `model`, `method` and `k`
+(k = number of directions removed).
 """
 import logging; logging.disable(logging.CRITICAL)
 import gc
@@ -18,7 +19,13 @@ MODELS = [
     ("glove100", "glove-wiki-gigaword-100", "GloVe wiki-gigaword 100d"),
     ("fasttext300", "fasttext-wiki-news-subwords-300", "fastText wiki-news 300d"),
 ]
-METHOD = "Subtract group subspace (Bolukbasi neutralize)"
+# (tag, label shown on the dashboard and in the CSVs, run_experiment arguments)
+METHODS = [
+    ("fullrank", "Subtract group subspace (Bolukbasi neutralize)", dict(method="neutralize", k=None)),
+    ("k3", "Subtract top 3 directions", dict(method="neutralize", k=3)),
+    ("hard", "Hard debias (Bolukbasi neutralize + equalize)", dict(method="hard", k=None)),
+    ("inlp", "INLP (iterative nullspace projection)", dict(method="inlp", k=None)),
+]
 pd.set_option('display.width', 220); pd.set_option('display.max_columns', 30)
 want = set(sys.argv[1:])
 
@@ -28,12 +35,12 @@ for slug, name, display in MODELS:
     print(f"\n===== {display} ({name}) =====", flush=True)
     kv = api.load(name)
     res = {}
-    for tag, k in {"fullrank": None, "k3": 3}.items():
-        scores, pairs, summary, dropped = run_experiment(kv, k=k)
+    for tag, label, kw in METHODS:
+        scores, pairs, summary, dropped = run_experiment(kv, **kw)
         res[tag] = (scores, pairs, summary)
         for df in (scores, pairs, summary):
             df.insert(0, "model", display)
-            df.insert(1, "method", METHOD)
+            df.insert(1, "method", label)
         scores.round(5).to_csv(f'results_{slug}_{tag}_scores.csv', index=False)
         pairs.round(5).to_csv(f'results_{slug}_{tag}_pairwise.csv', index=False)
         summary.round(5).to_csv(f'results_{slug}_{tag}_spillover.csv', index=False)
