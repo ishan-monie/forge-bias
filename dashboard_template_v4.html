@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Forge Bias Prototype (dashboard)</title>
+<title>LLM Bias Prototype (dashboard)</title>
 <style>
 :root {
   color-scheme: light;
@@ -82,7 +82,7 @@ a { color: var(--blue); }
 <main>
 <header>
   <h1>Does fixing one bias move it somewhere else? <span class="badge">PROTOTYPE</span></h1>
-  <div class="meta">Model: <strong id="model"></strong></div>
+  <div class="meta">Model: <strong id="model"></strong> &middot; Method: <strong id="method"></strong></div>
 </header>
 <p class="lede">We remove one bias from an AI language model, then check what happens to bias toward other groups.</p>
 <details class="info" style="margin-top:2px">
@@ -99,6 +99,7 @@ a { color: var(--blue); }
   <div class="controls">
     <label class="f" id="modelwrap"><b>Model:</b> <select id="msel"></select></label>
     <label class="f" id="catwrap"><b>Remove bias:</b> <select id="cat"></select></label>
+    <label class="f" id="methwrap"><b>Method:</b> <select id="meth"></select></label>
     <span class="seg" role="group" aria-label="What to measure">
       <button id="m-valence" aria-pressed="true">Good vs. bad words</button>
       <button id="m-competence" aria-pressed="false">Competent vs. incompetent</button>
@@ -111,6 +112,7 @@ a { color: var(--blue); }
   <button role="tab" data-t="overview" aria-selected="false">After removing a bias</button>
   <button role="tab" data-t="compare" aria-selected="false" id="tab-compare">Compare models</button>
   <button role="tab" data-t="groups" aria-selected="false">Groups</button>
+  <button role="tab" data-t="pair" aria-selected="false">Two groups</button>
   <button role="tab" data-t="network" aria-selected="false">Network</button>
   <button role="tab" data-t="data" aria-selected="false">Data</button>
   <button role="tab" data-t="how" aria-selected="false">How it works</button>
@@ -188,6 +190,26 @@ a { color: var(--blue); }
   </details>
 </section>
 
+<section id="p-pair" class="card panel" hidden>
+  <h2>How far apart are two groups?</h2>
+  <p class="cap">Pick two groups. We show how much more strongly the model links group A to good words than group B, before and after removing the chosen bias.</p>
+  <div class="controls" style="margin-bottom:8px">
+    <label class="f"><b>Group A:</b> <select id="ga"></select></label>
+    <label class="f"><b>Group B:</b> <select id="gb"></select></label>
+  </div>
+  <div class="tiles" id="ptiles"></div>
+  <p id="psum" class="cap"></p>
+  <div id="pchart"></div>
+  <details class="info"><summary>How to read this</summary>
+    <ul>
+      <li><b>Difference (A minus B):</b> group A's score minus group B's score. Positive = A is linked to more positive words than B. Negative = the reverse.</li>
+      <li>"Further apart" or "closer together" compares the size of the difference after removing the bias with its size before.</li>
+      <li>Each group is defined against its opposite, so "black (vs. white)" and "white (vs. black)" are two different groups.</li>
+      <li>The groups start on the most and least favored in the category being removed. Change either one to look at any pair of the 72 groups.</li>
+    </ul>
+  </details>
+</section>
+
 <section id="p-network" class="card panel" hidden>
   <h2>Which groups look alike to the model?</h2>
   <p class="cap">Dots are groups (blue = the category we fixed). A line = the model treats two groups as similar.</p>
@@ -207,14 +229,17 @@ a { color: var(--blue); }
   <h2>All the numbers</h2>
   <p class="cap" id="tsub"></p>
   <div class="controls" style="margin-bottom:8px">
-    <button class="dl" id="dl1">Download CSV (this category)</button>
-    <button class="dl" id="dl2">Download CSV (all 15)</button>
+    <button class="dl" id="dl1">Group scores CSV (this category)</button>
+    <button class="dl" id="dl3">Pairwise similarity CSV (this category)</button>
+    <button class="dl" id="dl2">Group scores CSV (all 15)</button>
+    <button class="dl" id="dl4">Pairwise similarity CSV (all 15)</button>
   </div>
   <div class="scroll"><table id="tbl"></table></div>
   <details class="info"><summary>What the columns mean</summary>
     <ul>
       <li><b>Good&minus;bad</b> and <b>Competent&minus;incompetent</b> are the two scores. <i>Before</i> = original, <i>after</i> = once the chosen bias is removed, <i>change</i> = after minus before.</li>
-      <li>Highlighted rows are in the category we removed. The CSV also records the model name and k.</li>
+      <li>Highlighted rows are in the category we removed. The CSVs also record the model, the method and k.</li>
+      <li><b>Pairwise similarity CSV:</b> one row for each pair of the 72 groups (2,556 pairs), with how alike the model finds them before and after (1 = identical direction, 0 = unrelated).</li>
     </ul>
   </details>
 </section>
@@ -384,7 +409,7 @@ function chart2() {
 const COLS = ["valence_before", "valence_after", "valence_change", "competence_before", "competence_after", "competence_change"];
 function rowsFor(t) {
   return D.groups.map((g, i) => {
-    const o = { model: D.model, target_category: t, k: D.k[t], category: g.c, group: g.g };
+    const o = { model: D.model, method: D.method, target_category: t, k: D.k[t], category: g.c, group: g.g };
     for (const m of ["valence", "competence"]) { const b = D.before[m][i], a = D.after[t][m][i]; o[m + "_before"] = b; o[m + "_after"] = a; o[m + "_change"] = +(a - b).toFixed(4); }
     return o;
   });
@@ -395,14 +420,20 @@ function table() {
   const body = rowsFor(target).map(r => `<tr class="${r.category === target ? "tgt" : ""}"><td>${r.category}</td><td>${label(r.group)}</td>` + COLS.map(c => `<td>${c.endsWith("change") ? sgn(r[c]) : f3(r[c])}</td>`).join("") + "</tr>").join("");
   $("tbl").innerHTML = head + "<tbody>" + body + "</tbody>";
 }
-function csv(rs) {
-  const cols = ["model", "target_category", "k", "category", "group", ...COLS];
+function csv(rs, cols = ["model", "method", "target_category", "k", "category", "group", ...COLS]) {
   const q = v => typeof v === "string" && /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v;
   return [cols.join(","), ...rs.map(r => cols.map(c => q(r[c])).join(","))].join("\n");
 }
+const PCOLS = ["model", "method", "target_category", "k", "group_a", "group_b", "similarity_before", "similarity_after"];
+function pairRows(t) {
+  const P = D.pairs;
+  return P.a.map((ai, i) => ({ model: D.model, method: D.method, target_category: t, k: D.k[t], group_a: D.groups[ai].g, group_b: D.groups[P.b[i]].g, similarity_before: P.before[i], similarity_after: P.after[t][i] }));
+}
 function download(name, text) { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([text], { type: "text/csv" })); a.download = name; document.body.appendChild(a); a.click(); a.remove(); }
-$("dl1").onclick = () => download(`forge_bias_${target.replace(/\W+/g, "_")}_k${D.k[target]}.csv`, csv(rowsFor(target)));
-$("dl2").onclick = () => download("forge_bias_all_categories_fullrank.csv", csv(D.targets.flatMap(rowsFor)));
+$("dl1").onclick = () => download(`llm_bias_${target.replace(/\W+/g, "_")}_k${D.k[target]}.csv`, csv(rowsFor(target)));
+$("dl2").onclick = () => download("llm_bias_all_categories_fullrank.csv", csv(D.targets.flatMap(rowsFor)));
+$("dl3").onclick = () => download(`llm_bias_pairwise_${target.replace(/\W+/g, "_")}_k${D.k[target]}.csv`, csv(pairRows(target), PCOLS));
+$("dl4").onclick = () => download("llm_bias_pairwise_all_categories_fullrank.csv", csv(D.targets.flatMap(pairRows), PCOLS));
 
 let nn = D.nodes.length, sortedBefore = [...D.simBefore].sort((p, q) => p - q);
 const tidx = (i, j) => i * nn - i * (i + 1) / 2 + (j - i - 1);
@@ -469,12 +500,59 @@ function baseline() {
   });
   $("b2").replaceChildren(s2);
 }
+let ga = 0, gb = 0;
+function pairInit() {
+  for (const id of ["ga", "gb"]) {
+    const sel = $(id); sel.innerHTML = "";
+    D.categories.forEach(c => {
+      const og = document.createElement("optgroup"); og.label = c;
+      D.groups.forEach((g, i) => { if (g.c === c) { const o = document.createElement("option"); o.value = i; o.textContent = label(g.g); og.appendChild(o); } });
+      sel.appendChild(og);
+    });
+  }
+}
+function pairDefaults() {
+  const b = D.before[metric], idx = idxOf(target).sort((i, j) => b[j] - b[i]);
+  ga = idx[0]; gb = idx[idx.length - 1]; $("ga").value = ga; $("gb").value = gb;
+}
+function pairChart() {
+  const A = +$("ga").value, B = +$("gb").value, b = D.before[metric], a = D.after[target][metric];
+  const dB = b[A] - b[B], dA = a[A] - a[B], mA = Math.abs(dA), mB = Math.abs(dB);
+  const cl = mA - mB > SMALL ? "w" : mB - mA > SMALL ? "b" : "s";
+  const word = cl === "w" ? "further apart" : cl === "b" ? "closer together" : "about the same distance apart";
+  $("ptiles").innerHTML = `<div class="tile s"><b>${sgn(dB)}</b><span>difference before (A minus B)</span></div>` +
+    `<div class="tile s"><b>${sgn(dA)}</b><span>difference after removing ${target} bias</span></div>` +
+    `<div class="tile ${cl}"><b>${sgn(mA - mB)}</b><span>change in how far apart they are</span></div>`;
+  $("psum").innerHTML = A === B ? "Pick two different groups." :
+    `After removing ${target} bias, <b>${label(D.groups[A].g)}</b> and <b>${label(D.groups[B].g)}</b> are <b>${word}</b> (${mText()} measure).`;
+  const rows = [A, B], vs = [b[A], b[B], a[A], a[B], 0];
+  let lo = Math.min(...vs), hi = Math.max(...vs); const pad = Math.max((hi - lo) * 0.15, 0.01); lo -= pad; hi += pad;
+  const W = 760, L = 230, R = 70, T = 40, RH = 40, H = T + rows.length * RH + 8, x = v => L + (v - lo) / (hi - lo) * (W - L - R);
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Two groups before and after" });
+  const st = niceStep((hi - lo) / 5);
+  for (let v = Math.ceil(lo / st) * st; v <= hi; v += st) {
+    el("line", { x1: x(v), x2: x(v), y1: T - 6, y2: H - 4, stroke: Math.abs(v) < 1e-9 ? "var(--axis)" : "var(--grid)", "stroke-width": Math.abs(v) < 1e-9 ? 1.5 : 1 }, svg);
+    el("text", { x: x(v), y: T - 12, "text-anchor": "middle", class: "m", style: "font-size:11px" }, svg).textContent = Math.abs(v) < 1e-9 ? "0 (neutral)" : v.toFixed(2);
+  }
+  el("text", { x: L, y: 12, class: "s", style: "font-weight:600" }, svg).textContent = "← more negative words";
+  el("text", { x: W - R, y: 12, "text-anchor": "end", class: "s", style: "font-weight:600" }, svg).textContent = "more positive words →";
+  rows.forEach((gi, r) => {
+    const cy = T + r * RH + RH / 2, d = a[gi] - b[gi], c = d > SMALL ? "var(--blue)" : d < -SMALL ? "var(--red)" : "var(--muted)";
+    el("text", { x: L - 10, y: cy + 4, "text-anchor": "end" }, svg).textContent = (r ? "B: " : "A: ") + label(D.groups[gi].g);
+    el("line", { x1: x(b[gi]), x2: x(a[gi]), y1: cy, y2: cy, stroke: c, "stroke-width": 3.5, "stroke-linecap": "round" }, svg);
+    el("circle", { cx: x(b[gi]), cy, r: 5.5, fill: "var(--surface)", stroke: "var(--muted)", "stroke-width": 2 }, svg);
+    el("circle", { cx: x(a[gi]), cy, r: 5.5, fill: "var(--ink2)", stroke: "var(--surface)", "stroke-width": 1.5 }, svg);
+    el("text", { x: Math.max(x(b[gi]), x(a[gi])) + 12, y: cy + 4, class: "s", style: "font-size:12px" }, svg).textContent = `${sgn(b[gi])} → ${sgn(a[gi])}`;
+    el("rect", { x: 0, y: cy - RH / 2, width: W, height: RH, fill: "transparent", "data-tip": `<b>${label(D.groups[gi].g)}</b><br>score before ${f3(b[gi])} → after ${f3(a[gi])}` }, svg);
+  });
+  $("pchart").replaceChildren(svg);
+}
 function render(resetZoom) {
   baseline(); headline(); chart1();
   if (resetZoom || !zcat) { zcat = stats().others[0].c; $("zcat").value = zcat; }
   chart2(); network(); table();
   if (ALL.order.length > 1) compare();
-  $("model").textContent = D.model;
+  $("model").textContent = D.model; $("method").textContent = D.method; pairChart();
 }
 function setModel(k) {
   M = k; D = ALL.models[k];
@@ -488,17 +566,21 @@ D.categories.forEach(c => { const o = document.createElement("option"); o.value 
 $("bcat").onchange = e => { bcat = e.target.value; baseline(); };
 D.targets.forEach(t => { for (const id of ["cat", "zcat"]) { const o = document.createElement("option"); o.value = o.textContent = t; $(id).appendChild(o); } });
 $("cat").value = target;
-$("msel").onchange = e => { setModel(e.target.value); render(true); };
-$("cat").onchange = e => { target = e.target.value; render(true); };
+$("msel").onchange = e => { setModel(e.target.value); pairDefaults(); render(true); };
+$("cat").onchange = e => { target = e.target.value; pairDefaults(); render(true); };
+$("ga").onchange = $("gb").onchange = pairChart;
+{ const o = document.createElement("option"); o.textContent = D.method; $("meth").appendChild(o); }
 $("zcat").onchange = e => { zcat = e.target.value; chart2(); };
 $("thr").oninput = network;
 for (const m of ["valence", "competence"]) $("m-" + m).onclick = () => { metric = m; $("m-valence").setAttribute("aria-pressed", m === "valence"); $("m-competence").setAttribute("aria-pressed", m === "competence"); render(true); };
 document.querySelectorAll("#tabs button").forEach(b => b.onclick = () => {
   document.querySelectorAll("#tabs button").forEach(x => x.setAttribute("aria-selected", x === b));
-  for (const t of ["base", "overview", "compare", "groups", "network", "data", "how"]) $("p-" + t).hidden = t !== b.dataset.t;
-  $("catwrap").hidden = b.dataset.t === "base" || b.dataset.t === "how";
+  for (const t of ["base", "overview", "compare", "groups", "pair", "network", "data", "how"]) $("p-" + t).hidden = t !== b.dataset.t;
+  $("catwrap").hidden = $("methwrap").hidden = b.dataset.t === "base" || b.dataset.t === "how";
 });
-$("catwrap").hidden = true;
+$("catwrap").hidden = $("methwrap").hidden = true;
+const hb = document.querySelector(`#tabs button[data-t="${location.hash.slice(1)}"]`); if (hb) hb.click();
+pairInit(); pairDefaults();
 render(true);
 </script>
 </body>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Forge Bias Prototype (plain-language)</title>
+<title>LLM Bias Prototype (plain-language)</title>
 <style>
 :root {
   color-scheme: light;
@@ -325,8 +325,8 @@ function csv(rs) {
   return [cols.join(","), ...rs.map(r => cols.map(c => q(r[c])).join(","))].join("\n");
 }
 function download(name, text) { const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([text], { type: "text/csv" })); a.download = name; document.body.appendChild(a); a.click(); a.remove(); }
-$("dl1").onclick = () => download(`forge_bias_${target.replace(/\W+/g, "_")}_k${D.k[target]}.csv`, csv(rowsFor(target)));
-$("dl2").onclick = () => download("forge_bias_all_categories_fullrank.csv", csv(D.targets.flatMap(rowsFor)));
+$("dl1").onclick = () => download(`llm_bias_${target.replace(/\W+/g, "_")}_k${D.k[target]}.csv`, csv(rowsFor(target)));
+$("dl2").onclick = () => download("llm_bias_all_categories_fullrank.csv", csv(D.targets.flatMap(rowsFor)));
 
 function render(resetZoom) {
   headline(); chart1();

@@ -1,4 +1,4 @@
-# forge-bias (prototype)
+# LLM bias prototype
 
 When you remove one social bias from a word embedding (for example racial bias), does bias toward the **other** groups get better, worse, or stay the same?
 
@@ -14,7 +14,7 @@ This is a prototype, not a research finding: small pre-trained models, short wor
 4. "Debiases" one category by removing the subspace spanned by its distinct group centroids from every vector (the neutralize step of Bolukbasi et al., 2016). Full rank by default; `k` can cap the number of directions.
 5. Re-scores everything and reports how every other category's gap changed (the spillover).
 
-The dashboard (`index.html`) shows the spillover for any chosen category, per-group scores, a before/after similarity network, a side-by-side comparison of the two models, and CSV downloads.
+The dashboard (`index.html`) shows the spillover for any chosen category, per-group scores, a before/after similarity network, a comparison of any two groups, a side-by-side comparison of the two models, and CSV downloads (group scores and pairwise similarity).
 
 ## Run it
 
@@ -25,7 +25,7 @@ python run.py            # downloads the models via gensim (GloVe ~130 MB, fastT
 python build_dashboard.py  # builds index.html from the results
 ```
 
-`python run.py glove100` runs a single model. Every results file carries the `model` and `k` used.
+`python run.py glove100` runs a single model. Every results file carries the `model`, `method` and `k` used.
 
 ## Files
 

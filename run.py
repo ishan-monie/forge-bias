@@ -3,7 +3,7 @@
     python run.py              # all models in MODELS
     python run.py glove100     # just one (by slug)
 
-Writes results_<slug>_<fullrank|k3>_<scores|pairwise|spillover>.csv. Every table has `model` and `k`.
+Writes results_<slug>_<fullrank|k3>_<scores|pairwise|spillover>.csv. Every table has `model`, `method` and `k`.
 """
 import logging; logging.disable(logging.CRITICAL)
 import gc
@@ -18,6 +18,7 @@ MODELS = [
     ("glove100", "glove-wiki-gigaword-100", "GloVe wiki-gigaword 100d"),
     ("fasttext300", "fasttext-wiki-news-subwords-300", "fastText wiki-news 300d"),
 ]
+METHOD = "Subtract group subspace (Bolukbasi neutralize)"
 pd.set_option('display.width', 220); pd.set_option('display.max_columns', 30)
 want = set(sys.argv[1:])
 
@@ -32,6 +33,7 @@ for slug, name, display in MODELS:
         res[tag] = (scores, pairs, summary)
         for df in (scores, pairs, summary):
             df.insert(0, "model", display)
+            df.insert(1, "method", METHOD)
         scores.round(5).to_csv(f'results_{slug}_{tag}_scores.csv', index=False)
         pairs.round(5).to_csv(f'results_{slug}_{tag}_pairwise.csv', index=False)
         summary.round(5).to_csv(f'results_{slug}_{tag}_spillover.csv', index=False)

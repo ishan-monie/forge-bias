@@ -71,6 +71,16 @@ def build_model(slug, display, gname):
         "simBefore": tri(Sb),
         "simAfter": {t: tri(simmat(pr[pr.target_category == t], "similarity_after")) for t in targets},
     }
+    # full pairwise table (all 72 groups, every target) for the CSV download
+    pr0 = pr[pr.target_category == targets[0]].reset_index(drop=True)
+    key = list(zip(pr0.group_a, pr0.group_b))
+    data["method"] = sm["method"].iloc[0]
+    data["pairs"] = {"a": [gi[x] for x, _ in key], "b": [gi[y] for _, y in key],
+                     "before": [round(float(v), 5) for v in pr0.similarity_before], "after": {}}
+    for t in targets:
+        pt = pr[pr.target_category == t].set_index(["group_a", "group_b"]).loc[key]
+        assert len(pt) == len(key) == 2556 and np.allclose(pt.similarity_before.values, pr0.similarity_before.values, atol=1e-4)
+        data["pairs"]["after"][t] = [round(float(v), 5) for v in pt.similarity_after]
     # the page recomputes gaps from group scores; check against the summary CSV
     for t in targets:
         for m in ("valence", "competence"):
@@ -88,7 +98,7 @@ for slug, display, gname in MODELS:
         built[slug] = build_model(slug, display, gname)
         print(f"built data for {display}")
 first_slug = next(iter(built))
-single = json.dumps(built[first_slug], separators=(",", ":"))
+single = json.dumps({k: v for k, v in built[first_slug].items() if k != "pairs"}, separators=(",", ":"))   # older pages do not use the pairwise table
 multi = json.dumps({"order": list(built), "models": built}, separators=(",", ":"))
 
 PAGES = [("dashboard_template_v1.html", "forge_dashboard_v1.html", single),
