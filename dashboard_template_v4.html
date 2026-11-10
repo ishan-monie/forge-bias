@@ -132,7 +132,6 @@ a { color: var(--blue); }
   <button role="tab" data-t="base" aria-selected="true">Starting bias</button>
   <button role="tab" data-t="overview" aria-selected="false">After removing a bias</button>
   <button role="tab" data-t="compare" aria-selected="false" id="tab-compare">Compare models</button>
-  <button role="tab" data-t="groups" aria-selected="false">Groups</button>
   <button role="tab" data-t="pair" aria-selected="false">Two groups</button>
   <button role="tab" data-t="network" aria-selected="false">Network</button>
   <button role="tab" data-t="data" aria-selected="false">Data</button>
@@ -171,11 +170,19 @@ a { color: var(--blue); }
   <p class="cap" id="c1sub"></p>
   <div id="c1"></div>
   <p class="small" id="fixednote"></p>
+  <h2 id="zsec">Which groups moved?</h2>
+  <p class="cap">Pick a category (or click a row in the chart above). Each row is a group: hollow dot = before, filled dot = after.</p>
+  <label class="f">Category <select id="zcat"></select></label>
+  <div class="legend"><span><b class="dot" style="border:2px solid var(--muted)"></b>before</span><span><b class="dot" style="background:var(--ink2)"></b>after</span>
+    <span><i style="background:var(--red)"></i>toward negative</span><span><i style="background:var(--blue)"></i>toward positive</span></div>
+  <div id="c2"></div>
+  <p class="small" id="zfoot"></p>
   <details class="info"><summary>How to read this</summary>
     <ul>
       <li><b>Score:</b> how much closer a group's words are to positive words than to negative ones. Higher = more positive.</li>
       <li><b>Gap:</b> highest group score minus lowest, within a category. Bigger = more unequal.</li>
       <li><b>Bar:</b> gap after removing the bias minus gap before. Changes under 0.005 show as "no change" (our cutoff, not a statistical test).</li>
+      <li><b>Which groups moved:</b> further right = the model links the group with more positive words; further left = more negative. "old (vs. young)" is the word list for <i>old</i>, defined against <i>young</i>. A category's gap can grow when its most- and least-favored groups move apart, even though we never touched it.</li>
     </ul>
     <div class="ex" id="example"></div>
   </details>
@@ -195,22 +202,6 @@ a { color: var(--blue); }
   </details>
 </section>
 
-<section id="p-groups" class="card panel" hidden>
-  <h2>Which groups moved?</h2>
-  <p class="cap">Pick a category. Each row is a group: hollow dot = before, filled dot = after.</p>
-  <label class="f">Category <select id="zcat"></select></label>
-  <div class="legend"><span><b class="dot" style="border:2px solid var(--muted)"></b>before</span><span><b class="dot" style="background:var(--ink2)"></b>after</span>
-    <span><i style="background:var(--red)"></i>toward negative</span><span><i style="background:var(--blue)"></i>toward positive</span></div>
-  <div id="c2"></div>
-  <p class="small" id="zfoot"></p>
-  <details class="info"><summary>How to read this</summary>
-    <ul>
-      <li>Further right = the model links the group with more positive words; further left = more negative.</li>
-      <li>"old (vs. young)" is the word list for <i>old</i>, defined against <i>young</i>.</li>
-      <li>A category's gap can grow when its most- and least-favored groups move apart, even though we never touched it. Starts on the worst-hit category.</li>
-    </ul>
-  </details>
-</section>
 
 <section id="p-pair" class="card panel" hidden>
   <h2>How far apart are two groups?</h2>
@@ -394,7 +385,7 @@ document.addEventListener("mousemove", e => {
 
 function chart1() {
   const { own, others } = stats();
-  $("c1sub").textContent = `Change in the ${mText()} gap after removing ${target} bias. Red, right = more unequal. Blue, left = more equal.`;
+  $("c1sub").textContent = `Change in the ${mText()} gap after removing ${target} bias. Red, right = more unequal. Blue, left = more equal. Click a row to see its groups below.`;
   const W = 1040, L = 150, R = 110, T = 44, RH = 42, H = T + others.length * RH + 8;
   const M = Math.max(0.02, ...others.map(r => Math.abs(r.d))) * 1.15;
   const w = W - L - R, x = v => L + (v + M) / (2 * M) * w, x0 = x(0);
@@ -411,7 +402,8 @@ function chart1() {
     if (!small) el("rect", { x: Math.min(x0, xe), y: y - 10, width: Math.abs(xe - x0), height: 20, rx: 3, fill: col }, svg);
     const t = el("text", { x: W - R + 12, y: y + 5, style: "font-weight:600" }, svg);
     t.textContent = small ? "no change" : sgn(r.d) + (r.d > 0 ? " worse" : " better"); t.style.fill = small ? "var(--muted)" : col;
-    el("rect", { x: 0, y: y - RH / 2, width: W, height: RH, fill: "transparent", "data-tip": `<b>${r.c}</b><br>Gap between most and least favored group:<br>before ${f3(r.b)} → after ${f3(r.a)}<br>${small ? "barely changed" : r.d > 0 ? "got worse (more unequal)" : "got better (more equal)"}` }, svg);
+    const hit = el("rect", { x: 0, y: y - RH / 2, width: W, height: RH, fill: "transparent", "data-tip": `<b>${r.c}</b><br>Gap between most and least favored group:<br>before ${f3(r.b)} → after ${f3(r.a)}<br>${small ? "barely changed" : r.d > 0 ? "got worse (more unequal)" : "got better (more equal)"}` }, svg);
+    hit.style.cursor = "pointer"; hit.onclick = () => { zcat = r.c; $("zcat").value = zcat; chart2(); $("zsec").scrollIntoView({ behavior: "smooth", block: "start" }); };
   });
   $("c1").replaceChildren(svg);
   $("fixednote").innerHTML = `<b>${target}</b> itself: gap ${f3(own.b)} \u2192 ${f3(own.a)}. We removed it on purpose, so it should shrink.` + (own.d > SMALL ? " (It rose here, so the method did not work for this category.)" : own.a > 0.5 * own.b ? " (With this method it did not shrink much.)" : "");
@@ -615,11 +607,11 @@ $("thr").oninput = network;
 for (const m of ["valence", "competence"]) $("m-" + m).onclick = () => { metric = m; $("m-valence").setAttribute("aria-pressed", m === "valence"); $("m-competence").setAttribute("aria-pressed", m === "competence"); render(true); };
 document.querySelectorAll("#tabs button").forEach(b => b.onclick = () => {
   document.querySelectorAll("#tabs button").forEach(x => x.setAttribute("aria-selected", x === b));
-  for (const t of ["base", "overview", "compare", "groups", "pair", "network", "data", "how"]) $("p-" + t).hidden = t !== b.dataset.t;
+  for (const t of ["base", "overview", "compare", "pair", "network", "data", "how"]) $("p-" + t).hidden = t !== b.dataset.t;
   $("catwrap").hidden = $("methwrap").hidden = b.dataset.t === "base" || b.dataset.t === "how";
 });
 $("catwrap").hidden = $("methwrap").hidden = true;
-const hb = document.querySelector(`#tabs button[data-t="${location.hash.slice(1)}"]`); if (hb) hb.click();
+const hb = document.querySelector(`#tabs button[data-t="${location.hash.slice(1) === "groups" ? "overview" : location.hash.slice(1)}"]`); if (hb) hb.click();
 pairInit(); pairDefaults();
 render(true);
 </script>
